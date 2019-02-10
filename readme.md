@@ -1,1 +1,3 @@
-Everything that is not hidden is a global config.
+
+Some of my config files...
+

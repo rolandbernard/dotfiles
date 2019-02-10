@@ -12,7 +12,6 @@ if dein#load_state('/home/roland/.cache/dein')
 	" Let dein manage dein
 	" Required:
 	call dein#add('/home/roland/.cache/dein/repos/github.com/Shougo/dein.vim')
-	" call dein#add('Shougo/dein.vim')
 	
 	call dein#add('Shougo/deoplete.nvim')
 	if !has('nvim')
@@ -21,8 +20,6 @@ if dein#load_state('/home/roland/.cache/dein')
 	endif
 
 	" Add or remove your plugins here:
-	" call dein#add('Shougo/neosnippet.vim')
-	" call dein#add('Shougo/neosnippet-snippets')
 	call dein#add('sheerun/vim-polyglot')
 	call dein#add('Shougo/vimshell')
 	call dein#add('zchee/deoplete-jedi')
@@ -34,18 +31,11 @@ if dein#load_state('/home/roland/.cache/dein')
 	call dein#add('Shougo/neco-vim')
 	call dein#add('scrooloose/nerdtree')
 	call dein#add('icymind/NeoSolarized')
-	" call dein#add('tmhedberg/SimpylFold')
-	" call dein#add('Konfekt/FastFold')
 	call dein#add('w0rp/ale')
 	call dein#add('cloudhead/neovim-fuzzy')
-	" call dein#add('neomutt/neomutt.vim')
 	call dein#add('junegunn/fzf')
 	call dein#add('alaric/neovim-visor')
 	call dein#add('christoomey/vim-tmux-navigator')
-	" call dein#add('autozimu/LanguageClient-neovim', {
-	"			\ 'rev': 'next',
-	"			\ 'build': 'bash install.sh',
-	"			\ })
 	call dein#add('ternjs/tern_for_vim')
 	call dein#add('terryma/vim-multiple-cursors')
 	call dein#add('tpope/vim-eunuch')
