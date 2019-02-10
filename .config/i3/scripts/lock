@@ -2,5 +2,9 @@
 tmpbg='/tmp/screen.png'
 scrot "$tmpbg"
 convert "$tmpbg" -scale 10% -scale 1000% "$tmpbg"
-i3lock -i "$tmpbg"
+i3lock --insidevercolor=00000000 --insidecolor=00000000 \
+--insidewrongcolor=00000000 --ringvercolor=2f343fef \
+--ringcolor=2f343fef --ringwrongcolor=E53935ff \
+--line-uses-ring --keyhlcolor=f3f4f5ff --bshlcolor=E5393fff --verifcolor=00000000 \
+--wrongcolor=00000000 --timestr="%H:%M:%S" --ring-width=15 --clock -i "$tmpbg"
 rm "$tmpbg"
