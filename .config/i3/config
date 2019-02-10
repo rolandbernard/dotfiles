@@ -207,7 +207,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 bindsym $mod+d exec rofi -show
 
-exec_always setxkbmap -model asus_laptop -rules evdev -layout de,it
-exec_always feh --bg-fill ~/.config/i3/wallpaper.jpg
+exec_always --no-startup-id setxkbmap -model asus_laptop -rules evdev -layout de,it
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 
-exec compton
+exec --no-startup-id  compton
