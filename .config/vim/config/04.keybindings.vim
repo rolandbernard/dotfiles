@@ -1,4 +1,4 @@
-
+" make
 nnoremap mm :!make<CR><CR>
 nnoremap mr :!make;make run<CR>
 nnoremap mc :!make clean<CR><CR>

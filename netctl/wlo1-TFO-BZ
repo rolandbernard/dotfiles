@@ -1,0 +1,13 @@
+Description='School WiFi'
+Interface=wlo1
+Connection=wireless
+Security=wpa-configsection
+IP=dhcp
+WPAConfigSection=(
+        'ssid="TFO-BZ"'
+        'key_mgmt=WPA-EAP'
+        'eap=PEAP'
+        'identity="MY_IDENTITY"'
+        'password="MY_PASSWORD"'
+        'phase2="auth=MSCHAPV2"'
+)
