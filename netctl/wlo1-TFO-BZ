@@ -10,4 +10,5 @@ WPAConfigSection=(
         'identity="MY_IDENTITY"'
         'password="MY_PASSWORD"'
         'phase2="auth=MSCHAPV2"'
+        'priority=2'
 )
