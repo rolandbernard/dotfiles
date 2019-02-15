@@ -58,6 +58,8 @@ autocmd BufLeave term://* stopinsert
 set foldmethod=syntax
 set foldlevelstart=99
 
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent! loadview
 
