@@ -5,6 +5,7 @@
 alias ls='ls --color=auto'
 alias lh='ls -a'
 alias ll='lh -l'
+alias vim='nvim' # Im used to type 'vim'
 PS1='[\u@\h \W]\$ '
 
 # If not running interactively, don't do anything
