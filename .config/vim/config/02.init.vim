@@ -59,6 +59,7 @@ set foldmethod=syntax
 set foldlevelstart=99
 
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+set list!
 
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent! loadview
