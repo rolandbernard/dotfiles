@@ -30,7 +30,7 @@ font pango:Noto Sans 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id termite -t terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -215,6 +215,6 @@ exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 exec --no-startup-id compton
 
 # xinput
-# exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 286 1
-# exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 304 1
+exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 286 1
+exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 304 1
 
