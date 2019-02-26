@@ -28,6 +28,8 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'Shougo/neco-syntax'
 Plug 'carlitux/deoplete-ternjs'
+Plug 'fidian/hexmode'
+Plug 'takac/vim-hardtime'
 
 call plug#end()
 

@@ -8,12 +8,6 @@ nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
 vnoremap <C-s> <Esc>:w<CR>gv
 
-" don't use arrow keys
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-
 " Delete trailing whitespace with F5
 :nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
