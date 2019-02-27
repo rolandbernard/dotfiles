@@ -12,10 +12,6 @@ set cursorline " highlights current line
 
 set scrolloff=10
 
-" Autoindentation
-set ai
-filetype indent plugin on
-
 " Copies using system clipboard
 set clipboard+=unnamedplus
 
@@ -40,6 +36,7 @@ let g:airline_theme='solarized'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 set autoindent
+set smartindent
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
@@ -72,3 +69,6 @@ autocmd BufWinEnter *.* silent! loadview
 let &t_ut=''
 
 let g:hardtime_default_on = 1
+
+set ignorecase
+set smartcase
