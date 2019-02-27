@@ -1,9 +1,6 @@
 " Enable syntax highlighting
 syntax on
 
-" Enable line numbers
-set nu
-
 set wrap!
 
 " Enable line/column info at bottom
