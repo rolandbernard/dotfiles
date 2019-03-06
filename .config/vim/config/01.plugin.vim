@@ -29,7 +29,12 @@ Plug 'tpope/vim-surround'
 Plug 'Shougo/neco-syntax'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'fidian/hexmode'
-Plug 'takac/vim-hardtime'
+"Plug 'takac/vim-hardtime'
+Plug 'tpope/vim-commentary'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-entire'
+Plug 'tpope/vim-repeat'
 
 call plug#end()
 

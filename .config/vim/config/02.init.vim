@@ -49,9 +49,6 @@ let g:ale_lint_on_save = 1
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd BufLeave term://* stopinsert
 
-set foldmethod=indent
-set foldlevelstart=99
-
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list!
 
