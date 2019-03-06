@@ -190,8 +190,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 #xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 #xbacklight -dec 5 # decrease screen brightness
 
 # Touchpad controls
 # I don't need this...And don't want to make a script
@@ -203,6 +203,8 @@ bindsym XF86AudioPause exec --no-startup-id playerctl pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
+bindsym $mod+Shift+s exec --no-startup-id ~/.config/i3/scripts/screen_left
+
 bindsym $mod+d exec --no-startup-id rofi -show
 bindsym $mod+c exec --no-startup-id rofi -show calc
 bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/scripts/lock
@@ -212,9 +214,10 @@ bindsym $mod+i exec --no-startup-id firefox
 exec_always --no-startup-id setxkbmap -model asus_laptop -rules evdev -layout de,it
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 
+#exec --no-startup-id blueman-applet
 exec --no-startup-id compton
 
 # xinput
-exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 286 1
-exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 304 1
+exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 287 1
+exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 305 1
 
