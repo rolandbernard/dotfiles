@@ -1,4 +1,4 @@
 #!/bin/bash
 intel-virtual-output
-xrandr --output VIRTUAL2 --auto --left-of eDP1
+xrandr --output VIRTUAL2 --auto --above eDP1
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
