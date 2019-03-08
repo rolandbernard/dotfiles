@@ -218,6 +218,8 @@ exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 exec --no-startup-id compton
 
 # xinput
-exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 287 1
-exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" 305 1
+exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" "libinput Tapping Enabled" 1
+exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" "libinput Middle Emulation Enabled" 1
+
+
 
