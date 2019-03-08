@@ -50,9 +50,6 @@ scrollbar = off
 
 background = rgba(48, 48, 48, 1)
 
-# If unset, will reverse foreground and background
-highlight = #2f2f2f
-
 # Colors from color0 to color254 can be set
 color0 = #3f3f3f
 color1 = #705050
