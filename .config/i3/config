@@ -210,12 +210,29 @@ bindsym $mod+c exec --no-startup-id rofi -show calc
 bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/scripts/lock
 bindsym $mod+i exec --no-startup-id firefox
 
+# scratchpad
+for_window [instance="dropdown"] floating enabled
+for_window [instance="dropdown"] resize set 1000 800
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 10
+exec --no-startup-id termite --name dropdown -e tmux
+
+for_window [instance="math"] floating enabled
+for_window [instance="math"] resize set 1000 800
+for_window [instance="math"] move scratchpad
+for_window [instance="math"] border pixel 10
+exec --no-startup-id termite --name math -e "python -q -i -c 'from math import *; from numpy import *'"
+
+bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
+bindsym $mod+m [instance="math"] scratchpad show; [instance="math"] move position center
+
 
 exec_always --no-startup-id setxkbmap -model asus_laptop -rules evdev -layout de,it
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 
 #exec --no-startup-id blueman-applet
 exec --no-startup-id compton
+exec --no-startup-id redshift-gtk
 
 # xinput
 exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" "libinput Tapping Enabled" 1
