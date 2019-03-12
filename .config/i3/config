@@ -208,7 +208,7 @@ bindsym $mod+Shift+s exec --no-startup-id ~/.config/i3/scripts/screen_left
 bindsym $mod+d exec --no-startup-id rofi -show
 bindsym $mod+c exec --no-startup-id rofi -show calc
 bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/scripts/lock
-bindsym $mod+i exec --no-startup-id firefox
+bindsym $mod+i exec --no-startup-id GTK_THEME=Arc firefox
 
 # scratchpad
 for_window [instance="dropdown"] floating enabled
