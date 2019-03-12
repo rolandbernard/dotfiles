@@ -62,7 +62,7 @@ autocmd BufWinEnter *.* silent! loadview
 " background color.
 let &t_ut=''
 
-let g:hardtime_default_on = 1
+"let g:hardtime_default_on = 1
 
 set ignorecase
 set smartcase

@@ -5,8 +5,8 @@
 
 " save using <C-s>
 nnoremap <C-s> :w<CR>
-inoremap <C-s> <Esc>:w<CR>a
-vnoremap <C-s> <Esc>:w<CR>gv
+inoremap <C-s> <C-o>:w<CR>
+vnoremap <C-s> <C-o>:w<CR>
 
 " Delete trailing whitespace with F5
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
