@@ -21,8 +21,10 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 nmap <F8> <Plug>(ale_fix)
 
 " fzy
-nnoremap <C-p> :FuzzyOpen<CR>
-nnoremap <C-g> :FuzzyGrep<CR>
+if has('nvim')
+  nnoremap <C-p> :FuzzyOpen<CR>
+  nnoremap <C-g> :FuzzyGrep<CR>
+endif
 
 " neovim visor
 let g:neovim_visor_key = '<C-a>'
