@@ -6,6 +6,7 @@
 " save using <C-s>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <C-o>:w<CR>
+vnoremap <C-s> <Esc>:w<CR>gv
 
 " Delete trailing whitespace with F5
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
@@ -21,8 +22,10 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 nmap <F8> <Plug>(ale_fix)
 
 " fzy
-nnoremap <C-p> :FuzzyOpen<CR>
-nnoremap <C-g> :FuzzyGrep<CR>
+if has('nvim')
+	nnoremap <C-p> :FuzzyOpen<CR>
+	nnoremap <C-g> :FuzzyGrep<CR>
+endif
 
 " neovim visor
 let g:neovim_visor_key = '<C-a>'
