@@ -36,4 +36,3 @@ nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 
 " <ESC> exits in terminal mode
 tnoremap <ESC> <C-\><C-n><C-w><C-p>
-
