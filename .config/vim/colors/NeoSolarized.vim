@@ -504,8 +504,8 @@ endif
 
 exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0  .s:bg_none
 exe "hi! Conceal"        .s:fmt_none   .s:fg_blue   .s:bg_none
-exe "hi! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_red
-exe "hi! SpellCap"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_violet
+exe "hi! SpellBad"       .s:fmt_curl   .s:fg_red   .s:bg_none    .s:sp_red
+exe "hi! SpellCap"       .s:fmt_curl   .s:fg_violet   .s:bg_none    .s:sp_violet
 exe "hi! SpellRare"      .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_cyan
 exe "hi! SpellLocal"     .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_yellow
 exe "hi! Pmenu"          .s:fmt_none   .s:fg_base0  .s:bg_base02  .s:fmt_revbb
