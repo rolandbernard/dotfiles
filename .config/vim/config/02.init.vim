@@ -38,11 +38,12 @@ set noexpandtab
 set tabstop=4
 set shiftwidth=4
 
-" Disable completion where available from ALE
-" (not worth creating a separate file just for a one-liner)
+" ALE
 let g:ale_completion_enabled = 0
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_filetype_changed = 0
 let g:ale_lint_on_save = 1
 
 let g:ale_sign_error = '>>'
@@ -69,3 +70,5 @@ let g:hardtime_default_on = 1
 
 set ignorecase
 set smartcase
+
+

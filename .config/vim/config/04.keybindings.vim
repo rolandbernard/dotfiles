@@ -15,9 +15,6 @@ nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :noh
 " autocmd vimenter * NERDTree " start nerdtree automatically when vim starts up
 map <C-t> :NERDTreeToggle<CR>
 
-" deoplete tab-complete
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
 " ALE
 nmap <F8> <Plug>(ale_fix)
 

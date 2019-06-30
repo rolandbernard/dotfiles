@@ -1,20 +1,19 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'Shougo/deoplete.nvim'
-if !has('nvim')
-	Plug 'roxma/nvim-yarp'
-	Plug 'roxma/vim-hug-neovim-rpc'
-endif
+"Plug 'Shougo/deoplete.nvim'
+"if !has('nvim')
+"	Plug 'roxma/vim-hug-neovim-rpc'
+"endif
 Plug 'sheerun/vim-polyglot'
 Plug 'Shougo/vimshell'
-Plug 'zchee/deoplete-jedi'
-Plug 'Shougo/deoplete-clangx'
-Plug 'zchee/deoplete-asm'
+"Plug 'zchee/deoplete-jedi'
+"Plug 'Shougo/deoplete-clangx'
+"Plug 'zchee/deoplete-asm'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'Shougo/neoinclude.vim'
-Plug 'Shougo/neco-vim'
+"Plug 'Shougo/neoinclude.vim'
+"Plug 'Shougo/neco-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'icymind/NeoSolarized'
 Plug 'w0rp/ale'
@@ -27,7 +26,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'Shougo/neco-syntax'
-Plug 'carlitux/deoplete-ternjs'
+"Plug 'carlitux/deoplete-ternjs'
 Plug 'fidian/hexmode'
 "Plug 'takac/vim-hardtime'
 Plug 'tpope/vim-commentary'
@@ -35,6 +34,28 @@ Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-entire'
 Plug 'tpope/vim-repeat'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2'
+" ncm2 completion sources
+Plug 'ncm2/ncm2-pyclang'
+Plug 'ncm2/ncm2-syntax' | Plug 'Shougo/neco-syntax'
+Plug 'ncm2/ncm2-neoinclude' | Plug 'Shougo/neoinclude.vim'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-github'
+Plug 'ncm2/ncm2-tagprefix'
+"Plug 'filipekiss/ncm2-look.vim'
+"Plug 'yuki-ycino/ncm2-dictionary'
+Plug 'fgrsnau/ncm2-otherbuf'
+"Plug 'svermeulen/ncm2-yoink' | Plug 'svermeulen/vim-yoink'
+Plug 'ncm2/ncm2-cssomni'
+Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
+Plug 'ncm2/ncm2-jedi'
+Plug 'ncm2/ncm2-vim' | Plug 'Shougo/neco-vim'
+Plug 'ObserverOfTime/ncm2-jc2'
+Plug 'ncm2/ncm2-html-subscope'
+Plug 'ncm2/ncm2-markdown-subscope'
+Plug 'ncm2/ncm2-ultisnips'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
