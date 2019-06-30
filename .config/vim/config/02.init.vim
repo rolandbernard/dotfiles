@@ -49,6 +49,10 @@ let g:ale_lint_on_save = 1
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
 
+let g:ale_c_parse_compile_commands = 1
+"let g:ale_linters = { 'cpp': ['clang', 'clangtidy', 'gcc'] }
+let g:ale_c_build_dir_names = ['build']
+
 " terminal settings
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd BufLeave term://* stopinsert
