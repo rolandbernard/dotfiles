@@ -1,7 +1,3 @@
-" make
-"nnoremap mm :!make<CR>
-"nnoremap mr :!make;make run<CR>
-"nnoremap mc :!make clean<CR><CR>
 
 " save using <C-s>
 nnoremap <C-s> :w<CR>
@@ -13,13 +9,13 @@ nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :noh
 
 " nerdtree
 " autocmd vimenter * NERDTree " start nerdtree automatically when vim starts up
-map <C-t> :NERDTreeToggle<CR>
+noremap <C-t> :NERDTreeToggle<CR>
 
 " ALE
-nmap <F8> <Plug>(ale_fix)
+" nnoremap <F8> <Plug>(ale_fix)
 
-" fzy
 if has('nvim')
+" fzy
 	nnoremap <C-p> :FuzzyOpen<CR>
 	nnoremap <C-g> :FuzzyGrep<CR>
 endif
@@ -34,3 +30,7 @@ nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 " <ESC> exits in terminal mode
 tnoremap <ESC> <C-\><C-n><C-w><C-p>
 
+nnoremap <expr> <C-c> (g:ale_enabled ? ":ALEDisable<CR>" : ":ALEEnable<CR>")
+
+nnoremap <silent> <C-Left> :bprev<CR>
+nnoremap <silent> <C-Right> :bnext<CR>
