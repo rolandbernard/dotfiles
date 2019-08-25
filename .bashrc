@@ -46,7 +46,8 @@ set_prompt () {
 
     timer_stop
     #PS1+="($timer_show) \t "
-    PS1+="\e]2;\w\a[$timer_show][\u@\h \W]\$ "
+	echo -n -e "\e]2;`pwd`\a"
+    PS1+="[$timer_show][\u@\h \W]\$ "
 }
 
 trap 'timer_start' DEBUG
