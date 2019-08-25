@@ -93,4 +93,6 @@ let g:hardtime_default_on = 1
 set ignorecase
 set smartcase
 
+set undofile
+
 
