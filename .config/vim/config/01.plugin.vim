@@ -46,11 +46,14 @@ Plug 'ncm2/ncm2-github'
 Plug 'ncm2/ncm2-tagprefix'
 "Plug 'filipekiss/ncm2-look.vim'
 "Plug 'yuki-ycino/ncm2-dictionary'
+Plug 'ncm2/ncm2-bufword'
 Plug 'fgrsnau/ncm2-otherbuf'
+Plug 'ncm2/ncm2-tmux'
 "Plug 'svermeulen/ncm2-yoink' | Plug 'svermeulen/vim-yoink'
 Plug 'ncm2/ncm2-cssomni'
 Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
 Plug 'ncm2/ncm2-jedi'
+Plug 'ncm2/ncm2-go'
 Plug 'ncm2/ncm2-vim' | Plug 'Shougo/neco-vim'
 Plug 'ObserverOfTime/ncm2-jc2'
 Plug 'ncm2/ncm2-html-subscope'
@@ -59,7 +62,6 @@ Plug 'ncm2/ncm2-ultisnips'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-fugitive'
 Plug 'dikiaap/minimalist'
-Plug 'alcesleo/vim-uppercase-sql'
 
 call plug#end()
 
