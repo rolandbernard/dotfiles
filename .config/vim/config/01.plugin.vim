@@ -59,6 +59,7 @@ Plug 'ncm2/ncm2-ultisnips'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-fugitive'
 Plug 'dikiaap/minimalist'
+Plug 'alcesleo/vim-uppercase-sql'
 
 call plug#end()
 
