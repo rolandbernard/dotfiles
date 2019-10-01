@@ -51,7 +51,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 set autoindent
 set smartindent
-set noexpandtab
+" set noexpandtab
 set tabstop=4
 set shiftwidth=4
 
