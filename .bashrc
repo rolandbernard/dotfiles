@@ -9,8 +9,6 @@ alias vim='nvim' # Im used to type 'vim'
 alias vi='\vim'
 alias ssh='TERM=xterm ssh'
 
-PS1='[\u@\h \W]\$ '
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -46,8 +44,8 @@ set_prompt () {
 
     timer_stop
     #PS1+="($timer_show) \t "
-	echo -n -e "\e]2;`pwd`\a"
-    PS1+="[$timer_show][\u@\h \W]\$ "
+    echo -n -e "\e]2;`pwd`\a"
+    PS1+="\e[34m[\e[34m$timer_show\e[34m][\e[93m\u@\h \e[92m\W\e[34m]\e[94m\$\e[m "
 }
 
 trap 'timer_start' DEBUG
