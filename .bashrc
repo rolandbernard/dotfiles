@@ -40,12 +40,10 @@ function timer_stop {
 }
 
 set_prompt () {
-    PS1=""
-
     timer_stop
-    #PS1+="($timer_show) \t "
     echo -n -e "\e]2;`pwd`\a"
-    PS1+="\e[34m[\e[34m$timer_show\e[34m][\e[93m\u@\h \e[92m\W\e[34m]\e[94m\$\e[m "
+    #PS1="\e[34m[\e[34m$timer_show\e[34m][\e[93m\u@\h \e[92m\W\e[34m]\e[94m$\e[m "
+    PS1="[$timer_show][\u@\h \W]\$ "
 }
 
 trap 'timer_start' DEBUG
