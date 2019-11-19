@@ -1,0 +1,38 @@
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+let g:coc_global_extensions = [
+            \       'coc-syntax',
+            \       'coc-gocode',
+            \       'coc-vimlsp',
+            \       'coc-yank',
+            \       'coc-html',
+            \       'coc-json',
+            \       'coc-css',
+            \       'coc-tsserver',
+            \       'coc-phpls',
+            \       'coc-java',
+            \       'coc-rls',
+            \       'coc-python',
+            \       'coc-emmet',
+            \       'coc-git',
+            \       'coc-svg',
+            \       'coc-xml',
+            \       'coc-ultisnips'
+            \   ]
+
+let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_prev = '<s-tab>'
+
+set updatetime=300
+
+inoremap <silent><expr> <c-space> coc#refresh()
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nnoremap <silent> K :call CocAction('doHover')<CR>
+nmap <leader>rn <Plug>(coc-rename)
+inoremap <silent><expr> <c-space> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
