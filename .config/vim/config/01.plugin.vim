@@ -14,6 +14,7 @@ Plug 'kana/vim-textobj-entire'
 Plug 'tpope/vim-repeat'
 Plug 'roxma/nvim-yarp'
 Plug 'bling/vim-bufferline'
+Plug 'Shirk/vim-gas'
 
 call plug#end()
 

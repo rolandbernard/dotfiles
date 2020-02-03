@@ -1,4 +1,8 @@
 #!/bin/bash
 intel-virtual-output
+sleep 1
 xrandr --output VIRTUAL2 --auto --above eDP1
+sleep 1
+xrandr --output VIRTUAL2 --auto --above eDP1
+sleep 1
 feh --bg-fill ~/.config/i3/wallpaper.jpg

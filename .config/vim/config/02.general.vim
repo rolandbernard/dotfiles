@@ -34,6 +34,9 @@ set scrolloff=10
 
 set signcolumn=yes
 
+set foldmethod=syntax
+set foldlevel=99
+
 autocmd BufWinLeave * mkview
 autocmd BufWinEnter * silent! loadview
 
