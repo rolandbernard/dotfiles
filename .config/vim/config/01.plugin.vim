@@ -1,7 +1,6 @@
 
 call plug#begin('~/.config/vim/plugged')
 
-Plug 'flrnd/plastic.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
