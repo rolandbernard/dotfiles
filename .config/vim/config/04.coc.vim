@@ -5,6 +5,8 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:coc_global_extensions = [
             \       'coc-syntax',
             \       'coc-gocode',
+            \       'coc-go',
+            \       'coc-clangd',
             \       'coc-vimlsp',
             \       'coc-yank',
             \       'coc-html',
@@ -33,6 +35,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call CocAction('doHover')<CR>
-nmap <leader>rn <Plug>(coc-rename)
+nmap rn <Plug>(coc-rename)
 inoremap <silent><expr> <c-space> pumvisible() ? coc#_select_confirm() : coc#refresh()
 

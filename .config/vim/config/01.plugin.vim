@@ -14,6 +14,9 @@ Plug 'tpope/vim-repeat'
 Plug 'roxma/nvim-yarp'
 Plug 'bling/vim-bufferline'
 Plug 'Shirk/vim-gas'
+Plug 'vim-latex/vim-latex'
+Plug 'vim-scripts/restore_view.vim'
+Plug 'dpelle/vim-LanguageTool'
 
 call plug#end()
 

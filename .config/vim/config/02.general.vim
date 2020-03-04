@@ -24,6 +24,8 @@ set smartcase
 
 set autoindent
 set smartindent
+set cindent
+set cinoptions=j1,J1,+0,w0,m1,Ws,g0,:0,l1
 
 set undofile
 set hidden
@@ -34,10 +36,10 @@ set scrolloff=10
 
 set signcolumn=yes
 
-set foldmethod=syntax
+set foldmethod=indent
 set foldlevel=99
 
-autocmd BufWinLeave * mkview
-autocmd BufWinEnter * silent! loadview
-
 let g:omni_sql_no_default_maps = 1
+
+let g:languagetool_jar = '/usr/share/java/languagetool/languagetool-commandline.jar'
+
