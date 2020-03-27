@@ -11,11 +11,11 @@ syntax match roIdentifier "[_a-zA-Z][_a-zA-Z0-9]*"
 
 highlight link roIdentifier Identifier
 
-syntax keyword roConditional if else
-syntax keyword roRepeat for
+syntax keyword roConditional if else switch case
+syntax keyword roRepeat for break continue
 syntax keyword roStorageClass const volatile extern
 syntax keyword roStructure fn
-syntax keyword roStatement return
+syntax keyword roStatement return goto typeof
 syntax keyword roKeyword import export as from using
 
 highlight link roConditional Conditional
@@ -59,6 +59,8 @@ syntax match roDelimiter "("
 syntax match roDelimiter ")"
 syntax match roDelimiter "{"
 syntax match roDelimiter "}"
+syntax match roDelimiter "\["
+syntax match roDelimiter "\]"
 
 highlight link roDelimiter Delimiter
 
@@ -99,10 +101,10 @@ syntax keyword roBoolConstant true false
 syntax match roUnderscore contained "[_]"
 syntax match roIntegerConstant "0x[0-9a-fA-F_]\+\|0o[0-7_]\+\|0d[0-9_]\+\|0b[01_]\+\|\d[0-9_]*" contains=roUnderscore
 syntax match roFloatConstant "\(\d[0-9_]*\.[0-9_]*\|\.[0-9_]\+\)\(e[+-]\=\d[0-9_]*\)\=" contains=roUnderscore
-syntax match roEscapeSequence contained "\\[\\"'abtnvfre0]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}"
+syntax match roEscapeSequence contained "\\[\\"'abtnvfre]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}"
 syntax match roStringConstant "\"\(\\\"\|[^"]\)*\"" contains=roEscapeSequence
 syntax match roCharConstant "\'[^\\']\'"
-syntax match roCharConstant "\'\(\\[\\'"abtnvfre0]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}\)\'" contains=roEscapeSequence
+syntax match roCharConstant "\'\(\\[\\'"abtnvfre]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}\)\'" contains=roEscapeSequence
 
 highlight link roBoolConstant Boolean
 highlight link roIntegerConstant Number
@@ -111,4 +113,12 @@ highlight link roEscapeSequence SpecialChar
 highlight link roUnderscore SpecialChar
 highlight link roStringConstant String
 highlight link roCharConstant Character
+
+syntax match roAttribute "@\S\+"
+
+highlight link roAttribute Tag
+
+syntax match roLabel "\$[_a-zA-Z][_a-zA-Z0-9]*"
+
+highlight link roLabel Label
 
