@@ -12,7 +12,7 @@ syntax match roIdentifier "[_a-zA-Z][_a-zA-Z0-9]*"
 highlight link roIdentifier Identifier
 
 syntax keyword roConditional if else switch case
-syntax keyword roRepeat for break continue
+syntax keyword roRepeat for in break continue
 syntax keyword roStorageClass const volatile extern
 syntax keyword roStructure fn
 syntax keyword roStatement return goto typeof
@@ -114,11 +114,7 @@ highlight link roUnderscore SpecialChar
 highlight link roStringConstant String
 highlight link roCharConstant Character
 
-syntax match roAttribute "@\S\+"
-
-highlight link roAttribute Tag
-
-syntax match roLabel "\$[_a-zA-Z][_a-zA-Z0-9]*"
+syntax match roLabel "[_a-zA-Z][_a-zA-Z0-9]*\s*\$"
 
 highlight link roLabel Label
 
