@@ -205,8 +205,6 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 bindsym $mod+Shift+s exec --no-startup-id ~/.config/i3/scripts/screen_left
 
-bindsym $mod+d exec --no-startup-id rofi -show
-bindsym $mod+c exec --no-startup-id rofi -show calc
 bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/scripts/lock
 bindsym $mod+i exec --no-startup-id GTK_THEME=Arc firefox
 
@@ -239,4 +237,6 @@ exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" "libinput 
 exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" "libinput Middle Emulation Enabled" 1
 
 exec --no-startup-id libinput-gestures
+
+exec --no-startup-id ueli
 
