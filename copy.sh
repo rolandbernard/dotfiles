@@ -1,4 +1,5 @@
 
+cp -r ~/.config/libinput-gestures.conf ./.config/libinput-gestures.conf
 cp -r ~/.config/vim/config ./.config/vim/
 cp -r ~/.config/vim/syntax ./.config/vim/
 cp -r ~/.config/vim/colors ./.config/vim/
