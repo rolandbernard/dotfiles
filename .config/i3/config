@@ -238,5 +238,5 @@ exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" "libinput 
 
 exec --no-startup-id libinput-gestures
 
-exec --no-startup-id ueli
+exec --no-startup-id marvin
 
