@@ -185,9 +185,9 @@ bar {
 }
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +1% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -1% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_change inc #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume_change dec #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume_change mute # mute sound
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1 #xbacklight -inc 5 # increase screen brightness
@@ -209,13 +209,13 @@ bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/scripts/lock
 bindsym $mod+i exec --no-startup-id GTK_THEME=Arc firefox
 
 # scratchpad
-for_window [instance="dropdown"] floating enabled
+for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 1000 800
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 10
 exec --no-startup-id termite --name dropdown -e tmux
 
-for_window [instance="math"] floating enabled
+for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 1000 800
 for_window [instance="math"] move scratchpad
 for_window [instance="math"] border pixel 10

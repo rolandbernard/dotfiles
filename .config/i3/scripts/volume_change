@@ -1,0 +1,20 @@
+
+if [ $1 == inc ]
+then
+    for s in `pactl list short sinks | awk '{print $1}'`
+    do
+        pactl set-sink-volume $s +1%
+    done
+elif [ $1 == dec ]
+then
+    for s in `pactl list short sinks | awk '{print $1}'`
+    do
+        pactl set-sink-volume $s -1%
+    done
+elif [ $1 == mute ]
+then
+    for s in `pactl list short sinks | awk '{print $1}'`
+    do
+        pactl set-sink-mute $s toggle
+    done
+fi
