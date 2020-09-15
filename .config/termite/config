@@ -3,6 +3,7 @@
 audible_bell = false
 #clickable_url = true
 dynamic_title = true
+# font = Roland 11
 font = Monospace 11
 fullscreen = false
 #geometry = 1000x750

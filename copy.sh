@@ -8,6 +8,7 @@ cp -r ~/.config/vim/ftdetect ./.config/vim/
 cp -r ~/.config/vim/init.vim ./.config/vim/
 cp -r ~/.config/vim/coc-settings.json ./.config/vim/
 cp -r ~/.config/vim/autoload ./.config/vim/
+cp -r ~/.config/marvin/marvin.json ./.config/marvin/
 
 cp -r ~/.config/i3/* ./.config/i3/
 
