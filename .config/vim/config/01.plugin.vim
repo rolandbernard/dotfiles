@@ -3,6 +3,7 @@ call plug#begin('~/.config/vim/plugged')
 
 if !exists('g:vscode')
 
+    Plug 'lervag/vimtex'
     Plug 'itchyny/lightline.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-commentary'
@@ -10,7 +11,6 @@ if !exists('g:vscode')
     Plug 'sheerun/vim-polyglot'
     Plug 'bling/vim-bufferline'
     Plug 'Shirk/vim-gas'
-    Plug 'vim-latex/vim-latex'
     Plug 'vim-scripts/restore_view.vim'
     Plug 'dpelle/vim-LanguageTool'
 

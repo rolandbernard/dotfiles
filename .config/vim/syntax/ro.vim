@@ -11,11 +11,11 @@ syntax match roIdentifier "[_a-zA-Z][_a-zA-Z0-9]*"
 
 highlight link roIdentifier Identifier
 
-syntax keyword roConditional if else switch case
-syntax keyword roRepeat for in break continue
-syntax keyword roStorageClass const volatile extern
+syntax keyword roConditional if else match
+syntax keyword roRepeat for in loop break continue
+syntax keyword roStorageClass const volatile extern simple inline noinline
 syntax keyword roStructure fn
-syntax keyword roStatement return goto typeof
+syntax keyword roStatement return typeof defer
 syntax keyword roKeyword import export as from using
 
 highlight link roConditional Conditional
@@ -47,6 +47,9 @@ syntax match roOperator "!"
 syntax match roOperator "\.\."
 syntax match roOperator "++"
 syntax match roOperator "--"
+syntax match roOperator "->"
+syntax match roOperator "=>"
+syntax match roOperator "~>"
 
 highlight link roOperator Operator
 
@@ -114,7 +117,7 @@ highlight link roUnderscore SpecialChar
 highlight link roStringConstant String
 highlight link roCharConstant Character
 
-syntax match roLabel "[_a-zA-Z][_a-zA-Z0-9]*\s*\$"
+syntax match roLabel "\'[_a-zA-Z][_a-zA-Z0-9]*"
 
 highlight link roLabel Label
 
