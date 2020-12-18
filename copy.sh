@@ -11,6 +11,9 @@ cp -r ~/.config/vim/autoload ./.config/vim/
 cp -r ~/.config/marvin/marvin.json ./.config/marvin/
 
 cp -r ~/.config/i3/* ./.config/i3/
-
 cp -r ~/.config/termite/* ./.config/termite
+
+cp ~/.bashrc ./.bashrc
+cp ~/.gdbinit ./.gdbinit
+cp ~/.tmux.conf ./.tmux.conf
 
