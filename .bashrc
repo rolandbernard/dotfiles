@@ -2,15 +2,17 @@
 # ~/.bashrc
 #
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 alias ls='ls --color=auto'
 alias lh='ls -a'
 alias ll='lh -l'
-alias vim='nvim' # Im used to type 'vim'
+alias vim='nvim' # I'm used to type 'vim'
 alias vi='\vim'
+alias v='\vi'
 alias ssh='TERM=xterm ssh'
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+alias rm='trash-put' # I have to be more careful
 
 function timer_now {
     date +%s%N
@@ -48,3 +50,4 @@ set_prompt () {
 
 trap 'timer_start' DEBUG
 PROMPT_COMMAND='set_prompt'
+

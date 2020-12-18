@@ -16,7 +16,6 @@ if !exists('g:vscode')
                 \       'coc-css',
                 \       'coc-tsserver',
                 \       'coc-phpls',
-                \       'coc-java',
                 \       'coc-rls',
                 \       'coc-python',
                 \       'coc-emmet',

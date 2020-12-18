@@ -213,7 +213,7 @@ for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 1000 800
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 10
-exec --no-startup-id termite --name dropdown -e tmux
+exec --no-startup-id termite --name dropdown
 
 for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 1000 800
@@ -238,7 +238,7 @@ exec --no-startup-id xinput set-prop "ELAN1200:00 04F3:309C Touchpad" "libinput 
 
 exec --no-startup-id libinput-gestures
 
-exec --no-startup-id marvin &> /home/roland/log.txt
+exec --no-startup-id marvin
 
 for_window [window_role="About"] floating enable
 for_window [class="vlc"] floating enable
