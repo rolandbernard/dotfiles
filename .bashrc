@@ -33,7 +33,7 @@ function timer_stop {
     if ((h > 0)); then timer_show=${h}h${m}m
     elif ((m > 0)); then timer_show=${m}m${s}s
     elif ((s >= 10)); then timer_show=${s}.$((ms / 100))s
-    elif ((s > 0)); then timer_show=${s}.$(printf %03d $ms)s
+    elif ((s > 0)); then timer_show=${s}.$(printf %02d $((ms / 10)))s
     elif ((ms >= 100)); then timer_show=${ms}ms
     elif ((ms > 0)); then timer_show=${ms}.$((us / 100))ms
     else timer_show=${us}us
@@ -43,11 +43,21 @@ function timer_stop {
 
 set_prompt () {
     timer_stop
-    echo -n -e "\e]2;`pwd`\a"
-    #PS1="\e[34m[\e[34m$timer_show\e[34m][\e[93m\u@\h \e[92m\W\e[34m]\e[94m$\e[m "
-    PS1="[$timer_show][\u@\h \W]\$ "
+    echo -n -e "\e]2;`pwd`\a" # Set the terminal window title
+    PS1="\e[34m"
+    if [ $RET -eq 0 ]
+    then
+        PS1+="\e[92m"
+    else 
+        PS1+="\e[91m"
+    fi
+    PS1+="$timer_show \e[94m\W\e[m "
+    if git branch --show-current &> /dev/null
+    then
+        PS1+="\e[34m{$(git branch --show-current)}\e[m "
+    fi
 }
 
 trap 'timer_start' DEBUG
-PROMPT_COMMAND='set_prompt'
+PROMPT_COMMAND='RET=$? ; set_prompt'
 
