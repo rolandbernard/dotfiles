@@ -14,50 +14,68 @@ alias v='\vi'
 alias ssh='TERM=xterm ssh'
 alias rm='trash-put' # I have to be more careful
 
-function timer_now {
-    date +%s%N
+timer_start () {
+    timer_start=${timer_start:-$(date +%s%N)}
 }
 
-function timer_start {
-    timer_start=${timer_start:-$(timer_now)}
+timer_end () {
+    timer_end=$(date +%s%N)
 }
 
-function timer_stop {
-    local delta_us=$((($(timer_now) - $timer_start) / 1000))
-    local us=$((delta_us % 1000))
-    local ms=$(((delta_us / 1000) % 1000))
-    local s=$(((delta_us / 1000000) % 60))
-    local m=$(((delta_us / 60000000) % 60))
-    local h=$((delta_us / 3600000000))
-    # Goal: always show around 3 digits of accuracy
-    if ((h > 0)); then timer_show=${h}h${m}m
-    elif ((m > 0)); then timer_show=${m}m${s}s
-    elif ((s >= 10)); then timer_show=${s}.$((ms / 100))s
-    elif ((s > 0)); then timer_show=${s}.$(printf %02d $((ms / 10)))s
-    elif ((ms >= 100)); then timer_show=${ms}ms
-    elif ((ms > 0)); then timer_show=${ms}.$((us / 100))ms
-    else timer_show=${us}us
+timer_format () {
+    local ns=$((timer_end - timer_start))
+    local us=$((ns / 1000))
+    local ms=$((us / 1000))
+    local sec=$((ms / 1000))
+    local min=$((sec / 60))
+    local hou=$((min / 60))
+    local day=$((hou / 24))
+    if (( ns < 1000 )); then
+        printf "%3ins" ${ns}
+    elif (( us < 10 )); then
+        printf "%1i.%.1ius" $((us)) $((ns / 100 % 10))
+    elif (( us < 1000 )); then
+        printf "%3ius" ${us}
+    elif (( ms < 10 )); then
+        printf "%1i.%.1ims" ${ms} $((us / 100 % 10))
+    elif (( ms < 1000 )); then
+        printf "%3ims" ${ms}
+    elif (( sec < 10 )); then
+        printf "%1i.%.2is" ${sec} $((ms / 10 % 100))
+    elif (( sec < 100 )); then
+        printf "%2i.%.1is" ${sec} $((ms / 100 % 10))
+    elif (( min < 10 )); then
+        printf "%1im%2is" ${min} $((sec % 60))
+    elif (( min < 100 )); then
+        printf "%4im" ${min}
+    elif (( hou < 10 )); then
+        printf "%1ih%2im" ${hou} $((min % 60))
+    elif (( hou < 100 )); then
+        printf "%4ih" ${hou}
+    elif (( day < 10 )); then
+        printf "%1id%2ih" ${day} $((hou % 24))
+    else
+        printf "%4id" ${day}
     fi
-    unset timer_start
 }
 
 set_prompt () {
-    timer_stop
     echo -n -e "\e]2;`pwd`\a" # Set the terminal window title
     PS1="\e[34m"
-    if [ $RET -eq 0 ]
+    if [ $1 -eq 0 ]
     then
         PS1+="\e[92m"
     else 
         PS1+="\e[91m"
     fi
-    PS1+="$timer_show \e[94m\W\e[m "
+    PS1+="$(timer_format) \e[94m\W\e[m "
     if git branch --show-current &> /dev/null
     then
         PS1+="\e[34m{$(git branch --show-current)}\e[m "
     fi
+    PS1+=" "
 }
 
 trap 'timer_start' DEBUG
-PROMPT_COMMAND='RET=$? ; set_prompt'
+PROMPT_COMMAND='timer_end ; set_prompt $? ; unset timer_start'
 
