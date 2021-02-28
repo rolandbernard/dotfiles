@@ -61,17 +61,17 @@ timer_format () {
 
 set_prompt () {
     echo -n -e "\e]2;`pwd`\a" # Set the terminal window title
-    PS1="\e[34m"
+    PS1=""
     if [ $1 -eq 0 ]
     then
-        PS1+="\e[92m"
+        PS1+="\[\e[92m\]"
     else 
-        PS1+="\e[91m"
+        PS1+="\[\e[91m\]"
     fi
-    PS1+="$(timer_format) \e[94m\W\e[m "
+    PS1+="$(timer_format) \[\e[94m\]\W\[\e[m\] "
     if git branch --show-current &> /dev/null
     then
-        PS1+="\e[34m{$(git branch --show-current)}\e[m "
+        PS1+="\[\e[34m\]{$(git branch --show-current)}\[\e[m\] "
     fi
     PS1+=" "
 }
