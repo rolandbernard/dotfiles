@@ -60,6 +60,7 @@ timer_format () {
 }
 
 set_prompt () {
+    timer_end
     echo -n -e "\e]2;`pwd`\a" # Set the terminal window title
     PS1=""
     if [ $1 -eq 0 ]
@@ -77,5 +78,5 @@ set_prompt () {
 }
 
 trap 'timer_start' DEBUG
-PROMPT_COMMAND='timer_end ; set_prompt $? ; unset timer_start'
+PROMPT_COMMAND='set_prompt $? ; unset timer_start'
 
