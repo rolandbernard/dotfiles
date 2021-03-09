@@ -44,3 +44,9 @@ let g:omni_sql_no_default_maps = 1
 let g:languagetool_jar = '/usr/share/java/languagetool/languagetool-commandline.jar'
 let g:tex_flavor = 'latex'
 
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 10
+
+

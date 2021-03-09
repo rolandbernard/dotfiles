@@ -15,5 +15,6 @@ else
     nnoremap <silent> <C-Left> :bprev<CR>
     nnoremap <silent> <C-Right> :bnext<CR>
 
+    nnoremap <C-t> :Vexplore<CR>
 endif
 
