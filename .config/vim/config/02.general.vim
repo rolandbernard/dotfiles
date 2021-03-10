@@ -44,9 +44,25 @@ let g:omni_sql_no_default_maps = 1
 let g:languagetool_jar = '/usr/share/java/languagetool/languagetool-commandline.jar'
 let g:tex_flavor = 'latex'
 
-let g:netrw_liststyle = 3
-let g:netrw_banner = 0
-let g:netrw_browse_split = 4
-let g:netrw_winsize = 10
+if !exists('g:vscode')
+
+  let g:netrw_liststyle = 3
+  let g:netrw_banner = 0
+  let g:netrw_browse_split = 4
+  let g:netrw_winsize = 10
+  let g:netrw_keepdir = 0
+  let g:netrw_altv = 1
+
+  augroup ProjectDrawer
+    autocmd!
+    autocmd VimEnter * :silent! Lexplore
+    autocmd VimEnter * :silent! wincmd p
+    autocmd VimEnter * :silent! belowright split
+    autocmd VimEnter * :silent! resize 10
+    autocmd VimEnter * :silent! terminal
+    autocmd VimEnter * :silent! wincmd p
+  augroup END
+
+endif
 
 

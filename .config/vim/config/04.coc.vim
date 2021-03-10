@@ -23,7 +23,8 @@ if !exists('g:vscode')
                 \       'coc-svg',
                 \       'coc-xml',
                 \       'coc-angular',
-                \       'coc-ultisnips'
+                \       'coc-ultisnips',
+                \       'coc-java'
                 \   ]
 
     let g:coc_snippet_next = '<tab>'

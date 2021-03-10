@@ -15,6 +15,15 @@ else
     nnoremap <silent> <C-Left> :bprev<CR>
     nnoremap <silent> <C-Right> :bnext<CR>
 
-    nnoremap <C-t> :Vexplore<CR>
+    nnoremap <silent> <S-Up> :wincmd k<CR>
+    nnoremap <silent> <S-Down> :wincmd j<CR>
+    nnoremap <silent> <S-Left> :wincmd h<CR>
+    nnoremap <silent> <S-Right> :wincmd l<CR>
+
+    nnoremap <C-t> :Lexplore<CR>
+    nnoremap , :qa<CR>
+
+    tnoremap <ESC> <C-\><C-n>
+
 endif
 
