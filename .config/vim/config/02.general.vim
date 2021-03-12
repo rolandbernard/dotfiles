@@ -53,21 +53,6 @@ if !exists('g:vscode')
   let g:netrw_keepdir = 0
   let g:netrw_altv = 1
 
-  augroup ProjectDrawer
-    autocmd!
-    autocmd VimEnter * :silent! Lexplore
-    autocmd VimEnter * :silent! wincmd p
-    if has('nvim')
-      autocmd VimEnter * :silent! belowright split
-      autocmd VimEnter * :silent! resize 10
-      autocmd VimEnter * :silent! terminal
-    else
-      autocmd VimEnter * :silent! belowright terminal
-      autocmd VimEnter * :silent! resize 10
-    endif
-    autocmd VimEnter * :silent! wincmd p
-  augroup END
-
 endif
 
 

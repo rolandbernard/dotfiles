@@ -25,5 +25,11 @@ else
 
     tnoremap <ESC> <C-\><C-n>
 
+    if has('nvim')
+        nnoremap <C-c> :Lexplore<CR>:wincmd p<CR>:belowright split<CR>:resize 10<CR>:terminal<CR>:wincmd p<CR>
+    else
+        nnoremap <C-c> :Lexplore<CR>:wincmd p<CR>:belowright terminal<CR>:resize 10<CR>:wincmd p<CR>
+    endif
+
 endif
 
