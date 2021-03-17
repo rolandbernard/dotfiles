@@ -47,4 +47,7 @@ let g:tex_flavor = 'latex'
 let g:vimtex_compiler_progname = 'nvr'
 
 let g:NERDTreeShowHidden=1
+let NERDTreeWinSize=25
+
+autocmd BufEnter term://* startinsert
 
