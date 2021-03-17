@@ -13,6 +13,8 @@ if !exists('g:vscode')
     Plug 'Shirk/vim-gas'
     Plug 'vim-scripts/restore_view.vim'
     Plug 'dpelle/vim-LanguageTool'
+    Plug 'preservim/nerdtree'
+    Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 endif
 

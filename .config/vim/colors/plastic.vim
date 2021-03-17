@@ -51,6 +51,7 @@ let s:foreground = {'gui': '#a9b2c3', 'cterm256': '235'}
 let s:grey = { 'gui': '#abb2bf', 'cterm256': '59' }
 let s:punctuation = { 'gui': '#7c8696', 'cterm256': '238' }
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
+let s:dark = {'gui': '#40454a', 'cterm256': '235'}
 
 " }}}
 
@@ -118,6 +119,7 @@ call <sid>hi('Visual', s:black, s:white, 'none', {})
 hi link VisualNOS Visual
 call <sid>hi('TabLine', s:white, s:black, 'none', {})
 call <sid>hi('WildMenu', s:black, s:white, 'bold', {})
+call <sid>hi('Whitespace', s:dark, s:background, 'none', {})
 "}}}
 
 "----------------------------------------------------

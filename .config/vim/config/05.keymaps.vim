@@ -20,15 +20,15 @@ else
     nnoremap <silent> <S-Left> :wincmd h<CR>
     nnoremap <silent> <S-Right> :wincmd l<CR>
 
-    nnoremap <C-t> :Lexplore<CR>
+    nnoremap <C-t> :NERDTreeToggle<CR>
     nnoremap , :qa<CR>
 
     tnoremap <ESC> <C-\><C-n>
 
     if has('nvim')
-        nnoremap <C-c> :Lexplore<CR>:wincmd p<CR>:belowright split<CR>:resize 10<CR>:terminal<CR>:wincmd p<CR>
+        nnoremap <C-c> :NERDTreeToggle<CR>:wincmd p<CR>:belowright split<CR>:resize 10<CR>:terminal<CR>:wincmd p<CR>
     else
-        nnoremap <C-c> :Lexplore<CR>:wincmd p<CR>:belowright terminal<CR>:resize 10<CR>:wincmd p<CR>
+        nnoremap <C-c> :NERDTreeToggle<CR>:wincmd p<CR>:belowright terminal<CR>:resize 10<CR>:wincmd p<CR>
     endif
 
 endif

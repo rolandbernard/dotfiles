@@ -15,8 +15,9 @@ set mouse=a mousemodel=popup
 set termguicolors
 set background=dark
 colorscheme plastic
+match Whitespace /\s/
 
-set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·
 set list
 
 set ignorecase
@@ -39,20 +40,10 @@ set signcolumn=yes
 set foldmethod=indent
 set foldlevel=99
 
-if !exists('g:vscode')
+let g:omni_sql_no_default_maps = 1
 
-  let g:omni_sql_no_default_maps = 1
+let g:languagetool_jar = '/usr/share/java/languagetool/languagetool-commandline.jar'
+let g:tex_flavor = 'latex'
 
-  let g:languagetool_jar = '/usr/share/java/languagetool/languagetool-commandline.jar'
-  let g:tex_flavor = 'latex'
-
-  let g:netrw_liststyle = 3
-  let g:netrw_banner = 0
-  let g:netrw_browse_split = 4
-  let g:netrw_winsize = 10
-  let g:netrw_keepdir = 0
-  let g:netrw_altv = 1
-
-endif
-
+let g:NERDTreeShowHidden=1
 
