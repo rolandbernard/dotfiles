@@ -240,6 +240,8 @@ exec --no-startup-id libinput-gestures
 
 exec --no-startup-id marvin
 
+exec --no-startup-id flameshot
+
 exec --no-startup-id blueman-applet
 
 for_window [window_role="About"] floating enable

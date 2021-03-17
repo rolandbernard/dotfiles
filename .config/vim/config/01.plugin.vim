@@ -16,7 +16,12 @@ if !exists('g:vscode')
     Plug 'preservim/nerdtree'
     Plug 'jackguo380/vim-lsp-cxx-highlight'
 
+if has('nvim')
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 endif
+
+endif
+
 
 Plug 'tpope/vim-surround'
 Plug 'kana/vim-textobj-user'
