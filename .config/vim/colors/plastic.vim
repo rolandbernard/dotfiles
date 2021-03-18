@@ -162,6 +162,38 @@ call <sid>hi('Todo', s:aqua, s:none, 'italic', {})
 " Language specific syntax
 "--------------------------
 
+" lsp-cxx {{{
+" LspCxxHlSymFile
+" LspCxxHlSymModule
+" LspCxxHlSymNamespace
+" LspCxxHlSymPackage
+" LspCxxHlSymClass
+" LspCxxHlSymMethod
+" LspCxxHlSymProperty
+" LspCxxHlSymField
+" LspCxxHlSymConstructor
+" LspCxxHlSymEnum
+" LspCxxHlSymInterface
+" LspCxxHlSymFunction
+" LspCxxHlSymVariable
+" LspCxxHlSymConstant
+" LspCxxHlSymString
+" LspCxxHlSymNumber
+" LspCxxHlSymBoolean
+" LspCxxHlSymArray
+" LspCxxHlSymObject
+" LspCxxHlSymKey
+" LspCxxHlSymNull
+" LspCxxHlSymEnumMember
+" LspCxxHlSymStruct
+" LspCxxHlSymEvent
+" LspCxxHlSymOperator
+" LspCxxHlSymTypeParameter
+hi link LspCxxHlGroupEnumConstant Constant
+hi link LspCxxHlGroupNamespace Identifier
+hi link LspCxxHlGroupMemberVariable Identifier
+"}}}
+
 " HTML {{{
 call <sid>hi('htmlTag', s:punctuation, s:none, 'none', {})
 hi link htmlEndTag htmlTag

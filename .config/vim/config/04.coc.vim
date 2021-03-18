@@ -1,8 +1,8 @@
 
 if !exists('g:vscode')
 
-    inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-    inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+    inoremap <silent> <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+    inoremap <silent> <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
     let g:coc_global_extensions = [
                 \       'coc-syntax',
@@ -32,12 +32,12 @@ if !exists('g:vscode')
 
     set updatetime=300
 
-    nmap <silent> gd <Plug>(coc-definition)
-    nmap <silent> gy <Plug>(coc-type-definition)
-    nmap <silent> gi <Plug>(coc-implementation)
-    nmap <silent> gr <Plug>(coc-references)
+    nnoremap <silent> gd <Plug>(coc-definition)
+    nnoremap <silent> gy <Plug>(coc-type-definition)
+    nnoremap <silent> gi <Plug>(coc-implementation)
+    nnoremap <silent> gr <Plug>(coc-references)
     nnoremap <silent> K :call CocAction('doHover')<CR>
-    nmap rn <Plug>(coc-rename)
+    nnoremap <silent> rn <Plug>(coc-rename)
     inoremap <silent><expr> <c-space> pumvisible() ? coc#_select_confirm() : coc#refresh()
 
 endif

@@ -18,6 +18,7 @@ if !exists('g:vscode')
 
 if has('nvim')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'nvim-treesitter/playground'
 endif
 
 endif
