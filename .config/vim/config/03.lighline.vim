@@ -16,10 +16,20 @@ if !exists('g:vscode')
                 \     ]
                 \   },
                 \   'component_function': {
-                \     'gitbranch': 'fugitive#head',
-                \     'blame': 'LightlineGitBlame',
+                \       'gitbranch': 'fugitive#head',
+                \       'blame': 'LightlineGitBlame',
+                \       'filetype': 'MyFiletype',
+                \       'fileformat': 'MyFileformat',
                 \   },
                 \ }
+
+    function! MyFiletype()
+        return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+    endfunction
+      
+    function! MyFileformat()
+        return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+    endfunction
 
     function! LightlineGitBlame() abort
         let blame = get(b:, 'coc_git_blame', '')

@@ -12,9 +12,8 @@ if !exists('g:vscode')
     Plug 'bling/vim-bufferline'
     Plug 'Shirk/vim-gas'
     Plug 'vim-scripts/restore_view.vim'
-    Plug 'dpelle/vim-LanguageTool'
-    Plug 'preservim/nerdtree'
     Plug 'jackguo380/vim-lsp-cxx-highlight'
+    Plug 'ryanoasis/vim-devicons'
 
 if has('nvim')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

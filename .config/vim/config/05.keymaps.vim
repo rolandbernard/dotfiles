@@ -8,32 +8,37 @@ if exists('g:vscode')
 
 else
 
-    nnoremap <silent> <C-s> :w<CR>
-    inoremap <silent> <C-s> <C-o>:w<CR>
-    vnoremap <silent> <C-s> <Esc>:w<CR>gv
+    nmap <silent> <C-s> :w<CR>
+    imap <silent> <C-s> <C-o>:w<CR>
+    vmap <silent> <C-s> <Esc>:w<CR>gv
 
-    nnoremap <silent> <C-Left> :bprev<CR>
-    nnoremap <silent> <C-Right> :bnext<CR>
-    nnoremap <silent> <C-x> :bp<bar>vsp<bar>bn<bar>w<bar>bd<CR>
+    nmap <silent> <C-Left> :bprev<CR>
+    nmap <silent> <C-Right> :bnext<CR>
+    nmap <silent> <C-x> :bp<bar>vsp<bar>bn<bar>w<bar>bd<CR>
 
-    nnoremap <silent> <S-Up> :wincmd k<CR>
-    nnoremap <silent> <S-Down> :wincmd j<CR>
-    nnoremap <silent> <S-Left> :wincmd h<CR>
-    nnoremap <silent> <S-Right> :wincmd l<CR>
+    nmap <silent> <S-Up> :wincmd k<CR>
+    nmap <silent> <S-Down> :wincmd j<CR>
+    nmap <silent> <S-Left> :wincmd h<CR>
+    nmap <silent> <S-Right> :wincmd l<CR>
 
-    nnoremap <silent> <C-t> :NERDTreeToggle<CR>
-    nnoremap <silent> , :qa<CR>
+    nmap <silent> , :qa<CR>
 
-    tnoremap <silent> <ESC> <C-\><C-n>
-    tnoremap <silent> <C-Left> <C-\><C-n>:bprev<CR>
-    tnoremap <silent> <C-Right> <C-\><C-n>:bnext<CR>
-    tnoremap <silent> <S-Up> <C-\><C-n>:wincmd k<CR>
-    tnoremap <silent> <S-Down> <C-\><C-n>:wincmd j<CR>
-    tnoremap <silent> <S-Left> <C-\><C-n>:wincmd h<CR>
-    tnoremap <silent> <S-Right> <C-\><C-n>:wincmd l<CR>
+    tmap <silent> <ESC> <C-\><C-n>
+    tmap <silent> <C-Left> <C-\><C-n>:bprev<CR>
+    tmap <silent> <C-Right> <C-\><C-n>:bnext<CR>
+    tmap <silent> <S-Up> <C-\><C-n>:wincmd k<CR>
+    tmap <silent> <S-Down> <C-\><C-n>:wincmd j<CR>
+    tmap <silent> <S-Left> <C-\><C-n>:wincmd h<CR>
+    tmap <silent> <S-Right> <C-\><C-n>:wincmd l<CR>
+
+    tmap <LeftRelease> <Nop>
+
+    vmap <silent> <C-x> d
+    vmap <silent> <C-c> y
+    vmap <silent> <C-v> p
 
     if has('nvim')
-        nnoremap <silent> <C-c> :NERDTreeToggle<CR>:wincmd p<CR>:belowright split<CR>:resize 10<CR>:terminal<CR><ESC>:wincmd p<CR>
+        nmap <silent> <C-c> :belowright split<CR>:resize 10<CR>:terminal<CR><ESC>:wincmd p<CR>
     endif
 
 endif
