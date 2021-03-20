@@ -30,7 +30,7 @@ font pango:Noto Sans 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id termite -e "bash -i -c 'tmux'"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -213,7 +213,7 @@ for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 1000 800
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 10
-exec --no-startup-id termite --name dropdown
+exec --no-startup-id termite --name dropdown -e "bash -i -c 'tmux'"
 
 for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 1000 800

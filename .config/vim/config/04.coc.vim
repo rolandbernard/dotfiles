@@ -45,10 +45,14 @@ if !exists('g:vscode')
     nmap <silent> gr <Plug>(coc-references)
     nmap <silent> K :call CocAction('doHover')<CR>
     nmap <silent> <C-t> :CocCommand explorer<CR>
-    " nnoremap <silent> <RightMouse> <LeftMouse>:call CocAction('doHover')<CR>
-    " inoremap <silent> <RightMouse> <LeftMouse>:call CocAction('doHover')<CR>
+    nmap <silent> <RightMouse> <LeftMouse>:call CocAction('doHover')<CR>
+    imap <silent> <RightMouse> <LeftMouse>:call CocAction('doHover')<CR>
     nmap <silent> rn <Plug>(coc-rename)
     imap <silent><expr> <c-space> pumvisible() ? coc#_select_confirm() : coc#refresh()
+    augroup ProjectDrawer
+        autocmd!
+        autocmd VimEnter * :CocCommand explorer --no-focus
+    augroup END
 
 endif
 

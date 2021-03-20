@@ -7,6 +7,11 @@
     ],
     "explorer.icon.enableVimDevicons": true,
     "explorer.file.root.template": "[icon] [root & 1][git & 1][hidden & 1][fullpath]",
+    "explorer.file.hiddenRules": {
+        "extensions": [ ],
+        "filenames": [ ],
+        "patternMatches": [ ]
+    },
     "explorer.keyMappings.global": {
         "i": false,
         "*": "toggleSelection",

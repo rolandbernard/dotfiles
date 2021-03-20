@@ -23,6 +23,16 @@ else
 
     nmap <silent> , :qa<CR>
 
+    vmap <silent> <C-x> d
+    vmap <silent> <C-c> y
+    vmap <silent> <C-v> p
+
+    nmap <silent> <S-Left> :TmuxNavigateLeft<cr>
+    nmap <silent> <S-Down> :TmuxNavigateDown<cr>
+    nmap <silent> <S-Up> :TmuxNavigateUp<cr>
+    nmap <silent> <S-Right> :TmuxNavigateRight<cr>
+    nmap <silent> <C-\> :TmuxNavigatePrevious<cr>
+    
     tmap <silent> <ESC> <C-\><C-n>
     tmap <silent> <C-Left> <C-\><C-n>:bprev<CR>
     tmap <silent> <C-Right> <C-\><C-n>:bnext<CR>
@@ -32,14 +42,6 @@ else
     tmap <silent> <S-Right> <C-\><C-n>:wincmd l<CR>
 
     tmap <LeftRelease> <Nop>
-
-    vmap <silent> <C-x> d
-    vmap <silent> <C-c> y
-    vmap <silent> <C-v> p
-
-    if has('nvim')
-        nmap <silent> <C-c> :belowright split<CR>:resize 10<CR>:terminal<CR><ESC>:wincmd p<CR>
-    endif
 
 endif
 

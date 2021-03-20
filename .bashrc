@@ -2,16 +2,16 @@
 # ~/.bashrc
 #
 
+export TERM=xterm-256color
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
 alias lh='ls -a'
 alias ll='lh -l'
-alias vim='nvim' # I'm used to type 'vim'
-alias vi='\vim'
-alias v='\vi'
-alias ssh='TERM=xterm ssh'
+alias vim='tmux split -b -p 80 nvim'
+alias gdb='gdb -q'
 alias rm='trash-put' # I have to be more careful
 
 timer_start () {

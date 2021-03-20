@@ -46,8 +46,7 @@ let g:languagetool_jar = '/usr/share/java/languagetool/languagetool-commandline.
 let g:tex_flavor = 'latex'
 let g:vimtex_compiler_progname = 'nvr'
 
-let g:NERDTreeShowHidden=1
-let NERDTreeWinSize=25
+let g:tmux_navigator_no_mappings = 1
 
 autocmd BufEnter term://* startinsert
 
