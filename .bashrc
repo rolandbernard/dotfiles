@@ -10,7 +10,7 @@ export TERM=xterm-256color
 alias ls='ls --color=auto'
 alias lh='ls -a'
 alias ll='lh -l'
-alias vim='tmux split -b -p 80 nvim'
+alias vim='tmux split -bf -p 80 nvim'
 alias gdb='gdb -q'
 alias rm='trash-put' # I have to be more careful
 

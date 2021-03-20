@@ -49,10 +49,10 @@ if !exists('g:vscode')
     imap <silent> <RightMouse> <LeftMouse>:call CocAction('doHover')<CR>
     nmap <silent> rn <Plug>(coc-rename)
     imap <silent><expr> <c-space> pumvisible() ? coc#_select_confirm() : coc#refresh()
-    augroup ProjectDrawer
-        autocmd!
-        autocmd VimEnter * :CocCommand explorer --no-focus
-    augroup END
+
+    if @% == ""
+        autocmd VimEnter * :CocCommand explorer
+    endif
 
 endif
 
