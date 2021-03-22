@@ -80,3 +80,11 @@ set_prompt () {
 trap 'timer_start' DEBUG
 PROMPT_COMMAND='set_prompt $? ; unset timer_start'
 
+
+# Wasmer
+export WASMER_DIR="/home/roland/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+# Wasienv
+export WASIENV_DIR="/home/roland/.wasienv"
+[ -s "$WASIENV_DIR/wasienv.sh" ] && source "$WASIENV_DIR/wasienv.sh"

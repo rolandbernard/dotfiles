@@ -1,4 +1,5 @@
 {
+    "pairs.enableCharacters": ["(", "[", "{"],
     "clangd.semanticHighlighting": true,
     "explorer.width": 30,
     "explorer.sources": [
@@ -63,7 +64,6 @@
 
         "?": "help",
         "q": "quit",
-        "<esc>": "esc",
         "X": "systemExecute",
         "gd": "listDrive",
 
