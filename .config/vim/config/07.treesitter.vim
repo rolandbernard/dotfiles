@@ -7,15 +7,11 @@ require'nvim-treesitter.configs'.setup {
     ensure_installed = "all",
     highlight = {
         enable = true,
-        disable = { }
-    },
-    indent = {
-        enable = false,
-        disable = { }
+        disable = { 'verilog' }
     },
     playground = {
         enable = true,
-        disable = {},
+        disable = { },
         updatetime = 25,
         persist_queries = false
     }

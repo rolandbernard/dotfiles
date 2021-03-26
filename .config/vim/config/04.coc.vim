@@ -6,33 +6,41 @@ if !exists('g:vscode')
 
     let g:coc_global_extensions = [
     \   'coc-angular',
+    \   'coc-calc',
     \   'coc-clangd',
+    \   'coc-cmake',
     \   'coc-css',
+    \   'coc-cssmodules',
     \   'coc-emmet',
+    \   'coc-explorer',
+    \   'coc-floatinput',
     \   'coc-git',
     \   'coc-go',
-    \   'coc-gocode',
     \   'coc-html',
+    \   'coc-html-css-support',
     \   'coc-java',
     \   'coc-json',
     \   'coc-lists',
     \   'coc-pairs',
     \   'coc-phpls',
-    \   'coc-python',
+    \   'coc-pyright',
     \   'coc-rls',
+    \   'coc-sh',
     \   'coc-snippets',
+    \   'coc-spell-checker',
+    \   'coc-sql',
     \   'coc-svg',
     \   'coc-syntax',
+    \   'coc-toml',
     \   'coc-tsserver',
     \   'coc-vimlsp',
     \   'coc-vimtex',
     \   'coc-word',
     \   'coc-xml',
+    \   'coc-yaml',
     \   'coc-yank',
-    \   'coc-explorer',
-    \   'coc-git',
-    \   'coc-floatinput',
     \ ]
+    " \   'coc-tabnine',
 
     let g:coc_snippet_next = '<tab>'
     let g:coc_snippet_prev = '<s-tab>'
@@ -44,7 +52,7 @@ if !exists('g:vscode')
     nmap <silent> gi <Plug>(coc-implementation)
     nmap <silent> gr <Plug>(coc-references)
     nmap <silent> K :call CocAction('doHover')<CR>
-    nmap <silent> <C-t> :CocCommand explorer<CR>
+    nmap <silent> <C-t> :CocCommand explorer --focus<CR>
     nmap <silent> <RightMouse> <LeftMouse>:call CocAction('doHover')<CR>
     imap <silent> <RightMouse> <LeftMouse>:call CocAction('doHover')<CR>
     nmap <silent> rn <Plug>(coc-rename)

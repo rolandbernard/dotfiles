@@ -1,7 +1,33 @@
 {
+    "languageserver": {
+    },
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/usr/lib/jvm/java-8-openjdk"
+        },
+        {
+            "name": "JavaSE-10",
+            "path": "/usr/lib/jvm/java-10-openjdk"
+        },
+        {
+            "name": "JavaSE-11",
+            "path": "/usr/lib/jvm/jdk-11.0.2"
+        },
+        {
+            "name": "JavaSE-13",
+            "path": "/usr/lib/jvm/jdk-13"
+        },
+        {
+            "name": "JavaSE-15",
+            "path": "/usr/lib/jvm/java-15-openjdk",
+            "default": true
+        }
+    ],
     "pairs.enableCharacters": ["(", "[", "{"],
-    "clangd.semanticHighlighting": true,
+    "clangd.semanticHighlighting": false,
     "explorer.width": 30,
+    "explorer.focus": false,
     "explorer.sources": [
         { "name": "buffer", "expand": true },
         { "name": "file", "expand": true }

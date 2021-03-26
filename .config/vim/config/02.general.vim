@@ -3,8 +3,6 @@ syntax on
 
 set number
 set relativenumber
-set expandtab
-set shiftwidth=4
 set tabstop=4
 
 set nowrap
@@ -49,4 +47,5 @@ let g:vimtex_compiler_progname = 'nvr'
 let g:tmux_navigator_no_mappings = 1
 
 autocmd BufEnter term://* startinsert
+autocmd BufLeave * stopinsert
 

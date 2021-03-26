@@ -20,6 +20,8 @@ else
     nmap <silent> <S-Down> :wincmd j<CR>
     nmap <silent> <S-Left> :wincmd h<CR>
     nmap <silent> <S-Right> :wincmd l<CR>
+    nmap <silent> <C-n> :cn<CR>
+    nmap <silent> <C-S-n> :cp<CR>
 
     nmap <silent> , :qa<CR>
 
