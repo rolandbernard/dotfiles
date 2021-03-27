@@ -9,6 +9,7 @@ set nowrap
 
 set clipboard+=unnamedplus
 set mouse=a mousemodel=popup
+set viewoptions=cursor,folds,slash,unix
 
 set termguicolors
 set background=dark

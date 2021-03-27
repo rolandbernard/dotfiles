@@ -23,7 +23,7 @@ else
     nmap <silent> <C-n> :cn<CR>
     nmap <silent> <C-S-n> :cp<CR>
 
-    nmap <silent> , :qa<CR>
+    " nmap <silent> , :qa<CR>
 
     vmap <silent> <C-x> d
     vmap <silent> <C-c> y
