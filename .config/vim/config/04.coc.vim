@@ -51,10 +51,10 @@ if !exists('g:vscode')
     nmap <silent> gy <Plug>(coc-type-definition)
     nmap <silent> gi <Plug>(coc-implementation)
     nmap <silent> gr <Plug>(coc-references)
-    nmap <silent> K :call CocAction('doHover')<CR>
+    nmap <silent> K :silent! call CocAction('doHover')<CR>
     nmap <silent> <C-t> :CocCommand explorer --focus<CR>
-    nmap <silent> <RightMouse> <LeftMouse>:call CocAction('doHover')<CR>
-    imap <silent> <RightMouse> <LeftMouse>:call CocAction('doHover')<CR>
+    nmap <silent> <RightMouse> <LeftMouse>:silent! call CocAction('doHover')<CR>
+    imap <silent> <RightMouse> <LeftMouse>:silent! call CocAction('doHover')<CR>
     nmap <silent> rn <Plug>(coc-rename)
     imap <silent><expr> <c-space> pumvisible() ? coc#_select_confirm() : coc#refresh()
 

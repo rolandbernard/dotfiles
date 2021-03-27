@@ -47,6 +47,7 @@ let s:white = { 'gui': '#d7d7d7', 'cterm256': '145'}
 let s:black = { 'gui': '#181a1f', 'cterm256': '234'}
 let s:visual_black = { 'gui': 'NONE', 'cterm256': 'NONE'}
 let s:background = {'gui': '#21252b', 'cterm256': '235'}
+let s:backgroundline = {'gui': '#252930', 'cterm256': '235'}
 let s:foreground = {'gui': '#a9b2c3', 'cterm256': '235'}
 let s:grey = { 'gui': '#abb2bf', 'cterm256': '59' }
 let s:punctuation = { 'gui': '#7c8696', 'cterm256': '238' }
@@ -65,7 +66,7 @@ call <sid>hi('Normal', s:white, s:background, 'none', {})
 call <sid>hi('Cursor', s:none, s:none, 'inverse', {})
 hi link lCursor Cursor
 hi link CursorIM Cursor
-call <sid>hi('CursorLine', s:white, s:none, 'bold', {})
+call <sid>hi('CursorLine', s:none, s:backgroundline, 'none', {})
 call <sid>hi('EndOfBuffer', s:whisky, s:none, 'none', {})
 call <sid>hi('Conceal', s:blue, s:none, 'none', {})
 call <sid>hi('CursorColumn', s:none, s:blue, 'none', {})
@@ -119,7 +120,7 @@ call <sid>hi('Visual', s:black, s:white, 'none', {})
 hi link VisualNOS Visual
 call <sid>hi('TabLine', s:white, s:black, 'none', {})
 call <sid>hi('WildMenu', s:black, s:white, 'bold', {})
-call <sid>hi('Whitespace', s:dark, s:background, 'none', {})
+call <sid>hi('Whitespace', s:dark, s:none, 'none', {})
 "}}}
 
 "----------------------------------------------------
