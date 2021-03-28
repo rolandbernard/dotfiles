@@ -10,9 +10,22 @@ export TERM=xterm-256color
 alias ls='ls --color=auto'
 alias lh='ls -a'
 alias ll='lh -l'
-alias vim='tmux split -bf -p 80 nvim'
+alias vim='openvim'
 alias gdb='gdb -q'
 alias rm='trash-put' # I have to be more careful
+
+shopt -s globstar
+
+openvim () {
+    if [ $TMUX ]
+    then
+        tmux split -bf -p 80 nvim $@
+    else
+        nvim $@
+    fi
+}
+
+export -f openvim
 
 timer_start () {
     timer_start=${timer_start:-$(date +%s%N)}
@@ -80,11 +93,3 @@ set_prompt () {
 trap 'timer_start' DEBUG
 PROMPT_COMMAND='set_prompt $? ; unset timer_start'
 
-
-# Wasmer
-export WASMER_DIR="/home/roland/.wasmer"
-[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
-
-# Wasienv
-export WASIENV_DIR="/home/roland/.wasienv"
-[ -s "$WASIENV_DIR/wasienv.sh" ] && source "$WASIENV_DIR/wasienv.sh"

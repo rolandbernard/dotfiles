@@ -15,12 +15,13 @@ if !exists('g:vscode')
     Plug 'jackguo380/vim-lsp-cxx-highlight'
     Plug 'ryanoasis/vim-devicons'
     Plug 'christoomey/vim-tmux-navigator'
+    Plug 'lambdalisue/suda.vim'
 
-if has('nvim')
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-    Plug 'nvim-treesitter/playground'
-    Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
-endif
+    if has('nvim')
+        Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+        Plug 'nvim-treesitter/playground'
+        Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
+    endif
 
 endif
 

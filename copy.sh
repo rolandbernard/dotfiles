@@ -14,6 +14,9 @@ cp -r ~/.config/i3/* ./.config/i3/
 cp -r ~/.config/termite/* ./.config/termite
 
 cp ~/.bashrc ./.bashrc
+cp ~/.inputrc ./.inputrc
 cp ~/.gdbinit ./.gdbinit
 cp ~/.tmux.conf ./.tmux.conf
+cp ~/.clang-format ./.clang-format
+cp ~/.gitconfig ./.gitconfig
 

@@ -10,7 +10,7 @@ else
 
     nmap <silent> <C-s> :w<CR>
     imap <silent> <C-s> <C-o>:w<CR>
-    vmap <silent> <C-s> <Esc>:w<CR>gv
+    xmap <silent> <C-s> <Esc>:w<CR>gv
 
     nmap <silent> <C-Left> :bprev<CR>
     nmap <silent> <C-Right> :bnext<CR>
@@ -20,14 +20,15 @@ else
     nmap <silent> <S-Down> :wincmd j<CR>
     nmap <silent> <S-Left> :wincmd h<CR>
     nmap <silent> <S-Right> :wincmd l<CR>
+
     nmap <silent> <C-n> :cn<CR>
     nmap <silent> <C-S-n> :cp<CR>
 
     nmap <silent> ,, :qa<CR>
 
-    vmap <silent> <C-x> d
-    vmap <silent> <C-c> y
-    vmap <silent> <C-v> p
+    xmap <silent> <C-x> d
+    xmap <silent> <C-c> y
+    xmap <silent> <C-v> p
 
     nmap <silent> <S-Left> :TmuxNavigateLeft<cr>
     nmap <silent> <S-Down> :TmuxNavigateDown<cr>
@@ -44,6 +45,9 @@ else
     tmap <silent> <S-Right> <C-\><C-n>:wincmd l<CR>
 
     tmap <LeftRelease> <Nop>
+
+    command W SudaWrite
+    command R SudaRead
 
 endif
 

@@ -3,7 +3,7 @@
 audible_bell = true
 #clickable_url = true
 dynamic_title = true
-font = Monospace 11
+font = IBM Plex Mono 11
 fullscreen = false
 #geometry = 1000x750
 #icon_name = terminal

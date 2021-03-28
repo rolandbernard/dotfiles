@@ -1,0 +1,10 @@
+BasedOnStyle: WebKit
+AlignAfterOpenBracket: AlwaysBreakWithDanglingBracket
+# AlignAfterOpenBracket: AlwaysBreak
+AlignOperands: true
+AlignTrailingComments: true
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeBraces: Attach
+IndentWrappedFunctionNames: false
+SortIncludes: true
+ColumnLimit: 100

@@ -1,6 +1,8 @@
 
 syntax on
 
+set encoding=utf-8
+
 set number
 set relativenumber
 
@@ -24,20 +26,27 @@ set smartcase
 set autoindent
 set smartindent
 set cindent
-set cinkeys=0{,0},0),0],:,0#,!^F,o,O,e,!<Tab>
-set cinoptions=j1,J1,+0,w0,m1,Ws,g0,:0,l1,(s
+set cinkeys=0{,0},0),0],:,0#,!^F,o,O,e
+set cinoptions=j1,J1,+0,w0,m1,Ws,g0,l1,(s
 
 set undofile
 set hidden
+
+set nobackup
+set nowritebackup
 
 set cursorline
 
 set scrolloff=10
 
-set signcolumn=yes
+set signcolumn=number
 
 set foldmethod=indent
 set foldlevelstart=99
+
+set shortmess+=c
+
+set updatetime=100
 
 let g:omni_sql_no_default_maps = 1
 

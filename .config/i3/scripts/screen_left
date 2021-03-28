@@ -1,4 +1,3 @@
 #!/bin/bash
-intel-virtual-output
 xrandr --output VIRTUAL2 --auto --above eDP1
 feh --bg-fill ~/.config/i3/wallpaper.jpg

@@ -1,0 +1,32 @@
+
+[includeIf "gitdir:~/UniWorkspace/"]
+	path = .gitconfig-uni
+[includeIf "gitdir:~/Workspace/"]
+	path = .gitconfig-personal
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[user]
+	name = Roland Bernard
+
+[core]
+	editor = vim
+
+[credential]
+	helper = store
+
+[filesystem "Oracle Corporation|10.0.2|/dev/mapper/volgroup0-lv_home"]
+	timestampResolution = 5000 nanoseconds
+	minRacyThreshold = 18115 microseconds
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+

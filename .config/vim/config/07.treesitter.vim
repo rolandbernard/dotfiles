@@ -9,6 +9,10 @@ require'nvim-treesitter.configs'.setup {
         enable = true,
         disable = { 'verilog' }
     },
+    indent = {
+        enable = false,
+        disable = { }
+    },
     playground = {
         enable = true,
         disable = { },
