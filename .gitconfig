@@ -14,7 +14,7 @@
 	name = Roland Bernard
 
 [core]
-	editor = vim
+	editor = nvim
 
 [credential]
 	helper = store

@@ -1,10 +1,16 @@
 BasedOnStyle: WebKit
 AlignAfterOpenBracket: AlwaysBreakWithDanglingBracket
 # AlignAfterOpenBracket: AlwaysBreak
-AlignOperands: true
 AlignTrailingComments: true
 BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeBraces: Attach
 IndentWrappedFunctionNames: false
 SortIncludes: true
-ColumnLimit: 100
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: false
+ColumnLimit: 80

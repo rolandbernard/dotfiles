@@ -37,7 +37,7 @@ set nowritebackup
 
 set cursorline
 
-set scrolloff=10
+set scrolloff=5
 
 set signcolumn=number
 

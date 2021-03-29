@@ -26,6 +26,7 @@
     ],
     "pairs.enableCharacters": ["(", "[", "{"],
     "clangd.semanticHighlighting": false,
+    "clangd.path": "/opt/llvm/bin/clangd",
     "explorer.openAction.relativePath": true,
     "explorer.width": 30,
     "explorer.sources": [
