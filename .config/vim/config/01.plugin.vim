@@ -16,11 +16,11 @@ if !exists('g:vscode')
     Plug 'ryanoasis/vim-devicons'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'lambdalisue/suda.vim'
-    Plug 'wellle/context.vim'
 
     if has('nvim')
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
         Plug 'nvim-treesitter/playground'
+        Plug 'romgrk/nvim-treesitter-context'
         Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
     endif
 
