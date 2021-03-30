@@ -22,7 +22,7 @@ else
     nmap <silent> <S-Right> :wincmd l<CR>
 
     nmap <silent> <C-n> :cn<CR>
-    nmap <silent> <C-S-n> :cp<CR>
+    nmap <silent> <C-p> :cp<CR>
 
     nmap <silent> ,, :qa<CR>
 

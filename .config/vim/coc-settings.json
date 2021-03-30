@@ -119,10 +119,4 @@
         "<<": "gitStage",
         ">>": "gitUnstage"
     },
-    "cSpell.userWords": [
-      "Algebrite",
-      "Deepl",
-      "Midori",
-      "duckduckgo"
-    ]
 }
