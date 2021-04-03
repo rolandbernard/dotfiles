@@ -12,6 +12,7 @@ alias lh='ls -a'
 alias ll='lh -l'
 alias vim='openvim'
 alias gdb='gdb -q'
+alias python='python -q'
 alias rm='trash-put' # I have to be more careful
 
 shopt -s globstar

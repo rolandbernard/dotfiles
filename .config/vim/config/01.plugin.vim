@@ -16,6 +16,7 @@ if !exists('g:vscode')
     Plug 'ryanoasis/vim-devicons'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'lambdalisue/suda.vim'
+    Plug 'kylelaker/riscv.vim'
 
     if has('nvim')
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

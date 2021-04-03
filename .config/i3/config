@@ -204,7 +204,7 @@ bindsym XF86AudioPause exec --no-startup-id playerctl pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
-bindsym $mod+Shift+s exec --no-startup-id ~/.config/i3/scripts/screen_left
+bindsym $mod+Shift+s exec --no-startup-id ~/.config/i3/scripts/setupdisplays
 
 bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/scripts/lock
 bindsym $mod+i exec --no-startup-id GTK_THEME=Arc firefox

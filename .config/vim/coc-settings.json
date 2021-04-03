@@ -25,6 +25,7 @@
         }
     ],
     "pairs.enableCharacters": ["(", "[", "{"],
+    "rust-client.channel":"stable",
     "clangd.semanticHighlighting": false,
     "clangd.path": "/opt/llvm/bin/clangd",
     "explorer.openAction.relativePath": true,
@@ -40,6 +41,7 @@
         "filenames": [ ],
         "patternMatches": [ ]
     },
+    "cSpell.enabled": false,
     "explorer.keyMappings.global": {
         "i": false,
         "*": "toggleSelection",

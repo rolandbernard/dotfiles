@@ -48,6 +48,8 @@ set shortmess+=c
 
 set updatetime=100
 
+set textwidth=100
+
 let g:omni_sql_no_default_maps = 1
 
 let g:tex_flavor = 'latex'
