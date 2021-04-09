@@ -31,7 +31,7 @@
     "explorer.openAction.relativePath": true,
     "explorer.width": 30,
     "explorer.sources": [
-        { "name": "buffer", "expand": true },
+        { "name": "buffer", "expand": false },
         { "name": "file", "expand": true }
     ],
     "explorer.icon.enableVimDevicons": true,

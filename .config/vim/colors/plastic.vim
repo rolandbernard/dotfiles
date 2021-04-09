@@ -5,7 +5,7 @@
 " Repository:   https://github.com/flrnprz/plastic.vim/
 " License:      The MIT License (MIT)
 
-" Init {{{
+" Init
 scriptencoding utf-8
 
 set background=dark
@@ -32,10 +32,8 @@ fun! <sid>hi(group, fg, bg, attr, sp)
     exec "hi " . a:group . " guisp=" . a:sp.gui
 endif
 endfun
-"}}}
 
-" colors definition {{{
-
+" colors definition
 let s:red = {'gui': '#e06c75', 'cterm256': '204'}
 let s:green = { 'gui': '#98c379', 'cterm256': '114'}
 let s:yellow = { 'gui': '#e5c07b', 'cterm256': '180'}
@@ -55,15 +53,13 @@ let s:punctuation = { 'gui': '#7c8696', 'cterm256': '238' }
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 let s:dark = {'gui': '#40454a', 'cterm256': '235'}
 
-" }}}
-
 "--------------------
 " Syntax Definitions
 "--------------------
 " <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL)
 call <sid>hi('Normal', s:white, s:background, 'none', {})
 
-" UI {{{
+" UI
 call <sid>hi('Cursor', s:none, s:none, 'inverse', {})
 hi link lCursor Cursor
 hi link CursorIM Cursor
@@ -107,7 +103,7 @@ call <sid>hi('SpellCap', s:none, s:none, 'undercurl', {})
 call <sid>hi('SpellLocal', s:none, s:none, 'undercurl', {})
 call <sid>hi('SpellRare', s:none, s:none, 'undercurl', {})
 
-call <sid>hi('StatusLine', s:white, s:background, 'none', {})
+call <sid>hi('StatusLine', s:white, s:background, 'italic', {})
 call <sid>hi('StatusLineNC', s:white, s:background, 'none', {})
 hi link StatusLineTerm StatusLine
 hi link StatusLineTermNC StatusLineNC
@@ -122,13 +118,11 @@ hi link VisualNOS Visual
 call <sid>hi('TabLine', s:white, s:black, 'none', {})
 call <sid>hi('WildMenu', s:black, s:white, 'bold', {})
 call <sid>hi('Whitespace', s:dark, s:none, 'none', {})
-"}}}
 
 "----------------------------------------------------
 " Syntax groups and naming convenions
 " http://vimdoc.sourceforge.net/htmldoc/syntax.html
 "----------------------------------------------------
-" {{{
 call <sid>hi('Comment', s:grey, s:none, 'italic', {})
 
 call <sid>hi('Constant', s:aqua, s:none, 'none', {})
@@ -158,13 +152,12 @@ call <sid>hi('Error', s:red, s:black, 'undercurl', {})
 
 call <sid>hi('Todo', s:aqua, s:none, 'italic', {})
 
-"}}}
 
 "--------------------------
 " Language specific syntax
 "--------------------------
 
-" lsp-cxx {{{
+" lsp-cxx
 " LspCxxHlSymFile
 " LspCxxHlSymModule
 " LspCxxHlSymNamespace
@@ -194,24 +187,21 @@ call <sid>hi('Todo', s:aqua, s:none, 'italic', {})
 hi link LspCxxHlGroupEnumConstant Constant
 hi link LspCxxHlGroupNamespace Identifier
 hi link LspCxxHlGroupMemberVariable Identifier
-"}}}
 
-" HTML {{{
+" HTML
 call <sid>hi('htmlTag', s:punctuation, s:none, 'none', {})
 hi link htmlEndTag htmlTag
 call <sid>hi('htmlTagName', s:blue, s:none, 'none', {})
 call <sid>hi('htmlArg', s:whisky, s:none, 'none', {})
 call <sid>hi('htmlTitle', s:white, s:none, 'none', {})
-"}}}
 
-" XML {{{
+" XML
 call <sid>hi('xmlRegion', s:white, s:none, 'none', {})
 hi link xmlTag xmlRegion
 call <sid>hi('xmlTagName', s:yellow, s:none, 'none', {})
 call <sid>hi('xmlEndTag', s:punctuation, s:none, 'none', {})
-" }}}
 
-" Css {{{
+" Css
 call <sid>hi('cssAttrComma', s:punctuation, s:none, 'none', {})
 call <sid>hi('cssAttributeSelector', s:green, s:none, 'none', {})
 call <sid>hi('cssBraces', s:punctuation, s:none, 'none', {})
@@ -230,9 +220,8 @@ call <sid>hi('cssPseudoClassId', s:whisky, s:none, 'none', {})
 call <sid>hi('cssTagName', s:whisky, s:none, 'none', {})
 call <sid>hi('cssSelectorOp', s:purple, s:none, 'none', {})
 call <sid>hi('cssSelectorOp2', s:purple, s:none, 'none', {})
-"}}}
 
-" Javascript {{{
+" Javascript
 call <sid>hi('jsImport', s:red, s:none, 'none', {})
 hi link jsExport jsImport
 hi link jsFrom jsImport
@@ -242,9 +231,8 @@ call <sid>hi('jsStorageClass', s:blue, s:none, 'none', {})
 call <sid>hi('jsClassKeyword', s:blue, s:none, 'none', {})
 call <sid>hi('jsExtendsKeyword', s:blue, s:none, 'none', {})
 call <sid>hi('jsThis', s:yellow, s:none, 'none', {})
-"}}}
 
-" JSX {{{
+" JSX
 " https://github.com/MaxMEllon/vim-jsx-pretty
 call <sid>hi('jsxTagName', s:yellow, s:none, 'none', {})
 call <sid>hi('jsxPunct', s:punctuation, s:none, 'none', {})
@@ -252,9 +240,8 @@ call <sid>hi('jsClosePunct', s:punctuation, s:none, 'none', {})
 call <sid>hi('jsxAttrib', s:whisky, s:none, 'none', {})
 call <sid>hi('jsxComponentName', s:blue, s:none, 'none', {})
 hi link jsxCloseString jsClosePunct
-"}}}
 
-" Golang {{{
+" Golang
 call <sid>hi('goDirective', s:aqua, s:none, 'none', {})
 call <sid>hi('goConstants', s:white, s:none, 'none', {})
 call <sid>hi('goDeclaration', s:red, s:none, 'none', {})
@@ -263,9 +250,8 @@ call <sid>hi('goBuiltins', s:whisky, s:none, 'none', {})
 call <sid>hi('goFunctionCall', s:whisky, s:none, 'none', {})
 call <sid>hi('goVarAssign', s:white, s:none, 'none', {})
 hi link goVarDefs goVarAssign
-"}}}
 
-" Markdown {{{
+" Markdown
 call <sid>hi('markdownCode', s:green, s:none, 'none', {})
 hi link markdownCodeBlock markdownCode
 hi link markdownCodeDelimiter markdownCode
@@ -290,9 +276,7 @@ call <sid>hi('markdownLinkText', s:blue, s:none, 'none', {})
 call <sid>hi('markdownLinkDelimiter', s:white, s:none, 'none', {})
 call <sid>hi('markdownUrl', s:purple, s:none, 'none', {})
 
-"}}}
-
-" NERDTree {{{
+" NERDTree
 call <sid>hi('NERDTreeDir', s:blue, s:none, 'none', {})
 call <sid>hi('NERDTreeDirSlash', s:whisky, s:none, 'none', {})
 call <sid>hi('NERDTreeFile', s:aqua, s:none, 'none', {})
@@ -301,6 +285,6 @@ call <sid>hi('NERDTreeOpenable', s:whisky, s:none, 'none', {})
 call <sid>hi('NERDTreeClosable', s:red, s:none, 'none', {})
 call <sid>hi('NERDTreeCWD', s:blue, s:none, 'bold', {})
 call <sid>hi('NERDTreeUp', s:punctuation, s:none, 'none', {})
-" }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:
+"

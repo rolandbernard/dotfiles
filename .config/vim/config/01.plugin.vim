@@ -9,7 +9,6 @@ if !exists('g:vscode')
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-fugitive'
     Plug 'sheerun/vim-polyglot'
-    Plug 'bling/vim-bufferline'
     Plug 'Shirk/vim-gas'
     Plug 'vim-scripts/restore_view.vim'
     Plug 'jackguo380/vim-lsp-cxx-highlight'
@@ -17,12 +16,15 @@ if !exists('g:vscode')
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'lambdalisue/suda.vim'
     Plug 'kylelaker/riscv.vim'
+    Plug 'puremourning/vimspector'
 
     if has('nvim')
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
         Plug 'nvim-treesitter/playground'
         Plug 'romgrk/nvim-treesitter-context'
-        Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
+        Plug 'romgrk/barbar.nvim'
+    else
+        Plug 'bling/vim-bufferline'
     endif
 
 endif

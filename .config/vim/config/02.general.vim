@@ -39,7 +39,7 @@ set cursorline
 
 set scrolloff=5
 
-set signcolumn=number
+set signcolumn=yes
 
 set foldmethod=indent
 set foldlevelstart=99
@@ -59,4 +59,6 @@ let g:tmux_navigator_no_mappings = 1
 
 autocmd BufEnter term://* startinsert
 autocmd BufLeave * stopinsert
+
+let g:vimspector_enable_mappings = 'HUMAN'
 

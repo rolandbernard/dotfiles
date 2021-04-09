@@ -49,5 +49,11 @@ else
     command W SudaWrite
     command R SudaRead
 
+    nmap <silent> <F28> :call vimspector#Launch()<CR>
+    nmap <F32> <Plug>VimspectorRunToCursor
+    nmap <F33> <Plug>VimspectorToggleConditionalBreakpoint
+    nmap <F35> <Plug>VimspectorUpFrame
+    nmap <F36> <Plug>VimspectorDownFrame
+    nmap <C-RightMouse> <LeftMouse><Plug>VimspectorBalloonEval<CR>
 endif
 
