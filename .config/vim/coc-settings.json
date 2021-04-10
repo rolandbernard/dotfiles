@@ -121,4 +121,32 @@
         "<<": "gitStage",
         ">>": "gitUnstage"
     },
+    "diagnostic-languageserver.linters": {
+        "verilator": {
+            "sourceName": "verilator",
+            "command": "sh",
+            "rootPatterns": [ ".git" ],
+            "isStdout": true,
+            "isStderr": false,
+            "args": [ "-c", "verilator --lint-only -Wall $(find . -type d | awk '{print \"-I\" $0}') %file 2>&1 | grep %file" ],
+            "formatLines": 1,
+            "formatPattern": [
+                "^(%(Warning|Error)[^:]*:)?\\s*([^:]+):(\\d+):(\\d+)?:?\\s*(\\.\\.\\.)?\\s*(.*)$",
+                {
+                    "line": 4,
+                    "column": 5,
+                    "message": [7],
+                    "security": 2
+                }
+            ],
+            "securities": {
+              "Error": "error",
+              "Warning": "warning",
+              "undefined": "info"
+            }
+        }
+    },
+    "diagnostic-languageserver.filetypes": {
+        "verilog": "verilator"
+    }
 }
