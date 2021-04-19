@@ -50,6 +50,7 @@ else
     command R SudaRead
 
     nmap <silent> <F28> :call vimspector#Launch()<CR>
+    nmap <silent> <F16> :VimspectorReset<CR>
     nmap <F32> <Plug>VimspectorRunToCursor
     nmap <F33> <Plug>VimspectorToggleConditionalBreakpoint
     nmap <F35> <Plug>VimspectorUpFrame

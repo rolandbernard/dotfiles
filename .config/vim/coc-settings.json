@@ -128,7 +128,7 @@
             "rootPatterns": [ ".git" ],
             "isStdout": true,
             "isStderr": false,
-            "args": [ "-c", "verilator --lint-only -Wall $(find . -type d | awk '{print \"-I\" $0}') %file 2>&1 | grep %file" ],
+            "args": [ "-c", "verilator --lint-only -Wall $(find . -type f -name '*.v' | xargs -n1 dirname | sort -u | awk '{print \"-I\" $0}') %file 2>&1 | grep %file" ],
             "formatLines": 1,
             "formatPattern": [
                 "^(%(Warning|Error)[^:]*:)?\\s*([^:]+):(\\d+):(\\d+)?:?\\s*(\\.\\.\\.)?\\s*(.*)$",
