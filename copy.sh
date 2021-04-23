@@ -12,6 +12,7 @@ cp -r ~/.config/marvin/marvin.json ./.config/marvin/
 
 cp -r ~/.config/i3/* ./.config/i3/
 cp -r ~/.config/termite/* ./.config/termite
+cp -r ~/.config/kitty/* ./.config/kitty
 
 cp ~/.bashrc ./.bashrc
 cp ~/.inputrc ./.inputrc

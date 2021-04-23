@@ -30,8 +30,8 @@ font pango:Noto Sans 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id termite -e "bash -i -c 'tmux'"
-bindsym $mod+Shift+Return exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id kitty tmux
+bindsym $mod+Shift+Return exec --no-startup-id kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -214,13 +214,13 @@ for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 1000 800
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 10
-exec --no-startup-id termite --name dropdown -e "bash -i -c 'tmux'"
+exec --no-startup-id kitty --name dropdown tmux
 
 for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 1000 800
 for_window [instance="math"] move scratchpad
 for_window [instance="math"] border pixel 10
-exec --no-startup-id termite --name math -e "python -q -i -c 'from math import *; from numpy import *'"
+exec --no-startup-id kitty --name math python -q -i -c 'from math import *; from numpy import *'
 
 bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 bindsym $mod+m [instance="math"] scratchpad show; [instance="math"] move position center

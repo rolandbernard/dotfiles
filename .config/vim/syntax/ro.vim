@@ -13,7 +13,7 @@ highlight link roIdentifier Identifier
 
 syntax keyword roConditional if else match
 syntax keyword roRepeat for in loop break continue
-syntax keyword roStorageClass const volatile extern simple inline noinline
+syntax keyword roStorageClass const volatile extern simple
 syntax keyword roStructure fn
 syntax keyword roStatement return typeof defer
 syntax keyword roKeyword import export as from using
@@ -105,7 +105,7 @@ syntax match roUnderscore contained "[_]"
 syntax match roIntegerConstant "0x[0-9a-fA-F_]\+\|0o[0-7_]\+\|0d[0-9_]\+\|0b[01_]\+\|\d[0-9_]*" contains=roUnderscore
 syntax match roFloatConstant "\(\d[0-9_]*\.[0-9_]*\|\.[0-9_]\+\)\(e[+-]\=\d[0-9_]*\)\=" contains=roUnderscore
 syntax match roEscapeSequence contained "\\[\\"'abtnvfre]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}"
-syntax match roStringConstant "\"\(\\\"\|[^"]\)*\"" contains=roEscapeSequence
+syntax region roStringConstant start=+"+  skip=+\\"+  end=+"+ contains=roEscapeSequence
 syntax match roCharConstant "\'[^\\']\'"
 syntax match roCharConstant "\'\(\\[\\'"abtnvfre]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}\)\'" contains=roEscapeSequence
 

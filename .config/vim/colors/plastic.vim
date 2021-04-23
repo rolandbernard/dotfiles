@@ -35,6 +35,8 @@ endfun
 
 " colors definition
 let s:red = {'gui': '#e06c75', 'cterm256': '204'}
+let s:purered = {'gui': '#ff0000', 'cterm256': '196'}
+let s:orange = {'gui': '#ff922b', 'cterm256': '202'}
 let s:green = { 'gui': '#98c379', 'cterm256': '114'}
 let s:yellow = { 'gui': '#e5c07b', 'cterm256': '180'}
 let s:whisky = { 'gui': '#d19a66', 'cterm256': '173' }
@@ -152,6 +154,9 @@ call <sid>hi('Error', s:red, s:black, 'undercurl', {})
 
 call <sid>hi('Todo', s:aqua, s:none, 'italic', {})
 
+call <sid>hi('CocErrorHighlight', s:none, s:none, 'underline', s:purered)
+
+call <sid>hi('CocWarningHighlight', s:none, s:none, 'underline', s:orange)
 
 "--------------------------
 " Language specific syntax
