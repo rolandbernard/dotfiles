@@ -21,7 +21,6 @@ if !exists('g:vscode')
     \   'coc-json',
     \   'coc-lists',
     \   'coc-lit-html',
-    \   'coc-pairs',
     \   'coc-phpls',
     \   'coc-pyright',
     \   'coc-rls',
@@ -41,6 +40,7 @@ if !exists('g:vscode')
     \   'coc-yank',
     \ ]
     " \   'coc-tabnine',
+    " \   'coc-pairs',
 
     let g:coc_snippet_next = '<tab>'
     let g:coc_snippet_prev = '<s-tab>'
