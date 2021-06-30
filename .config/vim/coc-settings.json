@@ -41,7 +41,7 @@
         "filenames": [ ],
         "patternMatches": [ ]
     },
-    "cSpell.enabled": false,
+    "cSpell.enabled": true,
     "explorer.keyMappings.global": {
         "i": false,
         "*": "toggleSelection",
@@ -144,9 +144,34 @@
               "Warning": "warning",
               "undefined": "info"
             }
+        },
+        "todo": {
+            "sourceName": "todo",
+            "command": "awk",
+            "isStdout": true,
+            "isStderr": false,
+            "args": ["match($0, \"TODO\") { print NR\":\"RSTART\"-\"RSTART + 4, \"Todo?\" }"],
+            "formatLines": 1,
+            "formatPattern": [
+                "(\\d+):(\\d+)-(\\d+) (.*)",
+                {
+                    "line": 1,
+                    "column": 2,
+                    "endColumn": 3,
+                    "message": [4]
+                }
+            ],
+            "securities": {
+              "undefined": "warning"
+            }
         }
     },
     "diagnostic-languageserver.filetypes": {
-        "verilog": "verilator"
+        "verilog": ["verilator", "todo"],
+        "c": ["todo"],
+        "javascript": ["todo"],
+        "typescript": ["todo"],
+        "javascriptreact": ["todo"],
+        "typescriptreact": ["todo"]
     }
 }

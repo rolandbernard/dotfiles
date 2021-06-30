@@ -99,6 +99,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+bindsym Ctrl+Shift+3 workspace $ws3
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -248,4 +249,5 @@ exec --no-startup-id blueman-applet
 for_window [window_role="About"] floating enable
 for_window [class="vlc"] floating enable
 for_window [title="Microsoft Teams Notification"] floating enable
+for_window [class="daro.ide.main.Ide"] floating enable
 
