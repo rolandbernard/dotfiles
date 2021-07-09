@@ -20,7 +20,7 @@
         },
         {
             "name": "JavaSE-15",
-            "path": "/usr/lib/jvm/java-15-openjdk",
+            "path": "/usr/lib/jvm/java-16-openjdk",
             "default": true
         }
     ],
