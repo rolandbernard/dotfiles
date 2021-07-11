@@ -34,7 +34,8 @@
         { "name": "buffer", "expand": false },
         { "name": "file", "expand": true }
     ],
-    "explorer.icon.enableVimDevicons": true,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.icon.source": "vim-devicons",
     "explorer.file.root.template": "[icon] [root & 1][git & 1][hidden & 1][fullpath]",
     "explorer.file.hiddenRules": {
         "extensions": [ ],
