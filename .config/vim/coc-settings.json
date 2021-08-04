@@ -169,10 +169,13 @@
     },
     "diagnostic-languageserver.filetypes": {
         "verilog": ["verilator", "todo"],
+        "systemverilog": ["verilator", "todo"],
         "c": ["todo"],
+        "cpp": ["todo"],
         "javascript": ["todo"],
         "typescript": ["todo"],
         "javascriptreact": ["todo"],
-        "typescriptreact": ["todo"]
+        "typescriptreact": ["todo"],
+        "html": ["todo"]
     }
 }
