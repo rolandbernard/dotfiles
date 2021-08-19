@@ -34,11 +34,11 @@ if !exists('g:vscode')
     \   'coc-tsserver',
     \   'coc-vimlsp',
     \   'coc-vimtex',
-    \   'coc-word',
     \   'coc-xml',
     \   'coc-yaml',
     \   'coc-yank',
     \ ]
+    " \   'coc-word',
     " \   'coc-tabnine',
     " \   'coc-pairs',
 
