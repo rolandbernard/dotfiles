@@ -42,7 +42,6 @@
         "filenames": [ ],
         "patternMatches": [ ]
     },
-    "cSpell.enabled": true,
     "explorer.keyMappings.global": {
         "i": false,
         "*": "toggleSelection",
@@ -177,5 +176,6 @@
         "javascriptreact": ["todo"],
         "typescriptreact": ["todo"],
         "html": ["todo"]
-    }
+    },
+    "cSpell.enabled": true
 }

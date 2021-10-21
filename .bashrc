@@ -12,6 +12,7 @@ alias vim='openvim'
 alias gdb='gdb -q'
 alias python='python -q'
 alias rm='trash-put' # I have to be more careful
+alias esp-idf='. /opt/esp-idf/export.sh'
 
 shopt -s globstar
 
