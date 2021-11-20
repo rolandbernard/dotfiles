@@ -1,12 +1,5 @@
 
-if exists('g:vscode')
-
-    xmap gc  <Plug>VSCodeCommentary
-    nmap gc  <Plug>VSCodeCommentary
-    omap gc  <Plug>VSCodeCommentary
-    nmap gcc <Plug>VSCodeCommentaryLine
-
-else
+if !exists('g:vscode')
 
     nmap <silent> <C-s> :w<CR>
     imap <silent> <C-s> <C-o>:w<CR>
@@ -56,5 +49,13 @@ else
     nmap <F35> <Plug>VimspectorUpFrame
     nmap <F36> <Plug>VimspectorDownFrame
     nmap <C-RightMouse> <LeftMouse><Plug>VimspectorBalloonEval<CR>
+
+else
+
+    xmap gc  <Plug>VSCodeCommentary
+    nmap gc  <Plug>VSCodeCommentary
+    omap gc  <Plug>VSCodeCommentary
+    nmap gcc <Plug>VSCodeCommentaryLine
+
 endif
 

@@ -23,6 +23,7 @@ then
     cp ./.config/marvin/marvin.json ~/.config/marvin/marvin.json
     cp ./.config/vim/init.vim ~/.config/vim/init.vim
     cp ./.config/vim/coc-settings.json ~/.config/vim/coc-settings.json
+    cp ./.config/Code/User/settings.json ~/.config/Code/User/settings.json
 else
     cp -r ~/.config/vim/config ./.config/vim/
     cp -r ~/.config/vim/syntax ./.config/vim/
@@ -46,5 +47,6 @@ else
     cp ~/.config/marvin/marvin.json ./.config/marvin/
     cp ~/.config/vim/init.vim ./.config/vim/
     cp ~/.config/vim/coc-settings.json ./.config/vim/
+    cp ~/.config/Code/User/settings.json ./.config/Code/User/
 fi
 

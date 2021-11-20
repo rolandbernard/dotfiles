@@ -88,5 +88,22 @@ if !exists('g:vscode')
 
     autocmd CursorHold * silent call CocActionAsync('highlight')
 
+else
+
+    nmap <silent> [g <Cmd>call VSCodeNotify("editor.action.marker.prevInFiles")<CR>
+    nmap <silent> ]g <Cmd>call VSCodeNotify("editor.action.marker.nextInFiles")<CR>
+
+    nmap <silent> gd <Cmd>call VSCodeNotify("editor.action.revealDefinition")<CR>
+    nmap <silent> gy <Cmd>call VSCodeNotify("editor.action.goToTypeDefinition")<CR>
+    nmap <silent> gi <Cmd>call VSCodeNotify("editor.action.goToImplementation")<CR>
+    nmap <silent> gr <Cmd>call VSCodeNotify("editor.action.goToReferences")<CR>
+
+    nmap <silent> rn <Cmd>call VSCodeNotify("editor.action.rename")<CR>
+
+    xmap <silent> gf <Cmd>call VSCodeNotify("editor.action.formatSelection")<CR>
+    nmap <silent> gf <Cmd>call VSCodeNotify("editor.action.formatSelection")<CR>
+    xmap <silent> ga <Cmd>call VSCodeNotify("editor.action.quickFix")<CR>
+    nmap <silent> ga <Cmd>call VSCodeNotify("editor.action.quickFix")<CR>
+
 endif
 

@@ -1,4 +1,6 @@
 
+if !exists('g:vscode')
+
 syntax on
 
 set encoding=utf-8
@@ -61,4 +63,6 @@ autocmd BufEnter term://* startinsert
 autocmd BufLeave * stopinsert
 
 let g:vimspector_enable_mappings = 'HUMAN'
+
+endif
 
