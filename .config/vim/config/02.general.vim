@@ -10,7 +10,6 @@ set relativenumber
 
 set nowrap
 
-set clipboard=unnamed,unnamedplus
 set mouse=a mousemodel=popup
 set viewoptions=cursor,folds,slash,unix
 
@@ -21,6 +20,33 @@ match Whitespace /\s/
 
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·
 set list
+
+set cursorline
+
+set scrolloff=5
+
+set signcolumn=yes
+
+set foldmethod=indent
+set foldlevelstart=99
+
+set updatetime=100
+
+let g:omni_sql_no_default_maps = 1
+
+let g:tex_flavor = 'latex'
+let g:vimtex_compiler_progname = 'nvr'
+
+let g:tmux_navigator_no_mappings = 1
+
+autocmd BufEnter term://* startinsert
+autocmd BufLeave * stopinsert
+
+let g:vimspector_enable_mappings = 'HUMAN'
+
+endif
+
+set clipboard=unnamed,unnamedplus
 
 set ignorecase
 set smartcase
@@ -37,32 +63,7 @@ set hidden
 set nobackup
 set nowritebackup
 
-set cursorline
-
-set scrolloff=5
-
-set signcolumn=yes
-
-set foldmethod=indent
-set foldlevelstart=99
-
 set shortmess+=c
 
-set updatetime=100
-
 set textwidth=100
-
-let g:omni_sql_no_default_maps = 1
-
-let g:tex_flavor = 'latex'
-let g:vimtex_compiler_progname = 'nvr'
-
-let g:tmux_navigator_no_mappings = 1
-
-autocmd BufEnter term://* startinsert
-autocmd BufLeave * stopinsert
-
-let g:vimspector_enable_mappings = 'HUMAN'
-
-endif
 

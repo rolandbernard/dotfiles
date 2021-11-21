@@ -1,0 +1,47 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "ltex.additionalRules.enablePickyRules": true,
+    "ltex.additionalRules.motherTongue": "de",
+    "workbench.startupEditor": "none",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "editor.fontFamily": "'IBM Plex Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "Comment",
+                "scope": [
+                    "comment",
+                    "comment.block",
+                    "comment.block.documentation",
+                    "comment.line",
+                    "comment.line.double-slash",
+                    "punctuation.definition.comment",
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                }
+            },
+        ],
+    },
+    "editor.renderFinalNewline": false,
+    "files.insertFinalNewline": true,
+    "editor.lineNumbers": "relative",
+    "terminal.integrated.defaultProfile.linux": "tmux",
+    "clangd.inactiveRegionOpacity": 0.55,
+    "terminal.external.linuxExec": "kitty",
+    "editor.renderWhitespace": "all",
+    "git.confirmSync": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "explorer.confirmDelete": false,
+}
