@@ -3,6 +3,8 @@
 	path = .gitconfig-uni
 [includeIf "gitdir:~/Workspace/"]
 	path = .gitconfig-personal
+[includeIf "gitdir:~/BotWorkspace/"]
+	path = .gitconfig-bot
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -10,14 +12,8 @@
 	process = git-lfs filter-process
 	required = true
 
-[user]
-	name = Roland Bernard
-
 [core]
 	editor = nvim
-
-[credential]
-	helper = store
 
 [filesystem "Oracle Corporation|10.0.2|/dev/mapper/volgroup0-lv_home"]
 	timestampResolution = 5000 nanoseconds
