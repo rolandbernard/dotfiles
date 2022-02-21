@@ -1,7 +1,5 @@
 BasedOnStyle: WebKit
-AlignAfterOpenBracket: AlwaysBreakWithDanglingBracket
-# AlignAfterOpenBracket: AlwaysBreak
-# AlignAfterOpenBracket: BlockIndent
+AlignAfterOpenBracket: BlockIndent
 BinPackArguments: true
 BinPackParameters: true
 BitFieldColonSpacing: Both
