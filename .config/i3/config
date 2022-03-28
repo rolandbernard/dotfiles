@@ -247,7 +247,5 @@ exec --no-startup-id flameshot
 exec --no-startup-id blueman-applet
 
 for_window [window_role="About"] floating enable
-for_window [class="vlc"] floating enable
 for_window [title="Microsoft Teams Notification"] floating enable
-for_window [class="daro.ide.main.Ide"] floating enable
 
