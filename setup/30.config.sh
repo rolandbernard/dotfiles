@@ -2,11 +2,14 @@
 
 # Clone dotfiles
 
-# Copy vim config
+# vim config
 
-# Copy vscode config
+# vscode config
 
-# Copy tmux config
+# tmux config
 
-# Copy bash config
+# bash config
+
+# other config
+
 

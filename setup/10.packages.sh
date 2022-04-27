@@ -30,15 +30,20 @@ gpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/ms-
 dnf check-update
 dnf upgrade
 
-# Install nvidia?
+# Install nvidia driver?
+sudo dnf install akmod-nvidia
 
 # Install some other progams
 sudo dnf install \
-    @kde \ # KDE
+    @kde i3 \ # Desktop
     java-latest-openjdk java-latest-openjdk-devel \ # Java
     @multimedia \ # Multimedia
-    @c-development git llvm clang lld nodejs npm \ # Development
+    @c-development git llvm clang lld nodejs npm rust cargo @python-science \ # Development
     @virtualization guestfs-tools \ # Virtualization
-    @fonts ibm-plex-fonts-all \ # Fontyws
+    @fonts ibm-plex-fonts-all \ # Fonts
+    tlp tlp-rdw \ # Power management
     firefox ksysguard okular dolphin code teams kitty \ # Other
+
+sudo dnf group upgrade --with-optional Multimedia
+sudo systemctl enable tlp
 
