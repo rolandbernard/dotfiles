@@ -35,7 +35,7 @@ sudo dnf install akmod-nvidia
 
 # Install some other progams
 sudo dnf install \
-    i3 \
+    i3 picom feh wmctrl polybar \
     java-latest-openjdk java-latest-openjdk-devel \
     @multimedia \
     @c-development git llvm clang lld nodejs npm rust cargo @python-science \
@@ -43,8 +43,7 @@ sudo dnf install \
     @fonts ibm-plex-fonts-all \
     tlp tlp-rdw \
     firefox ksysguard okular dolphin code teams kitty bash-completion \
-    neovim tmux 
+    neovim tmux
 
 sudo dnf group upgrade --with-optional Multimedia
-sudo systemctl enable tlp
 
