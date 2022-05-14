@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Remove directories like Download/Desktop/.../
+rm -rf $HOME/{Downloads,Desktop,Templates,Public,Documents,Music,Pictures,Videos}
+mkdir -p $HOME/{downloads,public,documents}
+mkdir -p $HOME/x/{desktop,templates,music,pictures,videos}
+mkdir -p $HOME/{dev,dev-uni,dev-bot}
+
 # Clone dotfiles
 git clone https://github.com/rolandbernard/dotfiles
 

@@ -7,7 +7,7 @@ max_parallel_downloads=10
 deltarpm=True" | sudo tee -a /etc/dnf/dnf.conf
 
 # Add RPM Fusion repositories
-sudo dnf install \
+sudo dnf -y install \
     https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
     https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
@@ -27,15 +27,15 @@ gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee -a /etc/yum.repos.d/ms-teams.repo
 
 # Upgrade system
-dnf check-update
-sudo dnf upgrade
+dnf -y check-update
+sudo dnf -y upgrade
 
 # Install nvidia driver?
-sudo dnf install akmod-nvidia
+sudo dnf -y install akmod-nvidia
 
 # Install some other progams
-sudo dnf install \
-    i3 picom feh wmctrl polybar \
+sudo dnf -y install \
+    i3 picom feh wmctrl xbacklight \
     java-latest-openjdk java-latest-openjdk-devel \
     @multimedia \
     @c-development git llvm clang lld nodejs npm rust cargo @python-science \
@@ -43,7 +43,7 @@ sudo dnf install \
     @fonts ibm-plex-fonts-all \
     tlp tlp-rdw \
     firefox ksysguard okular dolphin code teams kitty bash-completion \
-    neovim tmux
+    neovim tmux gimp inkscape ImageMagick discord
 
-sudo dnf group upgrade --with-optional Multimedia
+sudo dnf -y group upgrade --with-optional Multimedia
 
