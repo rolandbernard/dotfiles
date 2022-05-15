@@ -7,15 +7,11 @@ mkdir -p $HOME/x/{desktop,templates,music,pictures,videos}
 mkdir -p $HOME/{dev,dev-uni,dev-bot}
 
 # Clone dotfiles
+cd $HOME/dev
 git clone https://github.com/rolandbernard/dotfiles
-
-# vim config
-
-# vscode config
-
-# tmux config
-
-# bash config
+cd $HOME/dev/dotfiles
+bash restore.sh
+cd $HOME
 
 # other config
 sudo systemctl disable abrt-journal-core.service
@@ -24,4 +20,7 @@ sudo systemctl disable abrt-xorg.service
 sudo systemctl disable abrtd.service
 
 sudo systemctl enable tlp
+
+sudo plymouth-set-default-theme details
+sudo dracut -f
 

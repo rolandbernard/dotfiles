@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# kde config
-
-# i3 config
+# kde+i3 config
 mkdir $HOME/.config/systemd/user
 echo "[Unit]
 Description=i3 Window Manager

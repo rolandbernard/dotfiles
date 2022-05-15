@@ -6,4 +6,5 @@
 # - Login Visual Studio Code
 # - Login Microsoft Teams
 # - Login Discord
+# - Check system settings manualy
 

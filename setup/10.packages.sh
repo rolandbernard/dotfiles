@@ -35,7 +35,7 @@ sudo dnf -y install akmod-nvidia
 
 # Install some other progams
 sudo dnf -y install \
-    i3 picom feh wmctrl xbacklight \
+    i3 picom feh wmctrl xbacklight papirus-icon-theme \
     java-latest-openjdk java-latest-openjdk-devel \
     @multimedia \
     @c-development git llvm clang lld nodejs npm rust cargo @python-science \
