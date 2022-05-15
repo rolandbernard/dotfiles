@@ -1,9 +1,9 @@
 
-[includeIf "gitdir:~/UniWorkspace/"]
+[includeIf "gitdir:~/dev/"]
+	path = .gitconfig-dev
+[includeIf "gitdir:~/dev-uni/"]
 	path = .gitconfig-uni
-[includeIf "gitdir:~/Workspace/"]
-	path = .gitconfig-personal
-[includeIf "gitdir:~/BotWorkspace/"]
+[includeIf "gitdir:~/dev-bot/"]
 	path = .gitconfig-bot
 
 [filter "lfs"]
@@ -14,10 +14,6 @@
 
 [core]
 	editor = nvim
-
-[filesystem "Oracle Corporation|10.0.2|/dev/mapper/volgroup0-lv_home"]
-	timestampResolution = 5000 nanoseconds
-	minRacyThreshold = 18115 microseconds
 
 [init]
 	defaultBranch = main
