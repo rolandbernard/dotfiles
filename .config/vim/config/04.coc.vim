@@ -2,12 +2,12 @@
 if !exists('g:vscode')
 
     let g:coc_global_extensions = [
-    \   'coc-angular',
     \   'coc-calc',
     \   'coc-clangd',
     \   'coc-cmake',
     \   'coc-css',
     \   'coc-cssmodules',
+    \   'coc-deno',
     \   'coc-diagnostic',
     \   'coc-emmet',
     \   'coc-explorer',

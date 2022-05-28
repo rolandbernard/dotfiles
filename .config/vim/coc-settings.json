@@ -19,15 +19,16 @@
             "path": "/usr/lib/jvm/jdk-13"
         },
         {
-            "name": "JavaSE-15",
-            "path": "/usr/lib/jvm/java-17-openjdk",
+            "name": "JavaSE-17",
+            "path": "/usr/lib/jvm/default",
             "default": true
         }
     ],
-    "pairs.enableCharacters": ["(", "[", "{"],
+    // "pairs.enableCharacters": ["(", "[", "{"],
     "rust-client.channel":"stable",
-    "clangd.semanticHighlighting": false,
+    // "clangd.semanticHighlighting": false,
     "clangd.path": "/opt/llvm/bin/clangd",
+    "clangd.inlayHints.enable": false,
     "explorer.openAction.relativePath": true,
     "explorer.width": 30,
     "explorer.sources": [

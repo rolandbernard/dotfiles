@@ -72,5 +72,6 @@
     "git.enableSmartCommit": true,
     "jupyter.askForKernelRestart": false,
     "editor.inlayHints.enabled": false,
-    "rust-analyzer.inlayHints.enable": false
+    "rust-analyzer.inlayHints.enable": false,
+    "editor.language.colorizedBracketPairs": []
 }

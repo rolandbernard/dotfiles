@@ -3,6 +3,8 @@ call plug#begin('~/.config/vim/plugged')
 
 if !exists('g:vscode')
 
+    " Plug 'justinmk/vim-syntax-extra'
+    Plug 'mg979/vim-visual-multi'
     Plug 'lervag/vimtex'
     Plug 'itchyny/lightline.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
