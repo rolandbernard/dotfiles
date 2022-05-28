@@ -1,19 +1,19 @@
 
+set nocompatible
+
 call plug#begin('~/.config/vim/plugged')
 
 if !exists('g:vscode')
 
-    " Plug 'justinmk/vim-syntax-extra'
     Plug 'mg979/vim-visual-multi'
     Plug 'lervag/vimtex'
     Plug 'itchyny/lightline.vim'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': ':CocUpdate'}
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-fugitive'
     Plug 'sheerun/vim-polyglot'
     Plug 'Shirk/vim-gas'
     Plug 'vim-scripts/restore_view.vim'
-    Plug 'jackguo380/vim-lsp-cxx-highlight'
     Plug 'ryanoasis/vim-devicons'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'lambdalisue/suda.vim'

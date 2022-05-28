@@ -146,6 +146,8 @@ call <sid>hi('Type', s:blue, s:none, 'none', {})
 
 call <sid>hi('Special', s:punctuation, s:none, 'none', {})
 
+call <sid>hi('Delimiter', s:punctuation, s:none, 'none', {})
+
 call <sid>hi('Underlined', s:blue, s:none, 'underline', {})
 
 call <sid>hi('Ignore', s:none, s:none, 'none', {})
@@ -162,36 +164,22 @@ call <sid>hi('CocWarningHighlight', s:none, s:none, 'underline', s:orange)
 " Language specific syntax
 "--------------------------
 
-" lsp-cxx
-" LspCxxHlSymFile
-" LspCxxHlSymModule
-" LspCxxHlSymNamespace
-" LspCxxHlSymPackage
-" LspCxxHlSymClass
-" LspCxxHlSymMethod
-" LspCxxHlSymProperty
-" LspCxxHlSymField
-" LspCxxHlSymConstructor
-" LspCxxHlSymEnum
-" LspCxxHlSymInterface
-" LspCxxHlSymFunction
-" LspCxxHlSymVariable
-" LspCxxHlSymConstant
-" LspCxxHlSymString
-" LspCxxHlSymNumber
-" LspCxxHlSymBoolean
-" LspCxxHlSymArray
-" LspCxxHlSymObject
-" LspCxxHlSymKey
-" LspCxxHlSymNull
-" LspCxxHlSymEnumMember
-" LspCxxHlSymStruct
-" LspCxxHlSymEvent
-" LspCxxHlSymOperator
-" LspCxxHlSymTypeParameter
-hi link LspCxxHlGroupEnumConstant Constant
-hi link LspCxxHlGroupNamespace Identifier
-hi link LspCxxHlGroupMemberVariable Identifier
+" - CocSemVariable
+" - CocSemParameter
+" - CocSemFunction
+" - CocSemMethod
+" - CocSemProperty
+hi link CocSemClass Type
+" - CocSemInterface
+" - CocSemEnum
+" - CocSemEnumMember
+" - CocSemType
+" - CocSemUnknown
+" - CocSemNamespace
+" - CocSemTypeParameter
+" - CocSemConcept
+" - CocSemMacro
+" - CocSemComment
 
 " HTML
 call <sid>hi('htmlTag', s:punctuation, s:none, 'none', {})

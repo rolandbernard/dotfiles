@@ -27,6 +27,7 @@
     // "pairs.enableCharacters": ["(", "[", "{"],
     "rust-client.channel":"stable",
     // "clangd.semanticHighlighting": false,
+    "semanticTokens.filetypes": ["*"],
     "clangd.path": "/opt/llvm/bin/clangd",
     "clangd.inlayHints.enable": false,
     "explorer.openAction.relativePath": true,
