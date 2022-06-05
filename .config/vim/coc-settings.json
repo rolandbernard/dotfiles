@@ -179,5 +179,8 @@
         "typescriptreact": ["todo"],
         "html": ["todo"]
     },
-    "cSpell.enabled": true
+    "cSpell.enabled": true,
+    "cSpell.userWords": [
+      "pretype"
+    ]
 }

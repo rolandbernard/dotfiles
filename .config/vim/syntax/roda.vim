@@ -99,8 +99,8 @@ highlight link roUndefined Constant
 
 syntax keyword roBoolConstant true false
 syntax match roUnderscore contained "[_]"
-syntax match roIntegerConstant "0x[0-9a-fA-F_]\+\|0o[0-7_]\+\|0d[0-9_]\+\|0b[01_]\+\|\d[0-9_]*" contains=roUnderscore
-syntax match roFloatConstant "\(\d[0-9_]*\.[0-9_]*\|\.[0-9_]\+\)\(e[+-]\=\d[0-9_]*\)\=" contains=roUnderscore
+syntax match roFloatConstant "\d[0-9_]*\(\.\d[0-9_]*\)\=\([eE][+-]\=\d[0-9_]*\)\=" contains=roUnderscore
+syntax match roIntegerConstant "0[xh][0-9a-fA-F_]\+\|0o[0-7_]\+\|0d[0-9_]\+\|0b[01_]\+\|\d[0-9_]*" contains=roUnderscore
 syntax match roEscapeSequence contained "\\[\\"'abtnvfre]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}"
 syntax region roStringConstant start=+"+  skip=+\\"+  end=+"+ contains=roEscapeSequence
 syntax match roCharConstant "\'[^\\']\'"

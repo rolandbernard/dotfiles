@@ -14,8 +14,8 @@ if !exists('g:vscode')
     nmap <silent> <S-Left> :wincmd h<CR>
     nmap <silent> <S-Right> :wincmd l<CR>
 
-    nmap <silent> <C-n> :cn<CR>
-    nmap <silent> <C-p> :cp<CR>
+    nmap <silent> <C-S-n> :cn<CR>
+    nmap <silent> <C-S-p> :cp<CR>
 
     nmap <silent> ,, :qa<CR>
 

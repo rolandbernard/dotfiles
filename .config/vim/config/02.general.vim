@@ -70,4 +70,5 @@ set nowritebackup
 set shortmess+=c
 
 set textwidth=100
+set formatoptions-=t
 
