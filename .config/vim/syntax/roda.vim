@@ -1,127 +1,115 @@
-" Vim syntax file
-" Language: RoDa 0.1
-" Maintainer: Roland Bernard
-" Latest Revision: 01.01.2019
 
 if exists("b:current_syntax")
   finish
 endif
 
-syntax match roIdentifier "[_a-zA-Z][_a-zA-Z0-9]*"
+syntax match rodaIdentifier "[_a-zA-Z][_a-zA-Z0-9]*"
 
-highlight link roIdentifier Identifier
+highlight link rodaIdentifier Identifier
 
-syntax keyword roConditional if else match
-syntax keyword roRepeat for in loop while break continue
-syntax keyword roStorageClass const volatile extern simple mut
-syntax keyword roStatement return typeof defer
-syntax keyword roKeyword import export as from use mod fn type let
+syntax keyword rodaConditional if else match
+syntax keyword rodaRepeat for in loop while break continue
+syntax keyword rodaStorageClass const volatile mut
+syntax keyword rodaStatement return typeof defer sizeof
+syntax keyword rodaKeyword import export as from use mod fn type let extern pub
 
-highlight link roConditional Conditional
-highlight link roRepeat Repeat
-highlight link roStorageClass StorageClass
-highlight link roStructure Structure
-highlight link roStatement Statement
-highlight link roKeyword Keyword
+highlight link rodaConditional Conditional
+highlight link rodaRepeat Repeat
+highlight link rodaStorageClass StorageClass
+highlight link rodaStructure Structure
+highlight link rodaStatement Statement
+highlight link rodaKeyword Keyword
 
-syntax match roOperator "&&"
-syntax match roOperator "||"
-syntax match roOperator "=="
-syntax match roOperator ">="
-syntax match roOperator "<="
-syntax match roOperator ">"
-syntax match roOperator "<"
-syntax match roOperator "|"
-syntax match roOperator "\^"
-syntax match roOperator "&"
-syntax match roOperator ">>"
-syntax match roOperator "<<"
-syntax match roOperator "+"
-syntax match roOperator "-"
-syntax match roOperator "\*"
-syntax match roOperator "\/"
-syntax match roOperator "%"
-syntax match roOperator "\~"
-syntax match roOperator "!"
-syntax match roOperator "\.\."
-syntax match roOperator "->"
-syntax match roOperator "=>"
-syntax match roOperator "~>"
+syntax match rodaOperator "&&"
+syntax match rodaOperator "||"
+syntax match rodaOperator "=="
+syntax match rodaOperator ">="
+syntax match rodaOperator "<="
+syntax match rodaOperator ">"
+syntax match rodaOperator "<"
+syntax match rodaOperator "|"
+syntax match rodaOperator "\^"
+syntax match rodaOperator "&"
+syntax match rodaOperator ">>"
+syntax match rodaOperator "<<"
+syntax match rodaOperator "+"
+syntax match rodaOperator "-"
+syntax match rodaOperator "\*"
+syntax match rodaOperator "\/"
+syntax match rodaOperator "%"
+syntax match rodaOperator "\~"
+syntax match rodaOperator "!"
+syntax match rodaOperator "\.\."
+syntax match rodaOperator "->"
+syntax match rodaOperator "=>"
+syntax match rodaOperator "~>"
 
-highlight link roOperator Operator
+highlight link rodaOperator Operator
 
-syntax match roDelimiter "\."
-syntax match roDelimiter ","
-syntax match roDelimiter ";"
-syntax match roDelimiter ":"
-syntax match roDelimiter "::"
-syntax match roDelimiter "("
-syntax match roDelimiter ")"
-syntax match roDelimiter "{"
-syntax match roDelimiter "}"
-syntax match roDelimiter "\["
-syntax match roDelimiter "\]"
+syntax match rodaDelimiter "\."
+syntax match rodaDelimiter ","
+syntax match rodaDelimiter ";"
+syntax match rodaDelimiter ":"
+syntax match rodaDelimiter "::"
+syntax match rodaDelimiter "("
+syntax match rodaDelimiter ")"
+syntax match rodaDelimiter "{"
+syntax match rodaDelimiter "}"
+syntax match rodaDelimiter "\["
+syntax match rodaDelimiter "\]"
 
-highlight link roDelimiter Delimiter
+highlight link rodaDelimiter Delimiter
 
-syntax match roAssignment ":="
-syntax match roAssignment "="
-syntax match roAssignment "+="
-syntax match roAssignment "-="
-syntax match roAssignment "\*="
-syntax match roAssignment "\/="
-syntax match roAssignment "%="
-syntax match roAssignment "|="
-syntax match roAssignment "&="
-syntax match roAssignment "\^="
-syntax match roAssignment "<<="
-syntax match roAssignment ">>="
+syntax match rodaAssignment ":="
+syntax match rodaAssignment "="
+syntax match rodaAssignment "+="
+syntax match rodaAssignment "-="
+syntax match rodaAssignment "\*="
+syntax match rodaAssignment "\/="
+syntax match rodaAssignment "%="
+syntax match rodaAssignment "|="
+syntax match rodaAssignment "&="
+syntax match rodaAssignment "\^="
+syntax match rodaAssignment "<<="
+syntax match rodaAssignment ">>="
 
-highlight link roAssignment Statement
+highlight link rodaAssignment Statement
 
-syntax keyword roTodo contained TODO FIXME XXX
-syntax match roLineComment "\/\/.\{-}$" contains=roTodo
-syntax region roRangeComment start="\/\*" end="\*\/" fold contains=roRangeComment,roTodo
+syntax keyword rodaTodo contained TODO FIXME XXX
+syntax match rodaLineComment "\/\/.\{-}$" contains=roTodo
+syntax region rodaRangeComment start="\/\*" end="\*\/" fold contains=roRangeComment,roTodo
 
-highlight link roTodo Todo
-highlight link roLineComment Comment
-highlight link roRangeComment Comment
+highlight link rodaTodo Todo
+highlight link rodaLineComment Comment
+highlight link rodaRangeComment Comment
 
-syntax match roCustomOperator "`[^`]\+`"
+syntax match rodaCustomOperator "`[^`]\+`"
 
-highlight link roCustomOperator Operator
+highlight link rodaCustomOperator Operator
 
-syntax region roBlock start="{" end="}" fold transparent
+syntax region rodaBlock start="{" end="}" fold transparent
 
-syntax match roUndefined "--"
+syntax keyword rodaBoolConstant true false
+syntax match rodaUnderscore contained "[_]"
+syntax match rodaIntegerConstant "0[xh][0-9a-fA-F_]\+\|0o[0-7_]\+\|0d[0-9_]\+\|0b[01_]\+\|\d[0-9_]*" contains=roUnderscore
+syntax match rodaFloatConstant "\d[0-9_]*\([eE][+-]\=\d[0-9_]*\)\|\d[0-9_]*\.\d[0-9_]*\([eE][+-]\=\d[0-9_]*\)\=" contains=roUnderscore
+syntax match rodaEscapeSequence contained "\\[\\"'abtnvfre]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}"
+syntax region rodaStringConstant start=+"+  skip=+\\"+  end=+"+ contains=rodaEscapeSequence
+syntax match rodaCharConstant "\'[^\\']\|\(\\.\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}\)\'" contains=rodaEscapeSequence
+syntax keyword rodaType i8 i16 i32 i64 u8 u16 u32 u64 int uint isize usize f32 f64 bool
 
-highlight link roUndefined Constant
+highlight link rodaBoolConstant Boolean
+highlight link rodaIntegerConstant Number
+highlight link rodaFloatConstant Float
+highlight link rodaEscapeSequence SpecialChar
+highlight link rodaUnderscore SpecialChar
+highlight link rodaStringConstant String
+highlight link rodaCharConstant Character
+highlight link rodaType Type
 
-syntax keyword roBoolConstant true false
-syntax match roUnderscore contained "[_]"
-syntax match roFloatConstant "\d[0-9_]*\(\.\d[0-9_]*\)\=\([eE][+-]\=\d[0-9_]*\)\=" contains=roUnderscore
-syntax match roIntegerConstant "0[xh][0-9a-fA-F_]\+\|0o[0-7_]\+\|0d[0-9_]\+\|0b[01_]\+\|\d[0-9_]*" contains=roUnderscore
-syntax match roEscapeSequence contained "\\[\\"'abtnvfre]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}"
-syntax region roStringConstant start=+"+  skip=+\\"+  end=+"+ contains=roEscapeSequence
-syntax match roCharConstant "\'[^\\']\'"
-syntax match roCharConstant "\'\(\\[\\'"abtnvfre]\|\\x\x\{2}\|\\u\x\{4}\|\\U\x\{8}\)\'" contains=roEscapeSequence
-syntax keyword roType i8 i16 i32 i64 u8 u16 u32 u64 int uint isize usize f32 f64
+syn match rodaFunction "\<\h\w*\>\(\s\|\n\)*("me=e-1
+syn match rodaFunctionPointer "(\s*\*\s*\h\w*\s*)\(\s\|\n\)*("
 
-highlight link roBoolConstant Boolean
-highlight link roIntegerConstant Number
-highlight link roFloatConstant Float
-highlight link roEscapeSequence SpecialChar
-highlight link roUnderscore SpecialChar
-highlight link roStringConstant String
-highlight link roCharConstant Character
-highlight link roType Type
+highlight link rodaFunction Function
+highlight link rodaFunctionPointer Function
 
-syn match roFunction "\<\h\w*\>\(\s\|\n\)*("me=e-1
-syn match roFunctionPointer "(\s*\*\s*\h\w*\s*)\(\s\|\n\)*("
-
-highlight link roFunction Function
-highlight link roFunctionPointer Function
-
-syntax match roLabel "\'[_a-zA-Z][_a-zA-Z0-9]*"
-
-highlight link roLabel Label
