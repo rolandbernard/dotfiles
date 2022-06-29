@@ -38,7 +38,7 @@ sudo dnf -y install \
     i3 picom feh wmctrl xbacklight papirus-icon-theme \
     java-latest-openjdk java-latest-openjdk-devel \
     @multimedia \
-    @c-development git llvm clang lld nodejs npm rust cargo @python-science \
+    @c-development git llvm-devel clang lld nodejs npm rust cargo @python-science \
     @virtualization guestfs-tools \
     @fonts ibm-plex-fonts-all \
     tlp tlp-rdw \
