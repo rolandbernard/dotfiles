@@ -28,7 +28,6 @@ else
     cp -r ~/.config/vim/config ./.config/vim/
     cp -r ~/.config/vim/syntax ./.config/vim/
     cp -r ~/.config/vim/colors ./.config/vim/
-    cp -r ~/.config/vim/spell ./.config/vim/
     cp -r ~/.config/vim/ftdetect ./.config/vim/
     cp -r ~/.config/vim/autoload ./.config/vim/
 

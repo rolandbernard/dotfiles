@@ -8,7 +8,7 @@ if !exists('g:vscode')
     Plug 'mg979/vim-visual-multi'
     Plug 'lervag/vimtex'
     Plug 'itchyny/lightline.vim'
-    Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': ':CocUpdate'}
+    Plug 'neoclide/coc.nvim', {'branch': 'master',  'do': 'yarn install --frozen-lockfile'}
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-fugitive'
     Plug 'sheerun/vim-polyglot'
@@ -21,7 +21,7 @@ if !exists('g:vscode')
     Plug 'puremourning/vimspector'
 
     if has('nvim')
-        Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+        Plug 'nvim-treesitter/nvim-treesitter'
         Plug 'nvim-treesitter/playground'
         " Plug 'romgrk/nvim-treesitter-context'
         Plug 'romgrk/barbar.nvim'

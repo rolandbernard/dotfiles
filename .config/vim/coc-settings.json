@@ -26,6 +26,8 @@
     "semanticTokens.filetypes": [
         "*"
     ],
+    "rust-analyzer.inlayHints.enable": false,
+    "clangd.arguments": ["-header-insertion=never"],
     "clangd.path": "/opt/llvm/bin/clangd",
     "clangd.inlayHints.enable": false,
     "explorer.openAction.relativePath": true,
