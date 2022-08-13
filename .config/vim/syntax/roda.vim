@@ -9,9 +9,9 @@ highlight link rodaIdentifier Identifier
 
 syntax keyword rodaConditional if else match
 syntax keyword rodaRepeat for in loop while break continue
-syntax keyword rodaStorageClass const volatile mut
+syntax keyword rodaStorageClass mut
 syntax keyword rodaStatement return typeof defer sizeof
-syntax keyword rodaKeyword import export as from use mod fn type let extern pub
+syntax keyword rodaKeyword import export as from use mod fn type let extern pub static const
 
 highlight link rodaConditional Conditional
 highlight link rodaRepeat Repeat

@@ -74,5 +74,9 @@
     "editor.inlayHints.enabled": false,
     "rust-analyzer.inlayHints.enable": false,
     "editor.language.colorizedBracketPairs": [],
-    "C_Cpp.clang_format_fallbackStyle": "file"
+    "C_Cpp.clang_format_fallbackStyle": "file",
+    "hexeditor.columnWidth": 32,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside"
 }
