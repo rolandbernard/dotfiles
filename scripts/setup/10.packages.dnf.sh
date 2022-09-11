@@ -1,10 +1,16 @@
 #!/bin/bash
 
+if [ "$OS_NAME" == "Fedora Linux" ]
+then
+
 # Some dnf config changes
 echo "
 fastestmirror=True
 max_parallel_downloads=10
 deltarpm=True" | sudo tee -a /etc/dnf/dnf.conf
+
+if [ "$HOST_NAME" == "rolandlinux" ]
+then
 
 # Add RPM Fusion repositories
 sudo dnf -y install \
@@ -26,14 +32,22 @@ enabled=1
 gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee -a /etc/yum.repos.d/ms-teams.repo
 
+fi
+
 # Upgrade system
 dnf -y check-update
 sudo dnf -y upgrade
 
 # Install nvidia driver?
-sudo dnf -y install akmod-nvidia
+if [ $(lspci | grep -c NVIDIA) -gt 0 ]
+then
+    sudo dnf -y install akmod-nvidia
+fi
 
 # Install some other progams
+if [ "$HOST_NAME" == "rolandlinux" ]
+then
+
 sudo dnf -y install \
     i3 picom feh wmctrl xbacklight papirus-icon-theme \
     java-latest-openjdk java-latest-openjdk-devel \
@@ -46,4 +60,15 @@ sudo dnf -y install \
     neovim tmux gimp inkscape ImageMagick discord
 
 sudo dnf -y group upgrade --with-optional Multimedia
+
+elif [ "$HOST_NAME" == "rolandpi" ]
+then
+
+sudo dnf -y install \
+    @c-development git llvm-devel clang lld nodejs npm rust cargo @python-science \
+    bash-completion neovim tmux
+
+fi
+
+fi
 

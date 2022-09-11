@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Manual steps to do after installation and reboot:
-# - Create git-credentials file
+# - Fill git-credentials files
 # - Login Firefox
 # - Login Visual Studio Code
 # - Login Microsoft Teams
