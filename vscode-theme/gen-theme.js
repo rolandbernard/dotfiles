@@ -78,3 +78,4 @@ for (const token of theme.tokenColors) {
 }
 
 fs.writeFileSync(path.join(__dirname, 'themes/theme.json'), JSON.stringify(theme, null, 4))
+
