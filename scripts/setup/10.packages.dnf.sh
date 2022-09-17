@@ -9,7 +9,7 @@ fastestmirror=True
 max_parallel_downloads=10
 deltarpm=True" | sudo tee -a /etc/dnf/dnf.conf
 
-if [ "$HOST_NAME" == "rolandlinux" ]
+if [ "$HOST_NAME" == "rolandlinux" -o  "$HOST_NAME" == "rolandvm" ]
 then
 
 # Add RPM Fusion repositories
@@ -45,7 +45,7 @@ then
 fi
 
 # Install some other progams
-if [ "$HOST_NAME" == "rolandlinux" ]
+if [ "$HOST_NAME" == "rolandlinux" -o  "$HOST_NAME" == "rolandvm" ]
 then
 
 sudo dnf -y install \
