@@ -38,9 +38,6 @@ if !exists('g:vscode')
     \   'coc-yaml',
     \   'coc-yank',
     \ ]
-    " \   'coc-word',
-    " \   'coc-tabnine',
-    " \   'coc-pairs',
 
     let g:coc_snippet_next = '<tab>'
     let g:coc_snippet_prev = '<s-tab>'

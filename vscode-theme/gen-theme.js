@@ -4,18 +4,23 @@ const path = require('path');
 const { generateTheme } = require('vscode-theme-generator');
 
 const colors = {
+    background: '#17161c',
+    foreground: '#d4d4d4',
     red: '#ff5967',
     green: '#98c379',
     yellow: '#e5c07b',
-    whisky: '#d19a66',
-    blue: '#61afef',
     darkBlue: '#345d7f',
-    aqua: '#56b6c2',
-    white: '#d7d7d7',
-    background: '#17161c',
-    foreground: '#d4d4d4',
-    grey: '#898f99',
-    punctuation: '#7c8696',
+    comment: '#84838b',
+    preproc: '#569cd6',
+    numeric: '#b5cea8',
+    escape: '#d7ba7d',
+    variable: '#9cdcfe',
+    string: '#ce9178',
+    function: '#dcdcaa',
+    type: '#4ec9b0',
+    control: '#c586c0',
+    constant: '#4fc1ff',
+    label: '#c8c8c8',
 }
 
 const colorSet = {
@@ -64,7 +69,7 @@ theme.tokenColors = [
             'source.groovy.embedded'
         ],
         settings: {
-            foreground: '#D4D4D4'
+            foreground: colors.foreground
         }
     },
     {
@@ -88,13 +93,13 @@ theme.tokenColors = [
     {
         scope: 'comment',
         settings: {
-            foreground: '#6A9955'
+            foreground: colors.comment
         }
     },
     {
         scope: 'constant.language',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
@@ -105,7 +110,7 @@ theme.tokenColors = [
             'keyword.operator.minus.exponent'
         ],
         settings: {
-            foreground: '#b5cea8'
+            foreground: colors.numeric
         }
     },
     {
@@ -117,19 +122,19 @@ theme.tokenColors = [
     {
         scope: 'entity.name.tag',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'entity.name.tag.css',
         settings: {
-            foreground: '#d7ba7d'
+            foreground: colors.escape
         }
     },
     {
         scope: 'entity.other.attribute-name',
         settings: {
-            foreground: '#9cdcfe'
+            foreground: colors.variable
         }
     },
     {
@@ -144,7 +149,7 @@ theme.tokenColors = [
             'entity.other.attribute-name.scss'
         ],
         settings: {
-            foreground: '#d7ba7d'
+            foreground: colors.escape
         }
     },
     {
@@ -163,14 +168,14 @@ theme.tokenColors = [
         scope: 'markup.bold',
         settings: {
             fontStyle: 'bold',
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'markup.heading',
         settings: {
             fontStyle: 'bold',
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
@@ -188,25 +193,25 @@ theme.tokenColors = [
     {
         scope: 'markup.inserted',
         settings: {
-            foreground: '#b5cea8'
+            foreground: colors.numeric
         }
     },
     {
         scope: 'markup.deleted',
         settings: {
-            foreground: '#ce9178'
+            foreground: colors.string
         }
     },
     {
         scope: 'markup.changed',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'punctuation.definition.quote.begin.markdown',
         settings: {
-            foreground: '#6A9955'
+            foreground: colors.comment
         }
     },
     {
@@ -218,7 +223,7 @@ theme.tokenColors = [
     {
         scope: 'markup.inline.raw',
         settings: {
-            foreground: '#ce9178'
+            foreground: colors.string
         }
     },
     {
@@ -234,43 +239,43 @@ theme.tokenColors = [
             'entity.name.function.preprocessor'
         ],
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'meta.preprocessor.string',
         settings: {
-            foreground: '#ce9178'
+            foreground: colors.string
         }
     },
     {
         scope: 'meta.preprocessor.numeric',
         settings: {
-            foreground: '#b5cea8'
+            foreground: colors.numeric
         }
     },
     {
         scope: 'meta.structure.dictionary.key.python',
         settings: {
-            foreground: '#9cdcfe'
+            foreground: colors.variable
         }
     },
     {
         scope: 'meta.diff.header',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'storage',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'storage.type',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
@@ -279,7 +284,7 @@ theme.tokenColors = [
             'keyword.operator.noexcept'
         ],
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
@@ -288,19 +293,19 @@ theme.tokenColors = [
             'meta.embedded.assembly'
         ],
         settings: {
-            foreground: '#ce9178'
+            foreground: colors.string
         }
     },
     {
         scope: 'string.tag',
         settings: {
-            foreground: '#ce9178'
+            foreground: colors.string
         }
     },
     {
         scope: 'string.value',
         settings: {
-            foreground: '#ce9178'
+            foreground: colors.string
         }
     },
     {
@@ -317,7 +322,7 @@ theme.tokenColors = [
             'punctuation.section.embedded'
         ],
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
@@ -326,7 +331,7 @@ theme.tokenColors = [
             'meta.template.expression'
         ],
         settings: {
-            foreground: '#d4d4d4'
+            foreground: colors.foreground
         }
     },
     {
@@ -339,25 +344,25 @@ theme.tokenColors = [
             'source.coffee.embedded'
         ],
         settings: {
-            foreground: '#9cdcfe'
+            foreground: colors.variable
         }
     },
     {
         scope: 'keyword',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'keyword.control',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'keyword.operator',
         settings: {
-            foreground: '#d4d4d4'
+            foreground: colors.foreground
         }
     },
     {
@@ -374,13 +379,13 @@ theme.tokenColors = [
             'keyword.operator.wordlike'
         ],
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'keyword.other.unit',
         settings: {
-            foreground: '#b5cea8'
+            foreground: colors.numeric
         }
     },
     {
@@ -389,19 +394,19 @@ theme.tokenColors = [
             'punctuation.section.embedded.end.php'
         ],
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'support.function.git-rebase',
         settings: {
-            foreground: '#9cdcfe'
+            foreground: colors.variable
         }
     },
     {
         scope: 'constant.sha.git-rebase',
         settings: {
-            foreground: '#b5cea8'
+            foreground: colors.numeric
         }
     },
     {
@@ -412,14 +417,14 @@ theme.tokenColors = [
             'storage.modifier.package.java'
         ],
         settings: {
-            foreground: '#d4d4d4'
+            foreground: colors.foreground
         }
     },
     {
         name: 'this.self',
         scope: 'variable.language',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
@@ -432,7 +437,7 @@ theme.tokenColors = [
             'entity.name.operator.custom-literal'
         ],
         settings: {
-            foreground: '#DCDCAA'
+            foreground: colors.function
         }
     },
     {
@@ -473,7 +478,7 @@ theme.tokenColors = [
             'storage.type.primitive.groovy'
         ],
         settings: {
-            foreground: '#4EC9B0'
+            foreground: colors.type
         }
     },
     {
@@ -487,7 +492,7 @@ theme.tokenColors = [
             'entity.other.inherited-class'
         ],
         settings: {
-            foreground: '#4EC9B0'
+            foreground: colors.type
         }
     },
     {
@@ -501,7 +506,7 @@ theme.tokenColors = [
             'entity.name.operator'
         ],
         settings: {
-            foreground: '#C586C0'
+            foreground: colors.control
         }
     },
     {
@@ -514,7 +519,7 @@ theme.tokenColors = [
             'constant.other.placeholder', // placeholders in strings
         ],
         settings: {
-            foreground: '#9CDCFE'
+            foreground: colors.variable
         }
     },
     {
@@ -524,7 +529,7 @@ theme.tokenColors = [
             'variable.other.enummember'
         ],
         settings: {
-            foreground: '#4FC1FF',
+            foreground: colors.constant,
         }
     },
     {
@@ -533,7 +538,7 @@ theme.tokenColors = [
             'meta.object-literal.key'
         ],
         settings: {
-            foreground: '#9CDCFE'
+            foreground: colors.variable
         }
     },
     {
@@ -548,7 +553,7 @@ theme.tokenColors = [
             'support.constant.color'
         ],
         settings: {
-            foreground: '#CE9178'
+            foreground: colors.string
         }
     },
     {
@@ -563,7 +568,7 @@ theme.tokenColors = [
             'support.other.parenthesis.regexp'
         ],
         settings: {
-            foreground: '#CE9178'
+            foreground: colors.string
         }
     },
     {
@@ -583,40 +588,40 @@ theme.tokenColors = [
             'keyword.control.anchor.regexp'
         ],
         settings: {
-            foreground: '#DCDCAA'
+            foreground: colors.function
         }
     },
     {
         scope: 'keyword.operator.quantifier.regexp',
         settings: {
-            foreground: '#d7ba7d'
+            foreground: colors.escape
         }
     },
     {
         scope: 'constant.character',
         settings: {
-            foreground: '#569cd6'
+            foreground: colors.preproc
         }
     },
     {
         scope: 'constant.character.escape',
         settings: {
-            foreground: '#d7ba7d'
+            foreground: colors.escape
         }
     },
     {
         scope: 'entity.name.label',
         settings: {
-            foreground: '#C8C8C8'
+            foreground: colors.label
         }
     }
 ];
 theme.semanticHighlighting = true;
 theme.semanticTokenColors = {
-    newOperator: '#C586C0',
-    stringLiteral: '#ce9178',
-    customLiteral: '#DCDCAA',
-    numberLiteral: '#b5cea8',
+    newOperator: colors.control,
+    stringLiteral: colors.string,
+    customLiteral: colors.function,
+    numberLiteral: colors.numeric,
 };
 
 for (const token of theme.tokenColors) {

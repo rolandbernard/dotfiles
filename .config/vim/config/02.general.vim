@@ -15,7 +15,7 @@ set viewoptions=cursor,folds,slash,unix
 
 set termguicolors
 set background=dark
-colorscheme plastic
+colorscheme simplydark
 match Whitespace /\s/
 
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·

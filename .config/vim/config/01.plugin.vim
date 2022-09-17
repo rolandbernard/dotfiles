@@ -21,7 +21,6 @@ if !exists('g:vscode')
     if has('nvim')
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
         Plug 'nvim-treesitter/playground'
-        " Plug 'romgrk/nvim-treesitter-context'
         Plug 'romgrk/barbar.nvim'
     else
         Plug 'bling/vim-bufferline'
