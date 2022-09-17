@@ -10,6 +10,13 @@ mkdir -p $HOME/{dev,dev-uni,dev-bot}
 mv . $HOME/dev
 bash scripts/restore.sh
 
+# Install vscode-theme
+cd vscode-theme
+npm install
+npm run package
+code --install-extension simplydark-0.0.1.vsix
+cd ..
+
 # Other config
 sudo systemctl disable abrt-journal-core.service
 sudo systemctl disable abrt-oops.service

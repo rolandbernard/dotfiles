@@ -106,7 +106,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color    $text-color     
 
 # Bar settings
 bar { 
-    status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#   status_command i3blocks -c ~/.config/i3/i3blocks.conf
     colors {
         background $inactive-bg-color
         separator #757575
@@ -140,6 +140,25 @@ bindsym $mod+m [instance="math"] scratchpad show; [instance="math"] move positio
 # Background and compositor
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
 exec_always --no-startup-id picom -b
+
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+
+for_window [class="yakuake"] floating enable
+for_window [class="systemsettings"] floating enable
+for_window [class="plasmashell"] floating enable;
+for_window [class="Plasma"] floating enable
+for_window [title="plasma-desktop"] floating enable
+for_window [title="win7"] floating enable
+for_window [class="krunner"] floating enable
+for_window [class="Kmix"] floating enable
+for_window [class="Klipper"] floating enable
+for_window [class="Plasmoidviewer"] floating enable
+for_window [class="(?i)*nextcloud*"] floating disable
+for_window [class="plasmashell" window_type="notification"] move position 70 ppt 81 ppt
+no_focus [class="plasmashell" window_type="notification"]
+
+for_window [title="Desktop — Plasma"] kill; floating enable
 
 for_window [window_role="About"] floating enable
 for_window [title="Microsoft Teams Notification"] floating enable

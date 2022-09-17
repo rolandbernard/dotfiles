@@ -8,6 +8,5 @@ for step in scripts/setup/* ; do
     . $step
 done
 
-# Reboot and run manual steps after staring
-reboot
+# Reboot and run manual steps after this
 
