@@ -1,23 +1,30 @@
 {
-  "name": "simplydark",
-  "displayName": "SimplyDark",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.71.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "SimplyDark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/theme.json"
-      }
-    ]
-  },
-  "dependencies": {
-    "vscode-theme-generator": "^0.2.1"
-  }
+    "name": "simplydark",
+    "repository": "https://github.com/rolandbernard/dotfiles",
+    "displayName": "SimplyDark",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.71.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "SimplyDark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/simplydark.json"
+            }
+        ]
+    },
+    "scripts": {
+        "package": "npm run compile && vsce package",
+        "compile": "node gen-theme.js",
+        "debug": "npm run compile && code --extensionDevelopmentPath=$(realpath .)"
+    },
+    "devDependencies": {
+        "vscode-theme-generator": "^0.2.1",
+        "vsce": "^2.11.0"
+    }
 }
