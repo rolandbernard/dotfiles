@@ -3,11 +3,11 @@
 
 cd $(dirname $0)/..
 
-cp -r .config ~/
-cp .bashrc.d ~/
-cp .bashrc ~/
-cp .clang-format ~/
-cp .gitconfig ~/
-cp .inputrc ~/
-cp .tmux.conf ~/
+cp -r config/.bashrc.d ~/
+cp -r config/.config ~/
+cp config/.bashrc ~/
+cp config/.clang-format ~/
+cp config/.gitconfig ~/
+cp config/.inputrc ~/
+cp config/.tmux.conf ~/
 

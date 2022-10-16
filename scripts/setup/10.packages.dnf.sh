@@ -9,7 +9,7 @@ fastestmirror=True
 max_parallel_downloads=10
 deltarpm=True" | sudo tee -a /etc/dnf/dnf.conf
 
-if [ "$HOST_NAME" == "rolandlinux" -o  "$HOST_NAME" == "rolandvm" ]
+if [ "$HOST_NAME" == "rolandlinux" -o "$HOST_NAME" == "rolandvm" ]
 then
 
 # Add RPM Fusion repositories
@@ -56,7 +56,7 @@ sudo dnf -y install \
     @virtualization guestfs-tools \
     @fonts ibm-plex-fonts-all \
     tlp tlp-rdw \
-    firefox ksysguard okular dolphin code teams kitty bash-completion \
+    firefox okular dolphin code teams kitty bash-completion \
     neovim tmux gimp inkscape ImageMagick discord
 
 sudo dnf -y group upgrade --with-optional Multimedia

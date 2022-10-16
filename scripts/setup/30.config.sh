@@ -3,11 +3,11 @@
 # Remove directories like Download/Desktop/...
 rm -rf $HOME/{Downloads,Desktop,Templates,Public,Documents,Music,Pictures,Videos}
 mkdir -p $HOME/{downloads,public,documents}
-mkdir -p $HOME/x/{desktop,templates,music,pictures,videos}
+mkdir -p $HOME/documents/{desktop,templates,music,pictures,videos}
 mkdir -p $HOME/{dev,dev-uni,dev-bot}
 
 # Copy config
-mv . $HOME/dev
+mv ../dotfiles $HOME/dev
 bash scripts/restore.sh
 
 # Install vscode-theme
