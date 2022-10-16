@@ -4,7 +4,7 @@ const path = require('path');
 const { generateTheme } = require('vscode-theme-generator');
 
 const colors = {
-    background: '#17161c',
+    background: '#1d2023',
     foreground: '#d4d4d4',
     red: '#ff5967',
     green: '#98c379',
@@ -53,6 +53,9 @@ const colorSet = {
     terminal: { },
     overrides: {
         'panel.background': colors.background,
+        'activityBar.background': '#2a2e32',
+        "scrollbar.shadow": "#ffffff00",
+        "widget.shadow": "#ffffff00",
     },
 };
 

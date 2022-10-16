@@ -5,7 +5,7 @@ then
 
 WM=$(wmctrl -m | awk '/^Name: (.*)$/ { print $2 }')
 
-if [ -a "$VM" == "KWin" ]
+if [ "$VM" == "KWin" ]
 then
 
 # kde+i3 config
@@ -16,7 +16,7 @@ Wants=plasma-kcminit.service
 PartOf=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/i3
+ExecStart=env GTK_DATA_PREFIX= /usr/bin/i3
 Slice=session.slice
 Restart=on-failure" | tee $HOME/.config/systemd/user/i3.service
 

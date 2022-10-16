@@ -10,6 +10,9 @@ mkdir -p $HOME/{dev,dev-uni,dev-bot}
 mv ../dotfiles $HOME/dev
 bash scripts/restore.sh
 
+# Install vim plugins
+nvim --headless +PlugInstall +qa
+
 # Install vscode-theme
 cd vscode-theme
 npm install

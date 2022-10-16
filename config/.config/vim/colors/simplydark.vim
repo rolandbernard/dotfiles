@@ -26,8 +26,8 @@ fun! <sid>hi(group, fg, bg, attr, sp)
 endfun
 
 let s:foreground = '#d4d4d4'
-let s:background = '#17161c'
-let s:backgroundline = '#1c1c1f'
+let s:background = '#1d2023'
+let s:backgroundline = '#202326'
 let s:red = '#ff5967'
 let s:green = '#98c379'
 let s:yellow = '#e5c07b'
@@ -45,7 +45,7 @@ let s:constant = '#4fc1ff'
 let s:label = '#c8c8c8'
 let s:none = 'NONE'
 let s:punctuation = '#bbbbbb'
-let s:dark = '#3c3b41'
+let s:dark = '#353a3f'
 let s:black = '#000000'
 
 call <sid>hi('Normal', s:foreground, s:background, 'none', {})

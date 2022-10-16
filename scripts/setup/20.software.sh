@@ -8,5 +8,9 @@ then
 mkdir -p $HOME/.local/share/applications
 wget -qO- https://raw.githubusercontent.com/rolandbernard/marvin/master/install.sh | bash
 
+# Install Nerd Fonts
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts $HOME/dev/nerd-fonts
+bash $HOME/dev/nerd-fonts/install.sh IBMPlexMono
+
 fi
 

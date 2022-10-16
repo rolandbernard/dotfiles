@@ -3,11 +3,19 @@
 
 cd $(dirname $0)/..
 
-cp -r config/.bashrc.d ~/
-cp -r config/.config ~/
-cp config/.bashrc ~/
-cp config/.clang-format ~/
-cp config/.gitconfig ~/
-cp config/.inputrc ~/
-cp config/.tmux.conf ~/
+cp -r config/.bashrc.d $HOME/
+cp -r config/.config $HOME/
+cp -r config/.local $HOME/
+cp config/.bashrc $HOME/
+cp config/.clang-format $HOME/
+cp config/.gitconfig $HOME/
+cp config/.inputrc $HOME/
+cp config/.tmux.conf $HOME/
+cp config/.gtkrc-2.0 $HOME/
+cp config/.gtkrc-2.0-kde4 $HOME/
+
+rm -f $HOME/.config/nvim
+ln -s $HOME/.config/vim $HOME/.config/nvim
+rm -f $HOME/.vimrc
+ln -s $HOME/.config/vim/init.vim $HOME/.vimrc
 

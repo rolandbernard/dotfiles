@@ -30,7 +30,7 @@ name=Microsoft Teams
 baseurl=https://packages.microsoft.com/yumrepos/ms-teams
 enabled=1
 gpgcheck=1
-gpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee -a /etc/yum.repos.d/ms-teams.repo
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee -a /etc/yum.repos.d/teams.repo
 
 fi
 
@@ -57,7 +57,7 @@ sudo dnf -y install \
     @fonts ibm-plex-fonts-all \
     tlp tlp-rdw \
     firefox okular dolphin code teams kitty bash-completion \
-    neovim tmux gimp inkscape ImageMagick discord
+    neovim tmux gimp inkscape ImageMagick discord python-neovim
 
 sudo dnf -y group upgrade --with-optional Multimedia
 
@@ -66,7 +66,7 @@ then
 
 sudo dnf -y install \
     @c-development git llvm-devel clang lld nodejs npm rust cargo @python-science \
-    bash-completion neovim tmux
+    bash-completion neovim tmux python-neovim
 
 fi
 
