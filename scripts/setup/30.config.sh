@@ -13,6 +13,9 @@ bash scripts/restore.sh
 # Install vim plugins
 nvim --headless +PlugInstall +qa
 
+if [ "$HOST_NAME" == "rolandlinux" -o  "$HOST_NAME" == "rolandvm" ]
+then
+
 # Install vscode-theme
 cd vscode-theme
 npm install
@@ -31,3 +34,4 @@ sudo systemctl enable tlp
 sudo plymouth-set-default-theme details
 sudo dracut -f
 
+fi

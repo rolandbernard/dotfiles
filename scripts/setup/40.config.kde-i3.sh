@@ -5,7 +5,7 @@ then
 
 WM=$(wmctrl -m | awk '/^Name: (.*)$/ { print $2 }')
 
-if [ "$VM" == "KWin" ]
+if [ "$WM" == "KWin" ]
 then
 
 # kde+i3 config

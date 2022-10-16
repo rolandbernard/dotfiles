@@ -21,5 +21,6 @@ if [ -d ~/.bashrc.d ]; then
 	done
 fi
 
+unset -f command_not_found_handle
 unset rc
 

@@ -13,4 +13,3 @@ git clone --depth 1 https://github.com/ryanoasis/nerd-fonts $HOME/dev/nerd-fonts
 bash $HOME/dev/nerd-fonts/install.sh IBMPlexMono
 
 fi
-
