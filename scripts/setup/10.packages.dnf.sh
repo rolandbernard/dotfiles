@@ -57,7 +57,7 @@ sudo dnf -y install \
     @fonts ibm-plex-fonts-all \
     tlp tlp-rdw \
     firefox okular dolphin code teams kitty bash-completion neovim tmux gimp \
-    inkscape ImageMagick discord remmina python-neovim
+    inkscape ImageMagick discord remmina python-neovim htop rustfmt rust-analyzer
 
 sudo dnf -y group upgrade --with-optional Multimedia
 

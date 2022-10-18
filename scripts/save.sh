@@ -18,7 +18,7 @@ cp $HOME/.gtkrc-2.0-kde4 config/
 cp $HOME/.inputrc config/
 cp $HOME/.tmux.conf config/
 
-cp $HOME/.bashrc.d/* $HOME/
+cp $HOME/.bashrc.d/* config/.bashrc.d/
 cp $HOME/.local/share/color-schemes/* config/.local/share/color-schemes/
 cp $HOME/.config/{breezerc,dolphinrc,gtkrc,gtkrc-2.0} config/.config/
 cp $HOME/.config/{kaccessrc,katerc,katevirc,kcminputrc,kded5rc,kdeglobals,kglobalshortcutsrc} config/.config/
