@@ -56,8 +56,8 @@ sudo dnf -y install \
     @virtualization guestfs-tools \
     @fonts ibm-plex-fonts-all \
     tlp tlp-rdw \
-    firefox okular dolphin code teams kitty bash-completion \
-    neovim tmux gimp inkscape ImageMagick discord python-neovim
+    firefox okular dolphin code teams kitty bash-completion neovim tmux gimp \
+    inkscape ImageMagick discord remmina python-neovim
 
 sudo dnf -y group upgrade --with-optional Multimedia
 

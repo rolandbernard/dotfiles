@@ -1,5 +1,5 @@
-
-# Copy config form the system to this repository
+#!/bin/bash
+# Copy config form this repository to the system
 
 cd $(dirname $0)/..
 

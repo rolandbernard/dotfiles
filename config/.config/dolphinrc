@@ -8,6 +8,7 @@ PreviewSize=16
 
 [DetailsMode]
 PreviewSize=16
+SidePadding=0
 
 [General]
 Version=202
@@ -15,6 +16,9 @@ ViewPropsTimestamp=2022,10,16,15,50,52.838
 
 [IconsMode]
 PreviewSize=16
+
+[InformationPanel]
+previewsShown=false
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
@@ -37,3 +41,7 @@ Plugins=audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvut
 
 [Search]
 Location=Everywhere
+
+[Toolbar mainToolBar]
+IconSize=16
+ToolButtonStyle=IconOnly
