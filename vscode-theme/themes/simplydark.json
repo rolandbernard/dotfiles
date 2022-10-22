@@ -610,7 +610,7 @@
         "statusBarItem.hoverBackground": "#FFFFFF1a",
         "statusBarItem.remoteBackground": "#345d7f",
         "statusBarItem.remoteForeground": "#ffffff",
-        "titleBar.activeBackground": "#17191c",
+        "titleBar.activeBackground": "#2a2e32",
         "pickerGroup.border": "#FFFFFF1a",
         "debugToolBar.background": "#282c31",
         "editorBracketHighlight.foreground1": "#41749e",

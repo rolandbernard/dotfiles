@@ -84,6 +84,7 @@ AppletOrder=25;5;7;19;24
 [Containments][27]
 ItemGeometries-1916x972=
 ItemGeometries-1920x1200=
+ItemGeometries-958x1013=
 ItemGeometriesHorizontal=
 activityId=e1e22a16-b242-4395-beec-95091817f16b
 formfactor=0
@@ -95,6 +96,20 @@ wallpaperplugin=org.kde.image
 
 [Containments][27][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.jpg
+
+[Containments][28]
+ItemGeometries-958x1013=
+ItemGeometriesVertical=
+activityId=e1e22a16-b242-4395-beec-95091817f16b
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][28][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/Next/contents/images/1280x1024.jpg
 
 [Containments][8]
 activityId=
@@ -150,14 +165,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][21][Configuration]
-PreloadWeight=65
+PreloadWeight=70
 
 [Containments][8][Applets][22]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][22][Configuration]
-PreloadWeight=60
+PreloadWeight=65
 
 [Containments][8][Applets][23]
 immutability=1
@@ -166,12 +181,19 @@ plugin=org.kde.kscreen
 [Containments][8][Applets][23][Configuration]
 PreloadWeight=55
 
+[Containments][8][Applets][29][Configuration]
+PreloadWeight=67
+
 [Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][9][Configuration]
-PreloadWeight=60
+PreloadWeight=80
+
+[Containments][8][Applets][9][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][8][ConfigDialog]
 DialogHeight=540

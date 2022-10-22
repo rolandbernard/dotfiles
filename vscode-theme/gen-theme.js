@@ -53,9 +53,10 @@ const colorSet = {
     terminal: { },
     overrides: {
         'panel.background': colors.background,
+        'titleBar.activeBackground': '#2a2e32',
         'activityBar.background': '#2a2e32',
-        "scrollbar.shadow": "#ffffff00",
-        "widget.shadow": "#ffffff00",
+        'scrollbar.shadow': '#ffffff00',
+        'widget.shadow': '#ffffff00',
     },
 };
 

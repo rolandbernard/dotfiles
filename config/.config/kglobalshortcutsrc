@@ -1,6 +1,7 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-7809ae96-6d4d-42ac-be2e-3363f59e9d88=none,none,Switch to activity "Default"
+switch-to-activity-e1e22a16-b242-4395-beec-95091817f16b=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
 Switch to Next Keyboard Layout=Meta+Alt+K,none,Switch to Next Keyboard Layout

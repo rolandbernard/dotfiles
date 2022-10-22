@@ -135,6 +135,9 @@ ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
+[DialogIcons]
+Size=16
+
 [DirSelect Dialog]
 DirSelectDialog Size=844,598
 History Items[$e]=file:$HOME/dotfiles
@@ -181,8 +184,17 @@ Sort reversed=false
 Speedbar Width=138
 View Style=DetailTree
 
+[MainToolbarIcons]
+Size=16
+
+[PanelIcons]
+Size=16
+
 [PreviewSettings]
 MaximumRemoteSize=0
+
+[ToolbarIcons]
+Size=16
 
 [WM]
 activeBackground=42,46,50
