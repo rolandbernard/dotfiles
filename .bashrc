@@ -84,6 +84,10 @@ set_prompt () {
         PS1+="\[\e[91m\]"
     fi
     PS1+="$(timer_format) \[\e[94m\]\W\[\e[m\] "
+    if [ -n "$CONDA_DEFAULT_ENV" -a "$CONDA_DEFAULT_ENV" != "base" ]
+    then
+        PS1+="\[\e[90m\][$CONDA_DEFAULT_ENV]\[\e[m\] "
+    fi
     if git branch --show-current &> /dev/null
     then
         PS1+="\[\e[34m\]{$(git branch --show-current)}\[\e[m\] "
@@ -93,4 +97,26 @@ set_prompt () {
 
 trap 'timer_start' DEBUG
 PROMPT_COMMAND='set_prompt $? ; unset timer_start'
+
+open_conda() {
+  if [ -z "$CONDA_INITIALIZED" ]
+  then
+    __conda_setup="$('/home/roland/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null); conda $@"
+    if [ $? -eq 0 ]; then
+        eval "$__conda_setup"
+    else
+        if [ -f "/home/roland/anaconda3/etc/profile.d/conda.sh" ]; then
+            . "/home/roland/anaconda3/etc/profile.d/conda.sh"
+        else
+            export PATH="/home/roland/anaconda3/bin:$PATH"
+        fi
+    fi
+    unset __conda_setup
+    CONDA_INITIALIZED=YES
+  else
+    conda $@
+  fi
+}
+
+alias conda='open_conda'
 

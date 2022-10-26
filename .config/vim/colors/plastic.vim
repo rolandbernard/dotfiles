@@ -181,6 +181,8 @@ hi link CocSemClass Type
 " - CocSemMacro
 " - CocSemComment
 
+hi CocMenuSel ctermbg=237 guibg=#13354A
+
 " HTML
 call <sid>hi('htmlTag', s:punctuation, s:none, 'none', {})
 hi link htmlEndTag htmlTag

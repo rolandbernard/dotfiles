@@ -37,7 +37,6 @@
     "files.insertFinalNewline": true,
     "editor.lineNumbers": "relative",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "clangd.inactiveRegionOpacity": 0.55,
     "terminal.external.linuxExec": "kitty",
     "editor.renderWhitespace": "all",
     "git.confirmSync": false,
@@ -78,5 +77,22 @@
     "hexeditor.columnWidth": 32,
     "hexeditor.showDecodedText": true,
     "hexeditor.defaultEndianness": "little",
-    "hexeditor.inspectorType": "aside"
+    "hexeditor.inspectorType": "aside",
+    "javascript.format.enable": false,
+    "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.foldingMaximumRegions": 50000,
+    "settingsSync.ignoredExtensions": [
+        "llvm-vs-code-extensions.vscode-clangd"
+    ],
+    "cSpell.userWords": [
+        "simplydark"
+    ],
+    "terminal.integrated.inheritEnv": false,
+    "python.analysis.typeCheckingMode": "basic",
+    "pddlParser.executableOrService": "/home/roland/.config/Code/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/Parser",
+    "pddl.validatorPath": "/home/roland/.config/Code/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/Validate",
+    "pddl.valueSeqPath": "/home/roland/.config/Code/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/ValueSeq",
+    "pddl.valStepPath": "/home/roland/.config/Code/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/ValStep",
 }

@@ -37,6 +37,7 @@ if !exists('g:vscode')
     \   'coc-xml',
     \   'coc-yaml',
     \   'coc-yank',
+    \   'coc-ltex',
     \ ]
 
     let g:coc_snippet_next = '<tab>'
