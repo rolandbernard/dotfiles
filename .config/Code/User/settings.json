@@ -95,4 +95,5 @@
     "pddl.validatorPath": "/home/roland/.config/Code/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/Validate",
     "pddl.valueSeqPath": "/home/roland/.config/Code/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/ValueSeq",
     "pddl.valStepPath": "/home/roland/.config/Code/User/globalStorage/jan-dolejsi.pddl/val/Val-20210401.1-Linux/bin/ValStep",
+    "rust-analyzer.rustfmt.rangeFormatting.enable": true,
 }
