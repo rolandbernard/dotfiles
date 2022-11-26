@@ -4,8 +4,8 @@
 cd $(dirname $0)/..
 
 mkdir -p config/.bashrc.d
-mkdir -p config/.mozilla/firefox/*.default*/chrome
-mkdir -p config/.config/{gtk-3.0,gtk-4.0,i3,kdedefaults,kitty,marvin}
+mkdir -p config/.mozilla/firefox/default/chrome
+mkdir -p config/.config/{gtk-3.0,gtk-4.0,i3,kdedefaults,kitty,marvin,nitrogen,htop}
 mkdir -p config/.config/Code/User
 mkdir -p config/.config/vim/{colors,config,ftdetect,syntax}
 mkdir -p config/.config/vim/autoload/lightline/colorscheme
@@ -42,4 +42,5 @@ cp $HOME/.config/vim/config/* config/.config/vim/config/
 cp $HOME/.config/vim/ftdetect/* config/.config/vim/ftdetect/
 cp $HOME/.config/vim/syntax/* config/.config/vim/syntax/
 cp $HOME/.config/nitrogen/bg-saved.cfg config/.config/nitrogen/
+cp $HOME/.config/htop/htoprc config/.config/htop/
 
