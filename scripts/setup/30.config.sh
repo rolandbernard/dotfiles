@@ -4,7 +4,7 @@
 rm -rf $HOME/{Downloads,Desktop,Templates,Public,Documents,Music,Pictures,Videos}
 mkdir -p $HOME/{downloads,public,documents}
 mkdir -p $HOME/documents/{desktop,templates,music,pictures,videos}
-mkdir -p $HOME/{dev,dev-uni,dev-bot}
+mkdir -p $HOME/dev/{uni,bot}
 
 # Copy config
 mv ../dotfiles $HOME/dev

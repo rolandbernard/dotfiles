@@ -1,9 +1,9 @@
 
 [includeIf "gitdir:~/dev/"]
 	path = .gitconfig-dev
-[includeIf "gitdir:~/dev-uni/"]
+[includeIf "gitdir:~/dev/uni/"]
 	path = .gitconfig-uni
-[includeIf "gitdir:~/dev-bot/"]
+[includeIf "gitdir:~/dev/bot/"]
 	path = .gitconfig-bot
 
 [filter "lfs"]

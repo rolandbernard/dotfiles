@@ -4,6 +4,7 @@
 cd $(dirname $0)/..
 
 mkdir -p config/.bashrc.d
+mkdir -p config/.mozilla/firefox/*.default*/chrome
 mkdir -p config/.config/{gtk-3.0,gtk-4.0,i3,kdedefaults,kitty,marvin}
 mkdir -p config/.config/Code/User
 mkdir -p config/.config/vim/{colors,config,ftdetect,syntax}
@@ -18,6 +19,7 @@ cp $HOME/.gtkrc-2.0-kde4 config/
 cp $HOME/.inputrc config/
 cp $HOME/.tmux.conf config/
 
+cp $HOME/.mozilla/firefox/*.default*/chrome/userChrome.css config/.mozilla/firefox/*.default*/chrome/
 cp $HOME/.bashrc.d/* config/.bashrc.d/
 cp $HOME/.local/share/color-schemes/* config/.local/share/color-schemes/
 cp $HOME/.config/{breezerc,dolphinrc,gtkrc,gtkrc-2.0} config/.config/

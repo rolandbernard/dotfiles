@@ -1,6 +1,6 @@
 {
     "telemetry.telemetryLevel": "off",
-    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
     "editor.suggestSelection": "first",
     "files.exclude": {
         "**/.classpath": true,
@@ -49,16 +49,8 @@
     ],
     "java.configuration.runtimes": [
         {
-            "name": "JavaSE-1.8",
-            "path": "/usr/lib/jvm/java-8-openjdk",
-        },
-        {
-            "name": "JavaSE-11",
-            "path": "/usr/lib/jvm/jdk-11.0.2",
-        },
-        {
-            "name": "JavaSE-17",
-            "path": "/usr/lib/jvm/default",
+            "name": "JavaSE-19",
+            "path": "/usr/lib/jvm/java",
             "default": true
         },
     ],
