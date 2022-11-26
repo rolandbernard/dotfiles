@@ -16,7 +16,7 @@ if !exists('g:vscode')
         \     ]
         \   },
         \   'component_function': {
-        \       'gitbranch': 'fugitive#head',
+        \       'gitbranch': 'FugitiveHead',
         \       'coc_status': 'CocStatus',
         \   },
         \ }

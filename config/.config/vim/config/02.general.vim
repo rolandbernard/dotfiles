@@ -1,6 +1,10 @@
 
 if !exists('g:vscode')
 
+func! polyglot#init#is_disabled(caller, name, path)
+  return has_key(g:polyglot_is_disabled, a:name)
+endfunc
+
 syntax on
 
 set encoding=utf-8
@@ -66,4 +70,5 @@ set nowritebackup
 set shortmess+=c
 
 set textwidth=100
+set formatoptions-=t
 

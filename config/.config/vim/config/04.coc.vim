@@ -2,12 +2,12 @@
 if !exists('g:vscode')
 
     let g:coc_global_extensions = [
-    \   'coc-angular',
     \   'coc-calc',
     \   'coc-clangd',
     \   'coc-cmake',
     \   'coc-css',
     \   'coc-cssmodules',
+    \   'coc-deno',
     \   'coc-diagnostic',
     \   'coc-emmet',
     \   'coc-explorer',
@@ -23,7 +23,7 @@ if !exists('g:vscode')
     \   'coc-lit-html',
     \   'coc-phpls',
     \   'coc-pyright',
-    \   'coc-rls',
+    \   'coc-rust-analyzer',
     \   'coc-sh',
     \   'coc-snippets',
     \   'coc-spell-checker',
@@ -37,6 +37,7 @@ if !exists('g:vscode')
     \   'coc-xml',
     \   'coc-yaml',
     \   'coc-yank',
+    \   'coc-ltex',
     \ ]
 
     let g:coc_snippet_next = '<tab>'
@@ -74,13 +75,13 @@ if !exists('g:vscode')
 
     nmap <silent> <C-t> :CocCommand explorer<CR>
 
-    imap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-    imap <silent><expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-    imap <silent><expr> <c-space> pumvisible() ? coc#_select_confirm() : coc#refresh()
+    imap <silent><expr> <Tab> coc#pum#visible() ? "\<C-n>" : "\<Tab>"
+    imap <silent><expr> <S-Tab> coc#pum#visible() ? "\<C-p>" : "\<S-Tab>"
+    imap <silent><expr> <c-space> coc#pum#visible() ? coc#_select_confirm() : coc#refresh()
     if has('nvim')
-        imap <silent><expr> <c-space> pumvisible() ? coc#_select_confirm() : coc#refresh()
+        imap <silent><expr> <c-space> coc#pum#visible() ? coc#_select_confirm() : coc#refresh()
     else
-        imap <silent><expr> <c-@> pumvisible() ? coc#_select_confirm() : coc#refresh()
+        imap <silent><expr> <c-@> coc#pum#visible() ? coc#_select_confirm() : coc#refresh()
     endif
 
     autocmd CursorHold * silent call CocActionAsync('highlight')

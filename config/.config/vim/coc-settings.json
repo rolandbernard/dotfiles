@@ -1,6 +1,5 @@
 {
-    "languageserver": {
-    },
+    "languageserver": {},
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-1.8",
@@ -19,62 +18,131 @@
             "path": "/usr/lib/jvm/jdk-13"
         },
         {
-            "name": "JavaSE-15",
-            "path": "/usr/lib/jvm/java-17-openjdk",
+            "name": "JavaSE-17",
+            "path": "/usr/lib/jvm/default",
             "default": true
         }
     ],
-    "pairs.enableCharacters": ["(", "[", "{"],
-    "rust-client.channel":"stable",
-    "clangd.semanticHighlighting": false,
+    "semanticTokens.filetypes": [
+        "*"
+    ],
+    "clangd.arguments": ["-header-insertion=never"],
     "clangd.path": "/opt/llvm/bin/clangd",
+    "clangd.inlayHints.enable": false,
+    "rust-analyzer.inlayHints.enable": false,
     "explorer.openAction.relativePath": true,
+    "inlayHint.filetypes": [],
     "explorer.width": 30,
     "explorer.sources": [
-        { "name": "buffer", "expand": false },
-        { "name": "file", "expand": true }
+        {
+            "name": "buffer",
+            "expand": false
+        },
+        {
+            "name": "file",
+            "expand": true
+        }
     ],
     "explorer.icon.enableNerdfont": true,
     "explorer.icon.source": "vim-devicons",
     "explorer.file.root.template": "[icon] [root & 1][git & 1][hidden & 1][fullpath]",
     "explorer.file.hiddenRules": {
-        "extensions": [ ],
-        "filenames": [ ],
-        "patternMatches": [ ]
+        "extensions": [],
+        "filenames": [],
+        "patternMatches": []
     },
     "explorer.keyMappings.global": {
         "i": false,
         "*": "toggleSelection",
         "<tab>": "actionMenu",
-        "gk": ["wait", "expandablePrev"],
-        "gj": ["wait", "expandableNext"],
-        "h": ["wait", "collapse"],
-        "<left>": ["wait", "collapse"],
-        "l": ["wait", "expandable?", "expand", "open"],
-        "<right>": ["wait", "expandable?", "expand", "open"],
-        "J": ["wait", "toggleSelection", "normal:j"],
-        "K": ["wait", "toggleSelection", "normal:k"],
-        "gl": ["wait", "expand:recursive"],
-        "gh": ["wait", "collapse:recursive"],
-        "<2-LeftMouse>": [
+        "gk": [
+            "wait",
+            "expandablePrev"
+        ],
+        "gj": [
+            "wait",
+            "expandableNext"
+        ],
+        "h": [
+            "wait",
+            "collapse"
+        ],
+        "<left>": [
+            "wait",
+            "collapse"
+        ],
+        "l": [
+            "wait",
             "expandable?",
-            ["expanded?", "collapse", "expand"],
+            "expand",
             "open"
         ],
-        "o": ["wait", "expandable?", "cd", "open"],
-        "<cr>": ["wait", "expandable?", ["expanded?", "collapse", "expand"], "open"],
+        "<right>": [
+            "wait",
+            "expandable?",
+            "expand",
+            "open"
+        ],
+        "J": [
+            "wait",
+            "toggleSelection",
+            "normal:j"
+        ],
+        "K": [
+            "wait",
+            "toggleSelection",
+            "normal:k"
+        ],
+        "gl": [
+            "wait",
+            "expand:recursive"
+        ],
+        "gh": [
+            "wait",
+            "collapse:recursive"
+        ],
+        "<2-LeftMouse>": [
+            "expandable?",
+            [
+                "expanded?",
+                "collapse",
+                "expand"
+            ],
+            "open"
+        ],
+        "o": [
+            "wait",
+            "expandable?",
+            "cd",
+            "open"
+        ],
+        "<cr>": [
+            "wait",
+            "expandable?",
+            [
+                "expanded?",
+                "collapse",
+                "expand"
+            ],
+            "open"
+        ],
         "e": "open",
         "s": "open:split",
         "E": "open:vsplit",
         "t": "open:tab",
-        "<bs>": ["wait", "gotoParent"],
-        "gs": ["wait", "reveal:select"],
+        "<bs>": [
+            "wait",
+            "gotoParent"
+        ],
+        "gs": [
+            "wait",
+            "reveal:select"
+        ],
         "il": "preview:labeling",
         "ic": "preview:content",
         "Il": "previewOnHover:toggle:labeling",
         "Ic": "previewOnHover:toggle:content",
         "II": "previewOnHover:disable",
-
         "yp": "copyFilepath",
         "yn": "copyFilename",
         "yy": "copyFile",
@@ -82,42 +150,68 @@
         "p": "pasteFile",
         "df": "delete",
         "dF": "deleteForever",
-
         "a": "addFile",
         "A": "addDirectory",
         "r": "rename",
-
         "zh": "toggleHidden",
         "g<dot>": "toggleHidden",
         "R": "refresh",
-
         "?": "help",
         "q": "quit",
         "X": "systemExecute",
         "gd": "listDrive",
-
         "f": "search",
         "F": "searchRecursive",
-
         "gf": "gotoSource:file",
         "gb": "gotoSource:buffer",
-
-        "[[": ["wait", "sourcePrev"],
-        "]]": ["wait", "sourceNext"],
-
-        "[i": ["wait", "indentPrev"],
-        "]i": ["wait", "indentNext"],
-
-        "[m": ["wait", "markPrev:modified"],
-        "]m": ["wait", "markNext:modified"],
-
-        "[d": ["wait", "markPrev:diagnosticError:diagnosticWarning"],
-        "]d": ["wait", "markNext:diagnosticError:diagnosticWarning"],
-        "[D": ["wait", "markPrev:diagnosticError"],
-        "]D": ["wait", "markNext:diagnosticError"],
-
-        "[c": ["wait", "markPrev:git"],
-        "]c": ["wait", "markNext:git"],
+        "[[": [
+            "wait",
+            "sourcePrev"
+        ],
+        "]]": [
+            "wait",
+            "sourceNext"
+        ],
+        "[i": [
+            "wait",
+            "indentPrev"
+        ],
+        "]i": [
+            "wait",
+            "indentNext"
+        ],
+        "[m": [
+            "wait",
+            "markPrev:modified"
+        ],
+        "]m": [
+            "wait",
+            "markNext:modified"
+        ],
+        "[d": [
+            "wait",
+            "markPrev:diagnosticError:diagnosticWarning"
+        ],
+        "]d": [
+            "wait",
+            "markNext:diagnosticError:diagnosticWarning"
+        ],
+        "[D": [
+            "wait",
+            "markPrev:diagnosticError"
+        ],
+        "]D": [
+            "wait",
+            "markNext:diagnosticError"
+        ],
+        "[c": [
+            "wait",
+            "markPrev:git"
+        ],
+        "]c": [
+            "wait",
+            "markNext:git"
+        ],
         "<<": "gitStage",
         ">>": "gitUnstage"
     },
@@ -125,24 +219,31 @@
         "verilator": {
             "sourceName": "verilator",
             "command": "sh",
-            "rootPatterns": [ ".git" ],
+            "rootPatterns": [
+                ".git"
+            ],
             "isStdout": true,
             "isStderr": false,
-            "args": [ "-c", "verilator --lint-only -Wall $(find . -type f -name '*.v' | xargs -n1 dirname | sort -u | awk '{print \"-I\" $0}') %file 2>&1 | grep %file" ],
+            "args": [
+                "-c",
+                "verilator --lint-only -Wall $(find . -type f -name '*.v' | xargs -n1 dirname | sort -u | awk '{print \"-I\" $0}') %file 2>&1 | grep %file"
+            ],
             "formatLines": 1,
             "formatPattern": [
                 "^(%(Warning|Error)[^:]*:)?\\s*([^:]+):(\\d+):(\\d+)?:?\\s*(\\.\\.\\.)?\\s*(.*)$",
                 {
                     "line": 4,
                     "column": 5,
-                    "message": [7],
+                    "message": [
+                        7
+                    ],
                     "security": 2
                 }
             ],
             "securities": {
-              "Error": "error",
-              "Warning": "warning",
-              "undefined": "info"
+                "Error": "error",
+                "Warning": "warning",
+                "undefined": "info"
             }
         },
         "todo": {
@@ -150,7 +251,9 @@
             "command": "awk",
             "isStdout": true,
             "isStderr": false,
-            "args": ["match($0, \"TODO\") { print NR\":\"RSTART\"-\"RSTART + 4, \"Todo?\" }"],
+            "args": [
+                "match($0, \"TODO\") { print NR\":\"RSTART\"-\"RSTART + 4, \"Todo?\" }"
+            ],
             "formatLines": 1,
             "formatPattern": [
                 "(\\d+):(\\d+)-(\\d+) (.*)",
@@ -158,24 +261,85 @@
                     "line": 1,
                     "column": 2,
                     "endColumn": 3,
-                    "message": [4]
+                    "message": [
+                        4
+                    ]
                 }
             ],
             "securities": {
-              "undefined": "warning"
+                "undefined": "warning"
+            }
+        },
+        "rodac": {
+            "sourceName": "rodac",
+            "command": "./build/release/bin/rodac",
+            "rootPatterns": [
+                ".git"
+            ],
+            "isStdout": false,
+            "isStderr": true,
+            "args": [
+                "%file",
+                "--messages=less-nosource"
+            ],
+            "formatLines": 1,
+            "formatPattern": [
+                "^(error|warning|note|help)[^:]*: ([^:]*):([0-9]*):([0-9]*)(-([0-9]*):([0-9]*))?: (.*)$",
+                {
+                    "sourceName": 2,
+                    "file": 2,
+                    "line": 3,
+                    "column": 4,
+                    "endLine": 6,
+                    "endColumn": 7,
+                    "message": [
+                        8
+                    ],
+                    "security": 1
+                }
+            ],
+            "securities": {
+                "fatal-error": "error",
+                "error": "error",
+                "warning": "warning",
+                "note": "info",
+                "help": "hint"
             }
         }
     },
     "diagnostic-languageserver.filetypes": {
-        "verilog": ["verilator", "todo"],
-        "systemverilog": ["verilator", "todo"],
-        "c": ["todo"],
-        "cpp": ["todo"],
-        "javascript": ["todo"],
-        "typescript": ["todo"],
-        "javascriptreact": ["todo"],
-        "typescriptreact": ["todo"],
-        "html": ["todo"]
+        "roda": [
+            "rodac"
+        ],
+        "verilog": [
+            "verilator",
+            "todo"
+        ],
+        "systemverilog": [
+            "verilator",
+            "todo"
+        ],
+        "c": [
+            "todo"
+        ],
+        "cpp": [
+            "todo"
+        ],
+        "javascript": [
+            "todo"
+        ],
+        "typescript": [
+            "todo"
+        ],
+        "javascriptreact": [
+            "todo"
+        ],
+        "typescriptreact": [
+            "todo"
+        ],
+        "html": [
+            "todo"
+        ]
     },
     "cSpell.enabled": true
 }
