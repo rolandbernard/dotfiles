@@ -84,4 +84,6 @@
     "terminal.integrated.inheritEnv": false,
     "python.analysis.typeCheckingMode": "basic",
     "workbench.colorTheme": "SimplyDark",
+    "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
 }

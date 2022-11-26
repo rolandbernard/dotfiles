@@ -48,7 +48,7 @@ fi
 if [ "$HOST_NAME" == "rolandlinux" -o  "$HOST_NAME" == "rolandvm" ]
 then
 
-sudo dnf -y install \
+sudo dnf -y install --skip-broken \
     i3 picom feh wmctrl xbacklight papirus-icon-theme \
     java-latest-openjdk java-latest-openjdk-devel \
     @multimedia \

@@ -19,7 +19,7 @@ cp $HOME/.gtkrc-2.0-kde4 config/
 cp $HOME/.inputrc config/
 cp $HOME/.tmux.conf config/
 
-cp $HOME/.mozilla/firefox/*.default*/chrome/userChrome.css config/.mozilla/firefox/*.default*/chrome/
+cp $HOME/.mozilla/firefox/*.default-release/chrome/userChrome.css config/.mozilla/firefox/default/chrome/
 cp $HOME/.bashrc.d/* config/.bashrc.d/
 cp $HOME/.local/share/color-schemes/* config/.local/share/color-schemes/
 cp $HOME/.config/{breezerc,dolphinrc,gtkrc,gtkrc-2.0} config/.config/
