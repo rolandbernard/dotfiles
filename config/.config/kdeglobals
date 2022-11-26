@@ -1,0 +1,206 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
+
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enable=
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=false
+Color=112,111,110
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=87,91,95
+BackgroundNormal=49,54,59
+DecorationFocus=104,107,111
+DecorationHover=104,107,111
+ForegroundActive=104,107,111
+ForegroundInactive=161,169,177
+ForegroundLink=104,107,111
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Complementary]
+BackgroundAlternate=30,87,116
+BackgroundNormal=42,46,50
+DecorationFocus=104,107,111
+DecorationHover=104,107,111
+ForegroundActive=104,107,111
+ForegroundInactive=161,169,177
+ForegroundLink=104,107,111
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Header]
+BackgroundAlternate=42,46,50
+BackgroundNormal=42,46,50
+DecorationFocus=104,107,111
+DecorationHover=104,107,111
+ForegroundActive=104,107,111
+ForegroundInactive=161,169,177
+ForegroundLink=104,107,111
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Header][Inactive]
+BackgroundAlternate=42,46,50
+BackgroundNormal=42,46,50
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Selection]
+BackgroundAlternate=80,83,87
+BackgroundNormal=80,83,87
+DecorationFocus=104,107,111
+DecorationHover=104,107,111
+ForegroundActive=104,107,111
+ForegroundInactive=255,255,255
+ForegroundLink=104,107,111
+ForegroundNegative=176,55,69
+ForegroundNeutral=198,92,0
+ForegroundNormal=255,255,255
+ForegroundPositive=23,104,57
+ForegroundVisited=155,89,182
+
+[Colors:Tooltip]
+BackgroundAlternate=42,46,50
+BackgroundNormal=49,54,59
+DecorationFocus=104,107,111
+DecorationHover=104,107,111
+ForegroundActive=104,107,111
+ForegroundInactive=161,169,177
+ForegroundLink=104,107,111
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:View]
+BackgroundAlternate=35,38,41
+BackgroundNormal=27,30,32
+DecorationFocus=104,107,111
+DecorationHover=104,107,111
+ForegroundActive=104,107,111
+ForegroundInactive=161,169,177
+ForegroundLink=104,107,111
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Window]
+BackgroundAlternate=42,46,50
+BackgroundNormal=42,46,50
+DecorationFocus=104,107,111
+DecorationHover=104,107,111
+ForegroundActive=104,107,111
+ForegroundInactive=161,169,177
+ForegroundLink=104,107,111
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[DialogIcons]
+Size=16
+
+[DirSelect Dialog]
+DirSelectDialog Size=844,598
+History Items[$e]=file:$HOME/dotfiles
+
+[General]
+AccentColor=104,107,111
+BrowserApplication=firefox.desktop
+ColorSchemeHash=66964e2a0d87744e628d7ea13cc1fbde09475a45
+TerminalApplication=kitty
+TerminalService=kitty.desktop
+XftHintStyle=hintslight
+XftSubPixel=rgb
+accentColorFromWallpaper=false
+fixed=IBM Plex Mono,10,-1,5,50,0,0,0,0,0
+font=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
+menuFont=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=IBM Plex Sans,8,-1,5,50,0,0,0,0,0
+toolBarFont=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
+
+[Icons]
+Theme=Papirus-Dark
+
+[KDE]
+AnimationDurationFactor=0.125
+LookAndFeelPackage=org.kde.breezedark.desktop
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=138
+View Style=DetailTree
+
+[MainToolbarIcons]
+Size=16
+
+[PanelIcons]
+Size=16
+
+[PreviewSettings]
+MaximumRemoteSize=0
+
+[ToolbarIcons]
+Size=16
+
+[WM]
+activeBackground=42,46,50
+activeBlend=252,252,252
+activeFont=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
+activeForeground=252,252,252
+inactiveBackground=42,46,50
+inactiveBlend=161,169,177
+inactiveForeground=161,169,177

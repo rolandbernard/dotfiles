@@ -1,7 +1,0 @@
-#!/bin/bash
-
-intel-virtual-output
-xrandr --output VIRTUAL2 --auto --above eDP1
-xrandr --output DP1 --auto --rotate left --left-of VIRTUAL2
-feh --bg-fill ~/.config/i3/wallpaper.jpg
-

@@ -1,7 +1,0 @@
-Description='Home WiFi'
-Interface=wlo1
-Connection=wireless
-Security=wpa
-ESSID=MY_ESSID
-IP=dhcp
-Key=MY_PASSWORD

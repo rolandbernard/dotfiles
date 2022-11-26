@@ -1,0 +1,23 @@
+
+[includeIf "gitdir:~/dev/"]
+	path = .gitconfig-dev
+[includeIf "gitdir:~/dev/uni/"]
+	path = .gitconfig-uni
+[includeIf "gitdir:~/dev/bot/"]
+	path = .gitconfig-bot
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[core]
+	editor = nvim
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
