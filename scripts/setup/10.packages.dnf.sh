@@ -49,7 +49,7 @@ if [ "$HOST_NAME" == "rolandlinux" -o  "$HOST_NAME" == "rolandvm" ]
 then
 
 sudo dnf -y install --skip-broken \
-    i3 picom feh wmctrl xbacklight papirus-icon-theme \
+    i3 picom nitrogen wmctrl papirus-icon-theme \
     java-latest-openjdk java-latest-openjdk-devel \
     @multimedia \
     @c-development git llvm-devel clang lld nodejs npm rust cargo @python-science \

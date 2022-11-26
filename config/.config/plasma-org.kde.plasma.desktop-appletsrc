@@ -95,7 +95,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][27][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.jpg
+Image=file:///usr/share/wallpapers/SafeLanding/contents/images/1920x1080.jpg
 
 [Containments][28]
 ItemGeometries-958x1013=
@@ -109,7 +109,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][28][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/Next/contents/images/1280x1024.jpg
+Image=file:///usr/share/wallpapers/SafeLanding/contents/images/1280x1024.jpg
 
 [Containments][8]
 activityId=
