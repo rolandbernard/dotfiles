@@ -21,3 +21,25 @@ openvim () {
 
 export -f openvim
 
+open_conda() {
+  if [ -z "$CONDA_INITIALIZED" ]
+  then
+    __conda_setup="$('/usr/bin/conda' 'shell.bash' 'hook' 2> /dev/null); conda $@"
+    if [ $? -eq 0 ]; then
+        eval "$__conda_setup"
+    else
+        if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+            . "/usr/etc/profile.d/conda.sh"
+        else
+            export PATH="/usr/bin:$PATH"
+        fi
+    fi
+    unset __conda_setup
+    CONDA_INITIALIZED=YES
+  else
+    conda $@
+  fi
+}
+
+alias conda='open_conda'
+
