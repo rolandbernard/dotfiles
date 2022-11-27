@@ -69,25 +69,3 @@ set_prompt () {
 trap 'timer_start' DEBUG
 PROMPT_COMMAND='set_prompt $? ; unset timer_start'
 
-open_conda() {
-  if [ -z "$CONDA_INITIALIZED" ]
-  then
-    __conda_setup="$('/home/roland/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null); conda $@"
-    if [ $? -eq 0 ]; then
-        eval "$__conda_setup"
-    else
-        if [ -f "/home/roland/anaconda3/etc/profile.d/conda.sh" ]; then
-            . "/home/roland/anaconda3/etc/profile.d/conda.sh"
-        else
-            export PATH="/home/roland/anaconda3/bin:$PATH"
-        fi
-    fi
-    unset __conda_setup
-    CONDA_INITIALIZED=YES
-  else
-    conda $@
-  fi
-}
-
-alias conda='open_conda'
-
