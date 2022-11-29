@@ -47,8 +47,10 @@
         "version": "0.4.4",
         "platform": "linux",
         "auto_update": false,
-        "latest": "0.4.4",
-        "can_update": false
+        "latest": "0.4.5",
+        "can_update": true,
+        "checking": false,
+        "updating": false
     },
     "modules": {
         "alias": {
