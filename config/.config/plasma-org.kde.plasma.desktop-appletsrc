@@ -78,7 +78,7 @@ SystrayContainmentId=8
 
 [Containments][2][ConfigDialog]
 DialogHeight=84
-DialogWidth=1916
+DialogWidth=1920
 
 [Containments][2][General]
 AppletOrder=25;5;7;19;24
@@ -128,6 +128,8 @@ immutability=1
 lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
+popupHeight=432
+popupWidth=432
 wallpaperplugin=org.kde.image
 
 [Containments][8][Applets][10]
@@ -152,7 +154,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][8][Applets][13][Configuration]
-PreloadWeight=65
+PreloadWeight=100
 
 [Containments][8][Applets][14][Configuration]
 PreloadWeight=42
