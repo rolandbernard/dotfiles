@@ -150,7 +150,7 @@ for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 1000 800
 for_window [instance="math"] move scratchpad
 for_window [instance="math"] border pixel 5
-exec --no-startup-id kitty --name math python -q -i -c 'from math import *; import numpy as np; import scipy as sy; import pandas as pd; import matplotlib.pyplot as plt;'
+exec --no-startup-id kitty --name math python -q -i -c 'import math; import numpy as np; import scipy as sy; import pandas as pd; import matplotlib.pyplot as plt;'
 
 bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 bindsym $mod+m [instance="math"] scratchpad show; [instance="math"] move position center

@@ -41,6 +41,5 @@ cp $HOME/.config/vim/colors/* config/.config/vim/colors/
 cp $HOME/.config/vim/config/* config/.config/vim/config/
 cp $HOME/.config/vim/ftdetect/* config/.config/vim/ftdetect/
 cp $HOME/.config/vim/syntax/* config/.config/vim/syntax/
-cp $HOME/.config/nitrogen/bg-saved.cfg config/.config/nitrogen/
 cp $HOME/.config/htop/htoprc config/.config/htop/
 
