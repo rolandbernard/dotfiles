@@ -33,7 +33,7 @@
             },
         ],
     },
-    "editor.renderFinalNewline": false,
+    "editor.renderFinalNewline": "off",
     "files.insertFinalNewline": true,
     "editor.lineNumbers": "relative",
     "terminal.integrated.defaultProfile.linux": "bash",
@@ -90,4 +90,6 @@
     "workbench.colorTheme": "SimplyDark",
     "rust-analyzer.rustfmt.rangeFormatting.enable": true,
     "terminal.integrated.enableMultiLinePasteWarning": false,
+    "coverage-gutters.showLineCoverage": true,
+    "coverage-gutters.showRulerCoverage": true,
 }

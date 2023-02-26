@@ -33,7 +33,6 @@ MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [MainWindow][Toolbar mainToolBar]
-IconSize=16
 ToolButtonStyle=IconOnly
 
 [PreviewSettings]
