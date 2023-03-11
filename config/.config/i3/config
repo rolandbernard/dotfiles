@@ -134,7 +134,7 @@ for_window [class="(?i)*nextcloud*"] floating disable
 for_window [class="plasmashell" window_type="notification"] move position 70 ppt 81 ppt
 no_focus [class="plasmashell" window_type="notification"]
 
-for_window [title="Desktop — Plasma"] kill; floating enable
+for_window [class="plasmashell" title="Desktop*"] kill
 
 for_window [window_role="About"] floating enable
 for_window [title="Microsoft Teams Notification"] floating enableight -dec 5
