@@ -155,6 +155,9 @@ exec --no-startup-id kitty --name math python -q -i -c 'import math; import nump
 bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 bindsym $mod+m [instance="math"] scratchpad show; [instance="math"] move position center
 
+for_window [class="notion"] exec "sh -c 'for i in $(seq 100) ; do i3-msg \[class=notion\] fullscreen disable ; sleep 0.05 ; done'"
+bindsym $mod+n exec --no-startup-id firefox -new-window https://notion.so -P notion -no-remote --kiosk --class=notion
+
 # Start an application
 bindsym $mod+i exec --no-startup-id firefox
 bindsym $mod+t exec --no-startup-id teams
