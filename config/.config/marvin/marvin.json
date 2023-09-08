@@ -3,7 +3,7 @@
         "global_shortcut": "Alt+Space",
         "autostart": true,
         "language": "en",
-        "debounce_time": 20,
+        "debounce_time": 10,
         "zoom_settings": 1,
         "zoom": 1,
         "width": 600,
@@ -11,22 +11,23 @@
         "max_results": 50,
         "ignore_mouse": false,
         "incremental_results": true,
-        "incremental_result_debounce": 100,
+        "result_debounce": 200,
         "smooth_scrolling": true,
         "recenter_on_show": true,
         "exclusive_module_prefix": true,
-        "enhanced_search": true
+        "enhanced_search": true,
+        "incremental_result_debounce": 200
     },
     "theme": {
         "border_radius": 5,
         "input": {
-            "background_color": "#1b1e21",
+            "background_color": "#1a1e22",
             "text_color": "#ffffff",
             "accent_color": "#f0f0f0",
             "shadow_color": "#00000000"
         },
         "output": {
-            "background_color": "#1d2023",
+            "background_color": "#1f2327",
             "text_color": "#f0f0f0",
             "accent_color": "#f0f0f0",
             "select_color": "#313943",
@@ -34,7 +35,7 @@
             "shadow_color": "#00000020"
         },
         "settings": {
-            "background_color": "#1d2023",
+            "background_color": "#171a1e",
             "text_color": "#f0f0f0",
             "accent_color": "#b0b0b0",
             "select_color": "#313943",
@@ -44,11 +45,11 @@
         }
     },
     "update": {
-        "version": "0.4.4",
+        "version": "0.4.9",
         "platform": "linux",
         "auto_update": false,
-        "latest": "0.4.5",
-        "can_update": true,
+        "latest": "0.4.9",
+        "can_update": false,
         "checking": false,
         "updating": false
     },
@@ -61,10 +62,11 @@
         "applications": {
             "active": true,
             "prefix": "",
-            "refresh_interval_min": 1800000,
+            "refresh_interval_min": 600000,
             "directories": [
                 "/usr/share/applications/",
-                "/home/roland/.local/share/applications/"
+                "/home/roland/.local/share/applications/",
+                "/var/lib/flatpak/exports/share/applications/"
             ]
         },
         "bookmarks": {

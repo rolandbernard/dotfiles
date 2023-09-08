@@ -21,3 +21,6 @@
 [pull]
 	rebase = false
 
+[user]
+	name = Roland Bernard
+	email = rolli.bernard@gmail.com

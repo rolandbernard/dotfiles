@@ -1,5 +1,5 @@
 [$Version]
-update_info=konsole_globalaccel.upd:konsole_globalaccel,spectacle_shortcuts.upd:spectacle-migrate-shortcuts
+update_info=konsole_globalaccel.upd:konsole_globalaccel,spectacle_shortcuts.upd:spectacle-migrate-shortcuts,konsole.upd:konsole_globalaccel
 
 [ColorEffects:Disabled]
 ChangeSelectionColor[$d]
@@ -1059,6 +1059,9 @@ Sort reversed[$d]
 Speedbar Width[$d]
 View Style[$d]
 
+[KShortcutsDialog Settings]
+Dialog Size[$d]
+
 [Main]
 AlreadyImported=defaults,kde32b1,konqueror_gestures_kde321
 Disabled=false
@@ -1072,6 +1075,10 @@ Size[$d]
 
 [PreviewSettings]
 MaximumRemoteSize[$d]
+
+[Shortcuts]
+Zoom[$d]
+ZoomIn[$d]
 
 [ToolbarIcons]
 Size[$d]

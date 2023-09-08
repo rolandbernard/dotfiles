@@ -139,8 +139,8 @@ ForegroundVisited=155,89,182
 Size=16
 
 [DirSelect Dialog]
-DirSelectDialog Size=844,598
-History Items[$e]=file:$HOME/dotfiles
+DirSelectDialog Size=808,598
+History Items[$e]=file:$HOME/games/switch/firmware-16.0.3,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/dev/ontologyutils,file:$HOME/.tomcat/apache-tomcat-10.0.27/lib/,file:$HOME/.tomcat,file:$HOME/dev/uni/islab/lab-20230403,file:$HOME/.tomcat,file:$HOME/dotfiles
 
 [General]
 AccentColor=104,107,111
@@ -166,7 +166,7 @@ LookAndFeelPackage=org.kde.breezedark.desktop
 
 [KFileDialog Settings]
 Allow Expansion=false
-Automatically select filename extension=true
+Automatically select filename extension=false
 Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
@@ -177,12 +177,15 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=false
-Sort by=Name
+Sort by=Date
 Sort directories first=true
 Sort hidden files last=false
-Sort reversed=false
+Sort reversed=true
 Speedbar Width=138
 View Style=DetailTree
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
 
 [MainToolbarIcons]
 Size=16
@@ -192,6 +195,10 @@ Size=16
 
 [PreviewSettings]
 MaximumRemoteSize=0
+
+[Shortcuts]
+Zoom=Ctrl++
+ZoomIn=Ctrl+=
 
 [ToolbarIcons]
 Size=16

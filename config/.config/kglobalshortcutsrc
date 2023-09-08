@@ -56,10 +56,10 @@ Invert Screen Colors=none,none,Invert Screen Colors
 Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
-MoveZoomDown=none,none,Move Zoomed Area Downwards
-MoveZoomLeft=none,none,Move Zoomed Area to Left
-MoveZoomRight=none,none,Move Zoomed Area to Right
-MoveZoomUp=none,none,Move Zoomed Area Upwards
+MoveZoomDown=none,Meta+Ctrl+Down,Move Down
+MoveZoomLeft=none,Meta+Ctrl+Left,Move Left
+MoveZoomRight=none,Meta+Ctrl+Right,Move Right
+MoveZoomUp=none,Meta+Ctrl+Up,Move Up
 Overview=Meta+W,Meta+W,Toggle Overview
 Setup Window Shortcut=none,none,Setup Window Shortcut
 Show Desktop=Meta+D,Meta+D,Peek at Desktop
@@ -190,16 +190,16 @@ Window to Screen 6=none,none,Window to Screen 6
 Window to Screen 7=none,none,Window to Screen 7
 _k_friendly_name=KWin
 view_actual_size=none,Meta+0,Zoom to Actual Size
-view_zoom_in=Meta+=,Meta++,Zoom In
+view_zoom_in=Meta+=\tMeta++,Meta++,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,none,Media volume down
-mediavolumeup=none,none,Media volume up
+mediavolumedown=none,,Media volume down
+mediavolumeup=none,,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,none,Play media playback
+playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
@@ -211,6 +211,12 @@ _launch=Meta+E,Meta+E,Dolphin
 [org.kde.kcalc.desktop]
 _k_friendly_name=KCalc
 _launch=Launch (1),Launch (1),KCalc
+
+[org.kde.konsole.desktop]
+NewTab=none,none,Open a New Tab
+NewWindow=none,none,Open a New Window
+_k_friendly_name=Konsole
+_launch=Ctrl+Alt+T,Ctrl+Alt+T,Konsole
 
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
