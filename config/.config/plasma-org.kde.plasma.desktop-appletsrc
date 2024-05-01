@@ -26,11 +26,12 @@ popupWidth=810
 [Containments][2][Applets][19][Configuration][Appearance]
 autoFontAndSize=false
 dateDisplayFormat=BesideTime
-enabledCalendarPlugins=/usr/lib64/qt5/plugins/plasmacalendarplugins/holidaysevents.so
+enabledCalendarPlugins=holidaysevents
 firstDayOfWeek=1
 fontFamily=IBM Plex Sans Cond Light
 fontSize=72
-showSeconds=true
+fontWeight=400
+showSeconds=2
 showWeekNumbers=true
 use24hFormat=2
 
@@ -42,13 +43,19 @@ DialogWidth=720
 immutability=1
 plugin=org.kde.plasma.lock_logout
 
+[Containments][2][Applets][24][Configuration]
+PreloadWeight=34
+
 [Containments][2][Applets][24][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=510
+DialogWidth=680
 
 [Containments][2][Applets][25]
 immutability=1
 plugin=org.kde.plasma.pager
+
+[Containments][2][Applets][25][Configuration]
+PreloadWeight=34
 
 [Containments][2][Applets][25][Configuration][ConfigDialog]
 DialogHeight=540
@@ -62,13 +69,16 @@ showOnlyCurrentScreen=true
 immutability=1
 plugin=org.kde.plasma.icontasks
 
+[Containments][2][Applets][5][Configuration]
+PreloadWeight=34
+
 [Containments][2][Applets][5][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=510
+DialogWidth=680
 
 [Containments][2][Applets][5][Configuration][General]
 groupingStrategy=0
-launchers=applications:systemsettings.desktop,preferred://filemanager,preferred://browser,applications:firefox-nightly.desktop
+launchers=applications:systemsettings.desktop,preferred://filemanager,preferred://browser
 maxStripes=1
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
@@ -85,6 +95,9 @@ SystrayContainmentId=8
 DialogHeight=84
 DialogWidth=1920
 
+[Containments][2][Configuration]
+PreloadWeight=34
+
 [Containments][2][General]
 AppletOrder=25;5;7;19;24
 
@@ -100,11 +113,19 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][29][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=510
+DialogWidth=680
+
+[Containments][29][Configuration]
+PreloadWeight=34
+
+[Containments][29][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=404
+ToolBoxButtonY=20
 
 [Containments][29][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/SafeLanding/
+Image=/usr/share/wallpapers/F40/
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][30]
@@ -122,11 +143,14 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][30][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=510
+DialogWidth=680
+
+[Containments][30][Configuration]
+PreloadWeight=34
 
 [Containments][30][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/SafeLanding/
+Image=/usr/share/wallpapers/F40/
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][8]
@@ -145,7 +169,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][10][Configuration]
-PreloadWeight=90
+PreloadWeight=100
 
 [Containments][8][Applets][11]
 immutability=1
@@ -172,7 +196,7 @@ immutability=1
 plugin=org.kde.plasma.printmanager
 
 [Containments][8][Applets][15][Configuration]
-PreloadWeight=65
+PreloadWeight=54
 
 [Containments][8][Applets][16][Configuration]
 PreloadWeight=42
@@ -188,7 +212,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][21][Configuration]
-PreloadWeight=100
+PreloadWeight=84
 
 [Containments][8][Applets][22]
 immutability=1
@@ -202,24 +226,31 @@ immutability=1
 plugin=org.kde.kscreen
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=80
+PreloadWeight=79
 
 [Containments][8][Applets][29][Configuration]
 PreloadWeight=67
 
 [Containments][8][Applets][31]
 immutability=1
-plugin=org.kde.plasma.bluetooth
+plugin=org.kde.kdeconnect
 
 [Containments][8][Applets][31][Configuration]
-PreloadWeight=97
+PreloadWeight=81
 
 [Containments][8][Applets][32]
 immutability=1
-plugin=org.kde.plasma.mediacontroller
+plugin=org.kde.plasma.cameraindicator
 
 [Containments][8][Applets][32][Configuration]
 PreloadWeight=0
+
+[Containments][8][Applets][33]
+immutability=1
+plugin=org.kde.plasma.brightness
+
+[Containments][8][Applets][33][Configuration]
+PreloadWeight=5
 
 [Containments][8][Applets][9]
 immutability=1
@@ -239,10 +270,14 @@ migrated=true
 DialogHeight=540
 DialogWidth=720
 
+[Containments][8][Configuration]
+PreloadWeight=34
+
 [Containments][8][General]
-extraItems=org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.bluetooth,org.kde.kscreen,org.kde.kdeconnect
-knownItems=org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.kscreen,org.kde.kdeconnect
+extraItems=org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.bluetooth,org.kde.kscreen,org.kde.kdeconnect,org.kde.plasma.brightness,org.kde.plasma.cameraindicator
+knownItems=org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.kscreen,org.kde.kdeconnect,org.kde.plasma.brightness,org.kde.plasma.cameraindicator
 showAllItems=true
 
 [ScreenMapping]
 itemsOnDisabledScreens=
+screenMapping=

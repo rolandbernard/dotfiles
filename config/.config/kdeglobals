@@ -140,7 +140,6 @@ Size=16
 
 [DirSelect Dialog]
 DirSelectDialog Size=808,598
-History Items[$e]=file:$HOME/games/switch/firmware-16.0.3,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/games/switch,file:$HOME/dev/ontologyutils,file:$HOME/.tomcat/apache-tomcat-10.0.27/lib/,file:$HOME/.tomcat,file:$HOME/dev/uni/islab/lab-20230403,file:$HOME/.tomcat,file:$HOME/dotfiles
 
 [General]
 AccentColor=104,107,111
@@ -199,6 +198,9 @@ MaximumRemoteSize=0
 [Shortcuts]
 Zoom=Ctrl++
 ZoomIn=Ctrl+=
+
+[Sounds]
+Enable=false
 
 [ToolbarIcons]
 Size=16

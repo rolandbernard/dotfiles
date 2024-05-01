@@ -2,4 +2,4 @@
 .config/i3/wallpaper.jpg
 .vscode
 .vim
-
+.tmp*

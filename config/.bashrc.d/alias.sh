@@ -13,7 +13,7 @@ alias trash='gio trash'
 openvim () {
     if [ $TMUX ]
     then
-        tmux split -bf -p 80 nvim $@
+        tmux split -bf -l 80% nvim $@
     else
         nvim $@
     fi

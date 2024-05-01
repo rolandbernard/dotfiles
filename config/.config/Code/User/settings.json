@@ -295,4 +295,25 @@
     ],
     "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
     "workbench.colorTheme": "SimplyDark",
+    "lldb.suppressUpdateNotifications": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.rulers": [
+        80, 100, 120
+    ],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#f0f0f010"
+    },
+    "files.autoSave": "afterDelay",
+    "coverage-gutters.coverageFileNames": [
+        "coverage/lcov.info",
+        "lcov.info",
+        "cov.xml",
+        "coverage.xml",
+        "jacoco.xml",
+        "coverage.cobertura.xml"
+    ],
+    "gitlens.telemetry.enabled": false,
+    "rust-analyzer.check.command": "clippy"
 }

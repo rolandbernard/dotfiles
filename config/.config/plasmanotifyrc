@@ -1,4 +1,13 @@
+[Applications][com.uploadedlobster.peek]
+Seen=true
+
+[Applications][discord]
+Seen=true
+
 [Applications][firefox]
+Seen=true
+
+[Applications][teams]
 Seen=true
 
 [Notifications]
