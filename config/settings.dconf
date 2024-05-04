@@ -1,0 +1,143 @@
+[ca/desrt/dconf-editor]
+show-warning=false
+
+[org/gnome/Console]
+audible-bell=false
+indow-maximized=false
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/f38/default/f38-01-day.png'
+picture-uri-dark='file:///usr/share/backgrounds/f38/default/f38-01-night.png'
+primary-color='#51a2da'
+secondary-color='#294172'
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
+[org/gnome/desktop/datetime]
+automatic-timezone=false
+
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'de')]
+
+[org/gnome/desktop/interface]
+clock-format='24h'
+clock-show-seconds=false
+clock-show-weekday=true
+color-scheme='prefer-dark'
+enable-animations=true
+gtk-theme='Adwaita'
+monospace-font-name='IBM Plex Mono 10'
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/f38/default/f38-01-day.png'
+primary-color='#51a2da'
+secondary-color='#294172'
+
+[org/gnome/desktop/wm/keybindings]
+activate-window-menu=@as []
+close=['<Shift><Super>q']
+move-to-monitor-down=['<Control><Super>Down']
+move-to-monitor-left=['<Control><Super>Left']
+move-to-monitor-right=['<Control><Super>Right']
+move-to-monitor-up=['<Control><Super>Up']
+move-to-workspace-1=['<Shift><Super>1']
+move-to-workspace-2=['<Shift><Super>2']
+move-to-workspace-3=['<Shift><Super>3']
+move-to-workspace-4=['<Shift><Super>4']
+move-to-workspace-left=['<Shift><Super>Left']
+move-to-workspace-right=['<Shift><Super>Right']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-left=['<Super>Left']
+switch-to-workspace-right=['<Super>Right']
+toggle-fullscreen=['<Super>f']
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='small'
+
+[org/gnome/nautilus/list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
+default-visible-columns=['name', 'size', 'date_modified']
+default-zoom-level='small'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+home=['<Super>q']
+www=['<Super>i']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Alt>space'
+command='marvin-msg toggle'
+name='Marvin'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>Return'
+command='kgx -e tmux'
+name='Terminal'
+
+[org/gnome/shell]
+disable-user-extensions=false
+disabled-extensions=@as []
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx']
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+override-background-dynamically=true
+
+[org/gnome/shell/extensions/just-perfection]
+panel-button-padding-size=5
+panel-icon-size=14
+panel-in-overview=true
+panel-size=28
+workspace-wrap-around=true
+
+[org/gnome/shell/keybindings]
+switch-to-application-1=@as []
+switch-to-application-2=@as []
+switch-to-application-3=@as []
+switch-to-application-4=@as []
+toggle-message-tray=@as []
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+view-type='list'
+
+[org/gtk/settings/file-chooser]
+clock-format='24h'
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+
+[system/locale]
+region='en_GB.UTF-8'

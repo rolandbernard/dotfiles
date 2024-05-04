@@ -18,13 +18,6 @@ then
 
 sudo systemctl set-default graphical.target
 
-# Install vscode-theme
-cd vscode-theme
-npm install
-npm run package
-code --install-extension simplydark-0.0.1.vsix
-cd ..
-
 # Other config
 sudo systemctl enable tlp
 
