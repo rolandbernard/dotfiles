@@ -16,6 +16,8 @@ nvim --headless +PlugInstall +qa
 if [ "$HOST_NAME" == "rolandlinux" -o  "$HOST_NAME" == "rolandvm" ]
 then
 
+sudo systemctl set-default graphical.target
+
 # Install vscode-theme
 cd vscode-theme
 npm install
@@ -24,11 +26,6 @@ code --install-extension simplydark-0.0.1.vsix
 cd ..
 
 # Other config
-sudo systemctl disable abrt-journal-core.service
-sudo systemctl disable abrt-oops.service
-sudo systemctl disable abrt-xorg.service
-sudo systemctl disable abrtd.service
-
 sudo systemctl enable tlp
 
 sudo plymouth-set-default-theme details
