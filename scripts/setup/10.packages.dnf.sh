@@ -43,16 +43,16 @@ if [ "$HOST_NAME" == "rolandlinux" -o "$HOST_NAME" == "rolandvm" ]
 then
 
 sudo dnf -y install \
-    gnome-shell gnome-console nautilus gnome-tweaks \
+    gnome-shell gnome-console nautilus gnome-tweaks f38-backgrounds-gnome \
     gnome-shell-extension-just-perfction gnome-shell-extension-blur-my-shell gnome-shell-extension-appindicator \
     @multimedia \
-    @development-tools @c-development llvm-devel clang lld nodejs npm rustup \
+    @development-tools @c-development llvm-devel clang clangd lld nodejs npm rustup \
     @python-science java-latest-openjdk java-latest-openjdk-devel \
     @virtualization guestfs-tools \
     @fonts ibm-plex-fonts-all \
     tlp tlp-rdw \
     firefox code bash-completion neovim tmux gimp inkscape \
-    ImageMagick discord remmina python-neovim htop
+    ImageMagick python-neovim htop
 
 sudo dnf remove gnome-tour
 
