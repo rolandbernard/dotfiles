@@ -1,0 +1,28 @@
+{
+    "name": "simpledark",
+    "repository": "https://github.com/rolandbernard/dotfiles",
+    "displayName": "Simple Dark",
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^1.71.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Simple Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/simpledark.json"
+            }
+        ]
+    },
+    "scripts": {
+        "package": "vsce package",
+        "debug": "code --extensionDevelopmentPath=$(realpath .)"
+    },
+    "devDependencies": {
+        "vsce": "^2.11.0"
+    }
+}

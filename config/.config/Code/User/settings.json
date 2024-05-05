@@ -83,9 +83,6 @@
     "settingsSync.ignoredExtensions": [
         "llvm-vs-code-extensions.vscode-clangd"
     ],
-    "cSpell.userWords": [
-        "simplydark"
-    ],
     "terminal.integrated.inheritEnv": false,
     "python.analysis.typeCheckingMode": "basic",
     "rust-analyzer.rustfmt.rangeFormatting.enable": true,
@@ -316,5 +313,7 @@
         "coverage.cobertura.xml"
     ],
     "gitlens.telemetry.enabled": false,
-    "rust-analyzer.check.command": "clippy"
+    "rust-analyzer.check.command": "clippy",
+    "cmake.showOptionsMovedNotification": false,
+    "workbench.colorTheme": "Simple Dark"
 }

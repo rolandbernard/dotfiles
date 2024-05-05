@@ -44,6 +44,7 @@ secondary-color='#294172'
 [org/gnome/desktop/wm/keybindings]
 activate-window-menu=@as []
 close=['<Shift><Super>q']
+maximize=['<Super>Up']
 move-to-monitor-down=['<Control><Super>Down']
 move-to-monitor-left=['<Control><Super>Left']
 move-to-monitor-right=['<Control><Super>Right']

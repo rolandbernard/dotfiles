@@ -1,6 +1,6 @@
 
 let s:foreground = [ '#d4d4d4', 0 ]
-let s:background = [ '#1d2023', 0 ]
+let s:background = [ '#1f1f1f', 0 ]
 let s:yellow = [ '#e5c07b', 0 ]
 let s:purple = [ '#c586c0', 0 ]
 let s:red = [ '#ff5967', 0 ]
@@ -25,5 +25,5 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:background, s:red ] ]
 let s:p.normal.warning = [ [ s:background, s:yellow ] ]
 
-let g:lightline#colorscheme#simplydark#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#simpledark#palette = lightline#colorscheme#flatten(s:p)
 

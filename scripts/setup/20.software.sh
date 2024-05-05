@@ -14,4 +14,7 @@ bash $HOME/dev/nerd-fonts/install.sh IBMPlexMono
 
 rustup-init -y --default-toolchain nightly --profile complete
 
+curl -fLo $HOME/.config/vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 fi
