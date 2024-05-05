@@ -2,7 +2,7 @@
 if !exists('g:vscode')
 
     let g:lightline = {
-        \   'colorscheme': 'simplydark',
+        \   'colorscheme': 'simpledark',
         \   'active': {
         \     'left':[
         \              [ 'mode', 'paste' ],

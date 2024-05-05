@@ -10,9 +10,9 @@
     },
     "ltex.additionalRules.enablePickyRules": true,
     "workbench.startupEditor": "none",
-    "C_Cpp.intelliSenseEngine": "Disabled",
-    "C_Cpp.autocomplete": "Disabled",
-    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.autocomplete": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
     "editor.fontFamily": "'IBM Plex Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
@@ -32,6 +32,8 @@
             },
         ],
     },
+    "window.titleBarStyle": "custom",
+    "window.dialogStyle": "custom",
     "editor.renderFinalNewline": "off",
     "files.insertFinalNewline": true,
     "editor.lineNumbers": "relative",
@@ -65,7 +67,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "git.enableSmartCommit": true,
     "jupyter.askForKernelRestart": false,
-    "editor.inlayHints.enabled": false,
+    "editor.inlayHints.enabled": "off",
     "rust-analyzer.inlayHints.enable": false,
     "editor.language.colorizedBracketPairs": [],
     "C_Cpp.clang_format_fallbackStyle": "file",
@@ -81,13 +83,10 @@
     "settingsSync.ignoredExtensions": [
         "llvm-vs-code-extensions.vscode-clangd"
     ],
-    "cSpell.userWords": [
-        "simplydark"
-    ],
     "terminal.integrated.inheritEnv": false,
     "python.analysis.typeCheckingMode": "basic",
     "rust-analyzer.rustfmt.rangeFormatting.enable": true,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "coverage-gutters.showLineCoverage": true,
     "coverage-gutters.showRulerCoverage": true,
     "java.debug.settings.showStaticVariables": false,
@@ -294,7 +293,6 @@
         }
     ],
     "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
-    "workbench.colorTheme": "SimplyDark",
     "lldb.suppressUpdateNotifications": true,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
@@ -315,5 +313,7 @@
         "coverage.cobertura.xml"
     ],
     "gitlens.telemetry.enabled": false,
-    "rust-analyzer.check.command": "clippy"
+    "rust-analyzer.check.command": "clippy",
+    "cmake.showOptionsMovedNotification": false,
+    "workbench.colorTheme": "Simple Dark"
 }

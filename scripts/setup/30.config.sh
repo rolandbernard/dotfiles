@@ -22,7 +22,7 @@ sudo systemctl set-default graphical.target
 cd vscode-theme
 npm install
 npm run package
-code --install-extension simplydark-0.0.2.vsix
+code --install-extension simpledark-0.0.2.vsix
 cd ..
 
 # Other config

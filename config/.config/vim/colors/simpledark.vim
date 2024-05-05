@@ -8,7 +8,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'simplydark'
+let g:colors_name = 'simpledark'
 
 fun! <sid>hi(group, fg, bg, attr, sp)
     if !empty(a:fg)
@@ -26,12 +26,12 @@ fun! <sid>hi(group, fg, bg, attr, sp)
 endfun
 
 let s:foreground = '#d4d4d4'
-let s:background = '#1d2023'
-let s:backgroundline = '#202326'
+let s:background = '#1f1f1f'
+let s:backgroundline = '#232323'
 let s:red = '#ff5967'
 let s:green = '#98c379'
 let s:yellow = '#e5c07b'
-let s:darkBlue = '#345d7f'
+let s:darkBlue = '#365c7d'
 let s:comment = '#84838b'
 let s:preproc = '#569cd6'
 let s:numeric = '#b5cea8'
