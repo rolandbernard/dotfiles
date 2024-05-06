@@ -28,7 +28,7 @@ clock-show-seconds=false
 clock-show-weekday=true
 color-scheme='prefer-dark'
 enable-animations=true
-gtk-theme='Adwaita'
+gtk-theme='adw-gtk3-dark'
 monospace-font-name='IBM Plex Mono 10'
 
 [org/gnome/desktop/peripherals/touchpad]

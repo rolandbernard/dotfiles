@@ -43,7 +43,7 @@ if [ "$HOST_NAME" == "rolandlinux" -o "$HOST_NAME" == "rolandvm" ]
 then
 
 sudo dnf -y install \
-    gnome-shell gnome-console nautilus gnome-tweaks f38-backgrounds-gnome \
+    gnome-shell gnome-console nautilus gnome-tweaks f38-backgrounds-gnome adw-gtk3-theme \
     gnome-shell-extension-just-perfction gnome-shell-extension-blur-my-shell gnome-shell-extension-appindicator \
     @multimedia \
     @development-tools @c-development llvm-devel clang clangd lld nodejs npm rustup \
