@@ -50,7 +50,6 @@ sudo dnf -y install \
     @python-science java-latest-openjdk java-latest-openjdk-devel \
     @virtualization guestfs-tools \
     @fonts ibm-plex-fonts-all \
-    tlp tlp-rdw \
     firefox code bash-completion neovim tmux gimp inkscape \
     ImageMagick python-neovim htop
 
