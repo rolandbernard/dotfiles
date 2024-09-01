@@ -26,8 +26,6 @@ code --install-extension simpledark-0.0.2.vsix
 cd ..
 
 # Other config
-sudo systemctl enable tlp
-
 sudo plymouth-set-default-theme details
 sudo dracut -f
 
