@@ -4,16 +4,17 @@
 rm -rf $HOME/{Downloads,Desktop,Templates,Public,Documents,Music,Pictures,Videos}
 mkdir -p $HOME/{downloads,public,documents}
 mkdir -p $HOME/documents/{desktop,templates,music,pictures,videos}
-mkdir -p $HOME/dev/{uni,bot}
+mkdir -p $HOME/dev/{uni,bot,github}
+mkdir -p $HOME/dev/github/rolandbernard
 
 # Copy config
-mv ../dotfiles $HOME/dev
+mv ../dotfiles $HOME/dev/github/rolandbernard
 bash scripts/restore.sh
 
 # Install vim plugins
 nvim --headless +PlugInstall +qa
 
-if [ "$HOST_NAME" == "rolandlinux" -o  "$HOST_NAME" == "rolandvm" ]
+if [ "$HOST_NAME" == "rolandlaptop" -o  "$HOST_NAME" == "rolandvm" ]
 then
 
 sudo systemctl set-default graphical.target

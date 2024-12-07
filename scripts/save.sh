@@ -4,7 +4,6 @@
 cd $(dirname $0)/..
 
 mkdir -p config/.bashrc.d
-mkdir -p config/.mozilla/firefox/default/chrome
 mkdir -p config/.config/{marvin,htop}
 mkdir -p config/.config/Code/User
 mkdir -p config/.config/vim/{colors,config,ftdetect,syntax}
@@ -16,7 +15,6 @@ cp $HOME/.gitconfig config/
 cp $HOME/.inputrc config/
 cp $HOME/.tmux.conf config/
 
-cp $HOME/.mozilla/firefox/*.default-release/chrome/userChrome.css config/.mozilla/firefox/default/chrome/
 cp $HOME/.bashrc.d/* config/.bashrc.d/
 cp $HOME/.config/marvin/marvin.json config/.config/marvin/
 cp $HOME/.config/Code/User/{keybindings.json,settings.json} config/.config/Code/User/

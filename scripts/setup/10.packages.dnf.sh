@@ -38,13 +38,12 @@ then
     sudo dnf -y install akmod-nvidia
 fi
 
-# Install some other progams
-if [ "$HOST_NAME" == "rolandlinux" -o "$HOST_NAME" == "rolandvm" ]
+# Install some other programs
+if [ "$HOST_NAME" == "rolandlaptop" -o "$HOST_NAME" == "rolandvm" ]
 then
 
 sudo dnf -y install \
-    gnome-shell gnome-console nautilus gnome-tweaks f38-backgrounds-gnome adw-gtk3-theme \
-    gnome-shell-extension-just-perfction gnome-shell-extension-blur-my-shell gnome-shell-extension-appindicator \
+    gnome-shell ptyxis nautilus gnome-tweaks adw-gtk3-theme \
     @multimedia \
     @development-tools @c-development llvm-devel clang clangd lld nodejs npm rustup \
     @python-science java-latest-openjdk java-latest-openjdk-devel \

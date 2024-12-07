@@ -1,7 +1,7 @@
 #!/bin/bash
 # Software that is not packaged
 
-if [ "$HOST_NAME" == "rolandlinux" -o  "$HOST_NAME" == "rolandvm" ]
+if [ "$HOST_NAME" == "rolandlaptop" -o  "$HOST_NAME" == "rolandvm" ]
 then
 
 # Install Marvin

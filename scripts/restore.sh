@@ -5,7 +5,6 @@ cd $(dirname $0)/..
 
 cp -r config/.bashrc.d $HOME/
 cp -r config/.config $HOME/
-cp -r config/.mozilla/firefox/default/chrome $HOME/.mozilla/firefox/*.default-release/
 cp config/.bashrc $HOME/
 cp config/.clang-format $HOME/
 cp config/.gitconfig $HOME/
