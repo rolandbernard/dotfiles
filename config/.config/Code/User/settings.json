@@ -315,5 +315,24 @@
     "gitlens.telemetry.enabled": false,
     "rust-analyzer.check.command": "clippy",
     "cmake.showOptionsMovedNotification": false,
-    "workbench.colorTheme": "Simple Dark"
+    "workbench.colorTheme": "Simple Dark",
+    "rust-analyzer.cargo.features": "all",
+    "rust-analyzer.cargo.cfgs": {
+        "miri": "",
+    },
+    "[latex]": {
+        "editor.wordWrap": "wordWrapColumn",
+    },
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "cSpell.userWords": [
+        "perfoming"
+    ],
 }
