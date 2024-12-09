@@ -25,7 +25,7 @@ profile-uuids=['fda44e7f14da6148b07e192e675456bb']
 restore-session=false
 restore-window-size=true
 use-system-font=true
-window-size=(uint32 117, uint32 63)
+window-size=(uint32 146, uint32 63)
 
 [org/gnome/Ptyxis/Profiles/fda44e7f14da6148b07e192e675456bb]
 bold-is-bright=true
@@ -39,8 +39,25 @@ paste-clipboard='<Shift><Alt>v'
 [org/gnome/Snapshot]
 capture-mode='picture'
 is-maximized=false
-window-height=800
+window-height=1200
 window-width=800
+
+[org/gnome/Weather]
+locations=[<(uint32 2, <('Bolzano', 'LIPB', false, [(0.81099633157779594, 0.19780397607492647)], @a(dd) [])>)>]
+window-height=1200
+window-maximized=false
+window-width=992
+
+[org/gnome/baobab/ui]
+is-maximized=false
+window-size=(960, 1200)
+
+[org/gnome/boxes]
+first-run=false
+view='icon-view'
+window-maximized=false
+window-position=[35, 32]
+window-size=[768, 1200]
 
 [org/gnome/calculator]
 accuracy=9
@@ -62,6 +79,11 @@ word-size=64
 active-view='month'
 window-maximized=true
 window-size=(768, 600)
+
+[org/gnome/clocks/state/window]
+maximized=false
+panel-id='world'
+size=(870, 1200)
 
 [org/gnome/control-center]
 last-panel='power'
@@ -248,6 +270,29 @@ initial-size-file-chooser=(890, 550)
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/roland/documents/pictures'
 
+[org/gnome/rhythmbox]
+position=(35, 32)
+size=(790, 1163)
+
+[org/gnome/rhythmbox/player]
+volume=1.0
+
+[org/gnome/rhythmbox/plugins]
+active-plugins=['rb', 'power-manager', 'notification', 'mtpdevice', 'mpris', 'iradio', 'ipod', 'generic-player', 'dbus-media-server', 'cd-recorder', 'audioscrobbler', 'audiocd', 'android', 'artsearch']
+seen-plugins=['rb', 'webremote', 'replaygain', 'rbzeitgeist', 'pythonconsole', 'notification', 'mtpdevice', 'ipod', 'grilo', 'fmradio', 'dbus-media-server', 'daap', 'cd-recorder', 'audioscrobbler', 'artsearch', 'im-status', 'listenbrainz', 'lyrics', 'magnatune']
+
+[org/gnome/rhythmbox/plugins/audioscrobbler/Last.fm]
+scrobbling-enabled=true
+
+[org/gnome/rhythmbox/plugins/audioscrobbler/Libre.fm]
+scrobbling-enabled=true
+
+[org/gnome/rhythmbox/plugins/iradio]
+initial-stations-loaded=true
+
+[org/gnome/rhythmbox/rhythmdb]
+locations=['file:///home/roland/documents/music']
+
 [org/gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
 
@@ -272,7 +317,7 @@ name='Terminal'
 sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'org.gnome.Snapshot.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.fedoraproject.MediaWriter.desktop': <{'position': <5>}>, 'libreoffice-calc.desktop': <{'position': <6>}>, 'org.gnome.Totem.desktop': <{'position': <7>}>, 'libreoffice-impress.desktop': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'org.gnome.Settings.desktop': <{'position': <10>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <11>}>, 'org.gnome.Boxes.desktop': <{'position': <12>}>, 'libreoffice-writer.desktop': <{'position': <13>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <14>}>, 'yelp.desktop': <{'position': <15>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <16>}>, 'org.gnome.Extensions.desktop': <{'position': <17>}>, 'htop.desktop': <{'position': <18>}>, 'org.gnome.Software.desktop': <{'position': <19>}>, 'org.gnome.Calendar.desktop': <{'position': <20>}>, 'mupdf-gl.desktop': <{'position': <21>}>, 'virt-manager.desktop': <{'position': <22>}>, 'org.gnome.baobab.desktop': <{'position': <23>}>}, {'jupyter-notebook.desktop': <{'position': <0>}>, 'jupyterlab.desktop': <{'position': <1>}>, 'marvin.desktop': <{'position': <2>}>, 'nvim.desktop': <{'position': <3>}>, 'java-23-openjdk-23.0.1.0.11-1.rolling.fc41.x86_64-jconsole.desktop': <{'position': <4>}>, 'remote-viewer.desktop': <{'position': <5>}>, 'io.github.vectorgraphics.asymptote.desktop': <{'position': <6>}>, 'org.fontforge.FontForge.desktop': <{'position': <7>}>, 'gimp.desktop': <{'position': <8>}>, 'org.inkscape.Inkscape.desktop': <{'position': <9>}>, 'org.gnome.Calculator.desktop': <{'position': <10>}>, 'org.gnome.TextEditor.desktop': <{'position': <11>}>, 'org.gnome.Nautilus.desktop': <{'position': <12>}>, 'code.desktop': <{'position': <13>}>, 'org.gnome.Ptyxis.desktop': <{'position': <14>}>, 'org.remmina.Remmina.desktop': <{'position': <15>}>, 'org.mozilla.firefox.desktop': <{'position': <16>}>, 'org.gnome.font-viewer.desktop': <{'position': <17>}>, 'org.freedesktop.GnomeAbrt.desktop': <{'position': <18>}>, 'org.gnome.tweaks.desktop': <{'position': <19>}>, 'org.gnome.Logs.desktop': <{'position': <20>}>, 'org.gnome.Characters.desktop': <{'position': <21>}>, 'org.gnome.Loupe.desktop': <{'position': <22>}>, 'org.gnome.Evince.desktop': <{'position': <23>}>}, {'org.gnome.DiskUtility.desktop': <{'position': <0>}>, 'org.gnome.Connections.desktop': <{'position': <1>}>}]
+app-picker-layout=[{'org.gnome.Weather.desktop': <{'position': <0>}>, 'org.fedoraproject.MediaWriter.desktop': <{'position': <1>}>, 'libreoffice-calc.desktop': <{'position': <2>}>, 'org.gnome.Totem.desktop': <{'position': <3>}>, 'libreoffice-impress.desktop': <{'position': <4>}>, 'simple-scan.desktop': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <7>}>, 'libreoffice-writer.desktop': <{'position': <8>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <9>}>, 'yelp.desktop': <{'position': <10>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <11>}>, 'org.gnome.Extensions.desktop': <{'position': <12>}>, 'htop.desktop': <{'position': <13>}>, 'org.gnome.Software.desktop': <{'position': <14>}>, 'org.gnome.Calendar.desktop': <{'position': <15>}>, 'mupdf-gl.desktop': <{'position': <16>}>, 'virt-manager.desktop': <{'position': <17>}>, 'org.gnome.baobab.desktop': <{'position': <18>}>, 'org.gnome.DiskUtility.desktop': <{'position': <19>}>, 'org.gnome.Evince.desktop': <{'position': <20>}>, 'org.gnome.Loupe.desktop': <{'position': <21>}>, 'org.gnome.Logs.desktop': <{'position': <22>}>, 'org.gnome.tweaks.desktop': <{'position': <23>}>}, {'marvin.desktop': <{'position': <0>}>, 'nvim.desktop': <{'position': <1>}>, 'java-23-openjdk-23.0.1.0.11-1.rolling.fc41.x86_64-jconsole.desktop': <{'position': <2>}>, 'io.github.vectorgraphics.asymptote.desktop': <{'position': <3>}>, 'gimp.desktop': <{'position': <4>}>, 'org.gnome.Calculator.desktop': <{'position': <5>}>, 'org.gnome.TextEditor.desktop': <{'position': <6>}>, 'org.gnome.Nautilus.desktop': <{'position': <7>}>, 'code.desktop': <{'position': <8>}>, 'org.gnome.Ptyxis.desktop': <{'position': <9>}>, 'org.remmina.Remmina.desktop': <{'position': <10>}>, 'org.mozilla.firefox.desktop': <{'position': <11>}>}]
 disable-user-extensions=false
 disabled-extensions=['hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'paperwm@paperwm.github.com', 'just-perfection-desktop@just-perfection', 'Battery-Health-Charging@maniacx.github.com', 'caffeine@patapon.info']
@@ -335,7 +380,6 @@ sigma=30
 enable-fullscreen=false
 indicator-position-max=3
 screen-blank='always'
-toggle-state=false
 
 [org/gnome/shell/extensions/hidetopbar]
 enable-active-window=false
@@ -363,7 +407,7 @@ last-used-display-server='Wayland'
 open-window-position=0
 restore-attach-modal-dialogs='true'
 restore-edge-tiling='true'
-restore-keybinds='{"cancel-input-capture":{"bind":"[\\"<Super><Shift>Escape\\"]","schema_id":"org.gnome.mutter.keybindings"},"restore-shortcuts":{"bind":"[\\"<Super>Escape\\"]","schema_id":"org.gnome.mutter.wayland.keybindings"},"switch-to-workspace-last":{"bind":"[\\"<Super>End\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-panels":{"bind":"[\\"<Control><Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-to-workspace-left":{"bind":"[\\"<Super>Left\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-to-workspace-right":{"bind":"[\\"<Super>Right\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-group-backward":{"bind":"[\\"<Shift><Super>Above_Tab\\",\\"<Shift><Alt>Above_Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"unmaximize":{"bind":"[\\"<Super>Down\\",\\"<Alt>F5\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"close":{"bind":"[\\"<Shift><Super>q\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-left":{"bind":"[\\"<Shift><Super>Left\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"toggle-fullscreen":{"bind":"[\\"<Super>f\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-group":{"bind":"[\\"<Super>Above_Tab\\",\\"<Alt>Above_Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-panels-backward":{"bind":"[\\"<Shift><Control><Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-left":{"bind":"[\\"<Control><Super>Left\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-up":{"bind":"[\\"<Control><Shift><Alt>Up\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-down":{"bind":"[\\"<Control><Super>Down\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-input-source-backward":{"bind":"[\\"<Shift><Super>space\\",\\"<Shift>XF86Keyboard\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-down":{"bind":"[\\"<Control><Shift><Alt>Down\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-right":{"bind":"[\\"<Control><Super>Right\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-applications":{"bind":"[\\"<Super>Tab\\",\\"<Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-up":{"bind":"[\\"<Control><Super>Up\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"maximize":{"bind":"[\\"<Super>Up\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-right":{"bind":"[\\"<Shift><Super>Right\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-applications-backward":{"bind":"[\\"<Shift><Super>Tab\\",\\"<Shift><Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"shift-overview-up":{"bind":"[\\"<Super><Alt>Up\\"]","schema_id":"org.gnome.shell.keybindings"},"shift-overview-down":{"bind":"[\\"<Super><Alt>Down\\"]","schema_id":"org.gnome.shell.keybindings"},"focus-active-notification":{"bind":"[\\"<Super>n\\"]","schema_id":"org.gnome.shell.keybindings"}}'
+restore-keybinds='{"cancel-input-capture":{"bind":"[\\"<Super><Shift>Escape\\"]","schema_id":"org.gnome.mutter.keybindings"},"restore-shortcuts":{"bind":"[\\"<Super>Escape\\"]","schema_id":"org.gnome.mutter.wayland.keybindings"},"switch-to-workspace-last":{"bind":"[\\"<Super>End\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-panels":{"bind":"[\\"<Control><Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-to-workspace-left":{"bind":"[\\"<Super>Left\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-to-workspace-right":{"bind":"[\\"<Super>Right\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-group-backward":{"bind":"[\\"<Shift><Super>Above_Tab\\",\\"<Shift><Alt>Above_Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"unmaximize":{"bind":"[\\"<Super>Down\\",\\"<Alt>F5\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"close":{"bind":"[\\"<Shift><Super>q\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-left":{"bind":"[\\"<Shift><Super>Left\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"toggle-fullscreen":{"bind":"[\\"<Super>f\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-group":{"bind":"[\\"<Super>Above_Tab\\",\\"<Alt>Above_Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-panels-backward":{"bind":"[\\"<Shift><Control><Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-left":{"bind":"[\\"<Control><Super>Left\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-up":{"bind":"[\\"<Control><Shift><Alt>Up\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-down":{"bind":"[\\"<Control><Super>Down\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-input-source-backward":{"bind":"[\\"<Shift><Super>space\\",\\"<Shift>XF86Keyboard\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-down":{"bind":"[\\"<Control><Shift><Alt>Down\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-right":{"bind":"[\\"<Control><Super>Right\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-applications":{"bind":"[\\"<Super>Tab\\",\\"<Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-up":{"bind":"[\\"<Control><Super>Up\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"maximize":{"bind":"[\\"<Super>Up\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-right":{"bind":"[\\"<Shift><Super>Right\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-applications-backward":{"bind":"[\\"<Shift><Super>Tab\\",\\"<Shift><Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"shift-overview-up":{"bind":"[\\"<Super><Alt>Up\\"]","schema_id":"org.gnome.shell.keybindings"},"shift-overview-down":{"bind":"[\\"<Super><Alt>Down\\"]","schema_id":"org.gnome.shell.keybindings"},"focus-active-notification":{"bind":"[\\"<Super>n\\"]","schema_id":"org.gnome.shell.keybindings"},"toggle-quick-settings":{"bind":"[\\"<Super>s\\"]","schema_id":"org.gnome.shell.keybindings"}}'
 restore-workspaces-only-on-primary='true'
 selection-border-radius-top=12
 selection-border-size=0
@@ -376,11 +420,25 @@ vertical-margin-bottom=0
 window-gap=0
 
 [org/gnome/shell/extensions/paperwm/keybindings]
-barf-out=['']
+barf-out=['<Super>e']
 center-horizontally=['<Super>c']
 close-window=['<Shift><Super>q']
+move-down=['<Shift><Super>Down']
+move-down-workspace=['']
+move-left=['<Shift><Super>Left']
+move-monitor-above=['<Control><Super>Up']
+move-monitor-below=['<Control><Super>Down']
+move-monitor-left=['<Control><Super>Left']
+move-monitor-right=['<Control><Super>Right']
+move-right=['<Shift><Super>Right']
+move-up=['<Shift><Super>Up']
+move-up-workspace=['']
 new-window=['<Super>n']
-slurp-in=['']
+slurp-in=['<Super>s']
+switch-monitor-above=['']
+switch-monitor-below=['']
+switch-monitor-left=['']
+switch-monitor-right=['']
 toggle-scratch=['<Shift><Super>space']
 
 [org/gnome/shell/extensions/paperwm/workspaces]
@@ -407,6 +465,11 @@ switch-to-application-2=@as []
 switch-to-application-3=@as []
 switch-to-application-4=@as []
 toggle-message-tray=@as []
+toggle-quick-settings=@as []
+
+[org/gnome/shell/weather]
+automatic-location=true
+locations=[<(uint32 2, <('Bolzano', 'LIPB', false, [(0.81099633157779594, 0.19780397607492647)], @a(dd) [])>)>]
 
 [org/gnome/shell/world-clocks]
 locations=@av []

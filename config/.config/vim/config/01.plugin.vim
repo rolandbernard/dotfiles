@@ -8,7 +8,7 @@ if !exists('g:vscode')
     Plug 'mg979/vim-visual-multi'
     Plug 'lervag/vimtex'
     Plug 'itchyny/lightline.vim'
-    Plug 'neoclide/coc.nvim', {'branch': 'master',  'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-fugitive'
     Plug 'sheerun/vim-polyglot'
