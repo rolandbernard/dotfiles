@@ -335,4 +335,6 @@
     "cSpell.userWords": [
         "perfoming"
     ],
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "gitlens.plusFeatures.enabled": false,
 }
