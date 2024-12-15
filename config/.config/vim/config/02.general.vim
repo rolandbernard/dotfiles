@@ -50,7 +50,7 @@ let g:vimspector_enable_mappings = 'HUMAN'
 
 endif
 
-set clipboard=unnamed,unnamedplus
+set clipboard=unnamedplus
 
 set ignorecase
 set smartcase
