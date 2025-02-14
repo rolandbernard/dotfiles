@@ -1,6 +1,7 @@
 [org/gnome/Ptyxis]
 audible-bell=false
 default-profile-uuid='fda44e7f14da6148b07e192e675456bb'
+enable-a11y=false
 interface-style='dark'
 profile-uuids=['fda44e7f14da6148b07e192e675456bb']
 restore-session=false
@@ -37,6 +38,9 @@ picture-uri-dark='file:///home/roland/.local/share/backgrounds/2024-12-07-18-09-
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
+[org/gnome/desktop/datetime]
+automatic-timezone=true
+
 [org/gnome/desktop/input-sources]
 current=uint32 0
 sources=[('xkb', 'de')]
@@ -71,7 +75,7 @@ primary-color='#000000000000'
 secondary-color='#000000000000'
 
 [org/gnome/desktop/session]
-idle-delay=uint32 60
+idle-delay=uint32 0
 
 [org/gnome/desktop/wm/keybindings]
 activate-window-menu=@as []
@@ -135,6 +139,7 @@ migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/settings-daemon/plugins/color]
+night-light-enabled=false
 night-light-schedule-automatic=false
 
 [org/gnome/settings-daemon/plugins/media-keys]
@@ -151,11 +156,13 @@ name='Marvin'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Super>Return'
-command='ptyxis --new-window -- tmux'
+command='ghostty -e tmux'
 name='Terminal'
 
 [org/gnome/settings-daemon/plugins/power]
+idle-dim=true
 sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
 disable-user-extensions=false
@@ -164,7 +171,7 @@ enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'Battery-Health-Ch
 favorite-apps=@as []
 
 [org/gnome/shell/extensions/Battery-Health-Charging]
-charging-mode='max'
+charging-mode='bal'
 ctl-path='/usr/local/bin/batteryhealthchargingctl-roland'
 device-type=2
 indicator-position-max=3
@@ -181,8 +188,10 @@ panel-in-overview=true
 panel-size=0
 
 [org/gnome/shell/extensions/paperwm]
+animation-time=0.20000000000000001
 cycle-height-steps=[0.38195000000000001, 0.5, 0.61804000000000003, 1.0]
 cycle-width-steps=[0.38195000000000001, 0.5, 0.61804000000000003, 1.0]
+default-focus-mode=0
 disable-topbar-styling=true
 horizontal-margin=0
 open-window-position=0
@@ -246,6 +255,7 @@ enabled=false
 date-format='regular'
 location-mode='path-bar'
 show-hidden=true
+sidebar-width=140
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
@@ -259,9 +269,10 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sort-column='name'
+sidebar-width=176
+sort-column='modified'
 sort-directories-first=true
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
 
 [system/locale]
