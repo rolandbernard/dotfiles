@@ -8,8 +8,10 @@ mkdir -p config/.config/{marvin,htop}
 mkdir -p config/.config/Code/User
 mkdir -p config/.config/vim/{colors,config,ftdetect,syntax}
 mkdir -p config/.config/vim/autoload/lightline/colorscheme
+mkdir -p config/.config/ghostty/themes
 
 cp $HOME/.bashrc config/
+cp $HOME/.bash_profile config/
 cp $HOME/.clang-format config/
 cp $HOME/.gitconfig config/
 cp $HOME/.inputrc config/
@@ -20,12 +22,13 @@ cp $HOME/.config/marvin/marvin.json config/.config/marvin/
 cp $HOME/.config/Code/User/{keybindings.json,settings.json} config/.config/Code/User/
 cp $HOME/.config/vim/{init.vim,coc-settings.json} config/.config/vim/
 cp $HOME/.config/vim/autoload/lightline/colorscheme/* config/.config/vim/autoload/lightline/colorscheme/
-cp $HOME/.config/vim/autoload/plug.vim config/.config/vim/autoload/
 cp $HOME/.config/vim/colors/* config/.config/vim/colors/
 cp $HOME/.config/vim/config/* config/.config/vim/config/
 cp $HOME/.config/vim/ftdetect/* config/.config/vim/ftdetect/
 cp $HOME/.config/vim/syntax/* config/.config/vim/syntax/
 cp $HOME/.config/htop/htoprc config/.config/htop/
+cp $HOME/.config/ghostty/config config/.config/ghostty/
+cp $HOME/.config/ghostty/themes/* config/.config/ghostty/themes
 
 dconf dump / > config/settings.dconf
 

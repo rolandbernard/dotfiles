@@ -21,3 +21,5 @@
 [pull]
 	rebase = false
 
+[credential]
+	helper = cache
