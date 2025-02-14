@@ -303,7 +303,6 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#f0f0f010"
     },
-    "files.autoSave": "afterDelay",
     "coverage-gutters.coverageFileNames": [
         "coverage/lcov.info",
         "lcov.info",
@@ -337,4 +336,8 @@
     ],
     "gitlens.showWhatsNewAfterUpgrades": false,
     "gitlens.plusFeatures.enabled": false,
+    "workbench.editorAssociations": {
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit",
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
 }
