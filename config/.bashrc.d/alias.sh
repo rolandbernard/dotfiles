@@ -10,7 +10,7 @@ alias gdb='gdb -q'
 alias python='python -q'
 alias trash='gio trash'
 
-openvim () {
+openvim() {
     if [ $TMUX ]
     then
         tmux split -bf -l 80% nvim $@
