@@ -5,21 +5,22 @@
 alias ls='ls --color=auto'
 alias lh='ls -a'
 alias ll='lh -l'
-alias vim='openvim'
+alias vim='openeditor nvim'
+alias hx='openeditor hx'
 alias gdb='gdb -q'
 alias python='python -q'
 alias trash='gio trash'
 
-openvim() {
+openeditor() {
     if [ $TMUX ]
     then
-        tmux split -bf -l 80% nvim $@
+        tmux split -bf -l 80% $@
     else
-        nvim $@
+        $@
     fi
 }
 
-export -f openvim
+export -f openeditor
 
 open_conda() {
   if [ -z "$CONDA_INITIALIZED" ]
