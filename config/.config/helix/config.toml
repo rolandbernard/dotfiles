@@ -1,0 +1,40 @@
+
+theme = "simpledark"
+
+[editor]
+line-number = "relative"
+cursorline = true
+gutters = ["diagnostics", "line-numbers", "diff"]
+auto-format = false
+completion-timeout = 5
+completion-replace = true
+rulers = [80, 100, 120]
+text-width = 8
+color-modes = true
+
+[editor.statusline]
+left = [
+    "mode", "spinner", "version-control", "file-name", "read-only-indicator",
+    "file-modification-indicator", "file-line-ending", "file-encoding", "file-type"
+]
+center = []
+right = ["diagnostics", "selections", "register", "position"]
+
+[editor.lsp]
+snippets = false
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+
+[editor.soft-wrap]
+wrap-at-text-width = true
+
+[editor.smart-tab]
+enable = false
+
