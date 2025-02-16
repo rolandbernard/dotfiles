@@ -1,6 +1,70 @@
 
-# key = { fg = "#ffffff", bg = "#000000", underline = { color = "#ff0000", style = "curl"}, modifiers = ["bold", "italic"] }
+# User interface
+"ui.background" = { bg = "background" }
+"ui.background.separator" = { fg = "punctuation" }
+"ui.text" = { fg = "foreground" }
+"ui.text.focus" = { fg = "white" }
+"ui.text.inactive" = "label"
+"ui.linenr" = { fg = "comment" }
+"ui.linenr.selected" = { fg = "punctuation" }
+"ui.statusline" = { fg = "punctuation", bg = "background" }
+"ui.statusline.normal" = { fg = "punctuation", bg = "background" }
+"ui.statusline.insert" = { fg = "background", bg = "green" }
+"ui.statusline.select" = { fg = "background", bg = "control" }
+"ui.popup" = { bg = "backgrounddark", fg = "label" }
+"ui.window" = { fg = "label" }
+"ui.help" = { bg = "backgrounddark", fg = "label" }
+"ui.selection" = { bg = "darkBlue" }
+"ui.cursorline.primary" = { bg = "backgroundline" }
+"ui.cursor" = { fg = "label", modifiers = ["reversed"] }
+"ui.cursor.match" = { bg = "dark" }
+"ui.highlight" = { bg = "backgroundline" }
+"ui.highlight.frameline" = { bg = "darkGreen" }
+"ui.debug" = { fg = "green" }
+"ui.debug.breakpoint" = { fg = "red" }
+"ui.menu" = { fg = "label", bg = "backgrounddark" }
+"ui.menu.selected" = { bg = "backgroundline" }
+"ui.menu.scroll" = { fg = "darkBlue", bg = "backgrounddark" }
+"ui.virtual" = { fg = "dark" }
+"ui.virtual.ruler" = { bg = "backgroundruler" }
+
+"diagnostic.hint" = { underline = { color = "preproc", style = "curl" } }
+"diagnostic.info" = { underline = { color = "preproc", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+warning = "yellow"
+error = "red"
+info = "preproc"
+hint = "preproc"
+
+# Syntax
+
 
 [palette]
-
+foreground = "#d4d4d4"
+background = "#1e1e1e"
+backgroundline = "#232323"
+backgroundruler = "#202020"
+backgrounddark = "#07080d"
+punctuation = "#bbbbbb"
+dark = "#353a3f"
+red = "#ff5967"
+green = "#98c379"
+darkGreen = "#3f4b37"
+yellow = "#e5c07b"
+darkBlue = "#365c7d"
+comment = "#84838b"
+preproc = "#569cd6"
+numeric = "#b5cea8"
+escape = "#d7ba7d"
+variable = "#9cdcfe"
+string = "#ce9178"
+function = "#dcdcaa"
+type = "#4ec9b0"
+control = "#c586c0"
+constant = "#4fc1ff"
+label = "#c8c8c8"
 

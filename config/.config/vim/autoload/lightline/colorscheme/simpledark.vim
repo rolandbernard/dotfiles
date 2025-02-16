@@ -1,6 +1,6 @@
 
 let s:foreground = [ '#d4d4d4', 0 ]
-let s:background = [ '#1f1f1f', 0 ]
+let s:background = [ '#1e1e1e', 0 ]
 let s:yellow = [ '#e5c07b', 0 ]
 let s:purple = [ '#c586c0', 0 ]
 let s:red = [ '#ff5967', 0 ]

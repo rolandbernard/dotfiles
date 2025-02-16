@@ -26,7 +26,7 @@ fun! <sid>hi(group, fg, bg, attr, sp)
 endfun
 
 let s:foreground = '#d4d4d4'
-let s:background = '#1f1f1f'
+let s:background = '#1e1e1e'
 let s:backgroundline = '#232323'
 let s:red = '#ff5967'
 let s:green = '#98c379'
