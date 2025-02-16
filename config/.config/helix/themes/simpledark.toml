@@ -41,6 +41,43 @@ info = "preproc"
 hint = "preproc"
 
 # Syntax
+"attribute" = "variable"
+"type" = "type"
+"type.enum.variant" = "preproc"
+"constructor" = "function"
+"constant" = "preproc"
+"constant.character" = "constant"
+"constant.numeric" = "numeric"
+"constant.character.escape" = "punctuation"
+"string" = "string"
+"string.escape" = "punctuation"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"variable" = "variable"
+"variable.builtin" = "preproc"
+"label" = "label"
+"punctuation" = "punctuation"
+"keyword" = "control"
+"keyword.storage" = "preproc"
+"operator" = "foreground"
+"function" = "function"
+"function.macro" = "preproc"
+"function.special" = "preproc"
+"tag" = "preproc"
+"namespace" = "type"
+"special" = "punctuation"
+
+"markup.heading" = { fg = "preproc", modifiers = ["bold"] }
+"markup.bold" = { fg = "preproc", modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { underline = { style = "line" } }
+"markup.quote" = "comment"
+"markup.list" = "control"
+"markup.raw.inline" = "string"
+
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "preproc"
 
 
 [palette]
@@ -59,7 +96,6 @@ darkBlue = "#365c7d"
 comment = "#84838b"
 preproc = "#569cd6"
 numeric = "#b5cea8"
-escape = "#d7ba7d"
 variable = "#9cdcfe"
 string = "#ce9178"
 function = "#dcdcaa"
