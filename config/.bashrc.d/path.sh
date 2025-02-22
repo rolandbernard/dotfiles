@@ -9,6 +9,11 @@ then
     PATH="$HOME/go/bin:$PATH"
 fi
 
+if ! [[ "$PATH" =~ "$HOME/.ghcup/bin:" ]]
+then
+    PATH="$HOME/.ghcup/bin:$PATH"
+fi
+
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
