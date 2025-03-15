@@ -6,8 +6,9 @@ line-number = "relative"
 cursorline = true
 gutters = ["diagnostics", "line-numbers", "diff"]
 auto-format = false
+auto-pairs = false
 completion-timeout = 5
-completion-replace = true
+completion-replace = false
 text-width = 8
 color-modes = true
 true-color = true
@@ -20,6 +21,10 @@ left = [
 ]
 center = []
 right = ["diagnostics", "selections", "register", "position"]
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
 
 [editor.lsp]
 snippets = false
