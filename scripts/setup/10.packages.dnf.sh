@@ -46,11 +46,11 @@ sudo dnf -y install \
     gnome-shell ptyxis nautilus gnome-tweaks adw-gtk3-theme \
     @multimedia \
     @development-tools @c-development llvm-devel clang clangd lld nodejs npm rustup \
-    @python-science java-latest-openjdk java-latest-openjdk-devel \
+    @python-science java-latest-openjdk java-latest-openjdk-devel go zig rustc rust-analyzer cargo \
     @virtualization guestfs-tools \
     @fonts ibm-plex-fonts-all \
     firefox code bash-completion neovim tmux gimp inkscape \
-    ImageMagick python-neovim htop
+    ImageMagick python-neovim htop helix nnn
 
 sudo dnf remove gnome-tour
 
