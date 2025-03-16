@@ -1,0 +1,30 @@
+
+[language-server.cspell]
+command = "cspell-lsp"
+args = ["--stdio", "--dictionary", ".cspell_dict"]
+
+[[language]]
+name = "markdown"
+soft-wrap.enable = true
+language-servers = ["marksman", "cspell", "ltex-ls-plus"]
+
+[[language]]
+name = "latex"
+soft-wrap.enable = true
+language-servers = ["texlab", "cspell", "ltex-ls-plus"]
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "cspell"]
+
+[[language]]
+name = "cpp"
+language-servers = ["clangd", "cspell"]
+
+[[language]]
+name = "c"
+language-servers = ["clangd", "cspell"]
+
+[[language]]
+name = "python"
+language-servers = ["pylsp", "cspell"]

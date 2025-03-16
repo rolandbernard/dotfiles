@@ -9,7 +9,8 @@ auto-format = false
 auto-pairs = false
 completion-timeout = 5
 completion-replace = false
-text-width = 8
+preview-completion-insert = true
+text-width = 80
 color-modes = true
 true-color = true
 undercurl = true
@@ -44,3 +45,5 @@ wrap-at-text-width = true
 [editor.smart-tab]
 enable = false
 
+[keys.insert]
+C-space = "completion"

@@ -30,7 +30,7 @@ cp $HOME/.config/vim/syntax/* config/.config/vim/syntax/
 cp $HOME/.config/htop/htoprc config/.config/htop/
 cp $HOME/.config/ghostty/config config/.config/ghostty/
 cp $HOME/.config/ghostty/themes/* config/.config/ghostty/themes/
-cp $HOME/.config/helix/config.toml config/.config/helix/
+cp $HOME/.config/helix/languages.toml config/.config/helix/
 cp $HOME/.config/helix/themes/* config/.config/helix/themes/
 
 dconf dump / > config/settings.dconf
