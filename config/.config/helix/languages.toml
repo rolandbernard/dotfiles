@@ -28,3 +28,7 @@ language-servers = ["clangd", "cspell"]
 [[language]]
 name = "python"
 language-servers = ["pylsp", "cspell"]
+
+[[language]]
+name = "git-commit"
+language-servers = ["cspell", "ltex-ls-plus"]

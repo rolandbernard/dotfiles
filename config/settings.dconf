@@ -68,7 +68,7 @@ report-technical-problems=false
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
-lock-enabled=false
+lock-enabled=true
 picture-options='zoom'
 picture-uri='file:///home/roland/.local/share/backgrounds/2024-12-07-18-09-04-black.png'
 primary-color='#000000000000'
@@ -181,11 +181,14 @@ show-notifications=false
 show-system-indicator=false
 
 [org/gnome/shell/extensions/just-perfection]
+animation=1
+max-displayed-search-results=0
 panel=false
 panel-button-padding-size=0
 panel-icon-size=0
 panel-in-overview=true
 panel-size=0
+workspace-wrap-around=false
 
 [org/gnome/shell/extensions/paperwm]
 animation-time=0.20000000000000001
