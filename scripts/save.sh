@@ -10,6 +10,8 @@ mkdir -p config/.config/vim/{colors,config,ftdetect,syntax}
 mkdir -p config/.config/vim/autoload/lightline/colorscheme
 mkdir -p config/.config/ghostty/themes
 mkdir -p config/.config/helix/themes
+mkdir -p config/.config/gtk-3.0
+mkdir -p config/.config/gtk-4.0
 
 cp $HOME/.bashrc config/
 cp $HOME/.bash_profile config/
@@ -32,6 +34,8 @@ cp $HOME/.config/ghostty/config config/.config/ghostty/
 cp $HOME/.config/ghostty/themes/* config/.config/ghostty/themes/
 cp $HOME/.config/helix/languages.toml config/.config/helix/
 cp $HOME/.config/helix/themes/* config/.config/helix/themes/
+cp $HOME/.config/gtk-3.0/gtk.css config/.config/gtk-3.0
+cp $HOME/.config/gtk-4.0/gtk.css config/.config/gtk-4.0
 
 dconf dump / > config/settings.dconf
 

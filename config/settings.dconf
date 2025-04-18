@@ -17,6 +17,10 @@ palette='Vs Code'
 copy-clipboard='<Shift><Alt>c'
 paste-clipboard='<Shift><Alt>v'
 
+[org/gnome/TextEditor]
+style-scheme='builder-dark'
+style-variant='follow'
+
 [org/gnome/Weather]
 locations=[<(uint32 2, <('Bolzano', 'LIPB', false, [(0.81099633157779594, 0.19780397607492647)], @a(dd) [])>)>]
 
