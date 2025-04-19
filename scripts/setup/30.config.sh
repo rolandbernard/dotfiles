@@ -26,6 +26,10 @@ npm run package
 code --install-extension simpledark-0.0.2.vsix
 cd ..
 
+# Install firefox-theme
+cp firefox-theme/129528ec52724bc59c9e-1.1.xpi \
+    $HOME/.mozilla/firefox/*.default*/extensions
+
 # Other config
 sudo plymouth-set-default-theme details
 sudo dracut -f
