@@ -5,6 +5,7 @@ cd $(dirname $0)/..
 
 cp -r config/.bashrc.d $HOME/
 cp -r config/.config $HOME/
+cp -r config/.themes $HOME/
 cp config/.bashrc $HOME/
 cp config/.clang-format $HOME/
 cp config/.gitconfig $HOME/
