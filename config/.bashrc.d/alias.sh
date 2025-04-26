@@ -7,9 +7,21 @@ alias lh='ls -a'
 alias ll='lh -l'
 alias vim='openeditor nvim'
 alias hx='openeditor hx'
+alias code='opencode'
 alias gdb='gdb -q'
 alias python='python -q'
 alias trash='gio trash'
+
+opencode() {
+    if [ -z "$1" ]
+    then
+        \code $(realpath .)
+    else
+        \code $(realpath $1)
+    fi
+}
+
+export -f opencode
 
 openeditor() {
     if [ $TMUX ]
