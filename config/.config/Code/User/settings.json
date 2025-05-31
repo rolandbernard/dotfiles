@@ -332,13 +332,31 @@
     "[c]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
-    "cSpell.userWords": [
-        "perfoming"
-    ],
     "gitlens.showWhatsNewAfterUpgrades": false,
     "gitlens.plusFeatures.enabled": false,
     "workbench.editorAssociations": {
         "{hexdiff}:/**/*.*": "hexEditor.hexedit",
         "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "python.createEnvironment.trigger": "off",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "workbench.experimental.share.enabled": true,
+    "explorer.confirmPasteNative": false,
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": true,
+        "contributors": true,
+        "repositories": false,
+        "searchAndCompare": true,
+        "launchpad": false
     },
 }

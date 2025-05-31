@@ -1,3 +1,6 @@
+[org/gnome/Console]
+audible-bell=false
+
 [org/gnome/Ptyxis]
 audible-bell=false
 default-profile-uuid='fda44e7f14da6148b07e192e675456bb'
@@ -41,6 +44,9 @@ picture-uri='file:///home/roland/.local/share/backgrounds/2024-12-07-18-09-04-bl
 picture-uri-dark='file:///home/roland/.local/share/backgrounds/2024-12-07-18-09-04-black.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
 
 [org/gnome/desktop/datetime]
 automatic-timezone=true
@@ -142,6 +148,9 @@ default-folder-viewer='list-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
+[org/gnome/portal/filechooser/io.bassi.Amberol]
+last-folder-path='/home/roland/documents/music'
+
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
 night-light-schedule-automatic=false
@@ -171,7 +180,7 @@ sleep-inactive-battery-type='nothing'
 [org/gnome/shell]
 disable-user-extensions=false
 disabled-extensions=@as []
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'Battery-Health-Charging@maniacx.github.com', 'paperwm@paperwm.github.com', 'hidetopbar@mathieu.bidon.ca', 'caffeine@patapon.info', 'blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'Battery-Health-Charging@maniacx.github.com', 'paperwm@paperwm.github.com', 'hidetopbar@mathieu.bidon.ca', 'caffeine@patapon.info', 'blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=@as []
 
 [org/gnome/shell/extensions/Battery-Health-Charging]
@@ -192,6 +201,7 @@ panel-button-padding-size=0
 panel-icon-size=0
 panel-in-overview=true
 panel-size=0
+theme=false
 workspace-wrap-around=false
 
 [org/gnome/shell/extensions/paperwm]
@@ -237,6 +247,9 @@ switch-monitor-left=['']
 switch-monitor-right=['']
 toggle-scratch=['<Shift><Super>space']
 
+[org/gnome/shell/extensions/user-theme]
+name='simpledark'
+
 [org/gnome/shell/keybindings]
 focus-active-notification=@as []
 shift-overview-down=@as []
@@ -258,6 +271,9 @@ locations=@av []
 [org/gnome/system/location]
 enabled=false
 
+[org/gnome/tweaks]
+show-extensions-notice=false
+
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
@@ -273,7 +289,7 @@ view-type='list'
 clock-format='24h'
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=176
