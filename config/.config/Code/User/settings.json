@@ -317,9 +317,9 @@
     "cmake.showOptionsMovedNotification": false,
     "workbench.colorTheme": "Simple Dark",
     "rust-analyzer.cargo.features": "all",
-    "rust-analyzer.cargo.cfgs": {
-        "miri": "",
-    },
+    "rust-analyzer.cargo.cfgs": [
+        "miri",
+    ],
     "[latex]": {
         "editor.wordWrap": "wordWrapColumn",
     },
