@@ -12,6 +12,7 @@ language-servers = ["marksman", "cspell", "ltex-ls-plus"]
 name = "latex"
 soft-wrap.enable = true
 language-servers = ["texlab", "cspell", "ltex-ls-plus"]
+indent = { tab-width = 2, unit = "  " }
 
 [[language]]
 name = "rust"
@@ -20,10 +21,12 @@ language-servers = ["rust-analyzer", "cspell"]
 [[language]]
 name = "cpp"
 language-servers = ["clangd", "cspell"]
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "c"
 language-servers = ["clangd", "cspell"]
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "python"
