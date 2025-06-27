@@ -6,6 +6,7 @@ BitFieldColonSpacing: Both
 AlignOperands: Align
 ContinuationIndentWidth: 4
 AlignTrailingComments: true
+AlignEscapedNewlines: LeftWithLastLine
 BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeTernaryOperators: true
 BreakBeforeBraces: Attach
@@ -18,4 +19,5 @@ AllowShortFunctionsOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLambdasOnASingleLine: All
 AllowShortLoopsOnASingleLine: false
+IndentCaseLabels: false
 ColumnLimit: 100
