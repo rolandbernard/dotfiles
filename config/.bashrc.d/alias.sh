@@ -11,6 +11,9 @@ alias code='opencode'
 alias gdb='gdb -q'
 alias python='python -q'
 alias trash='gio trash'
+alias fan-turbo='echo 1 | sudo tee /sys/devices/platform/asus-nb-wmi/throttle_thermal_policy'
+alias fan-balanced='echo 0 | sudo tee /sys/devices/platform/asus-nb-wmi/throttle_thermal_policy'
+alias fan-silent='echo 2 | sudo tee /sys/devices/platform/asus-nb-wmi/throttle_thermal_policy'
 
 opencode() {
     if [ -z "$1" ]
