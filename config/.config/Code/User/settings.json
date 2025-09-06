@@ -38,7 +38,7 @@
     "files.insertFinalNewline": true,
     "editor.lineNumbers": "relative",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.external.linuxExec": "kitty",
+    "terminal.external.linuxExec": "ghostty",
     "editor.renderWhitespace": "all",
     "git.confirmSync": false,
     "explorer.confirmDragAndDrop": false,
@@ -94,7 +94,6 @@
     "java.debug.settings.showQualifiedNames": false,
     "java.debug.settings.showLogicalStructure": true,
     "debug.autoExpandLazyVariables": "on",
-    "java.format.settings.profile": "${worspaceRoot}/formatter-config.xml",
     "ltex.language": "en-GB",
     "java.compile.nullAnalysis.nonnull": [
         "javax.annotation.Nonnull",
@@ -102,10 +101,6 @@
         "org.springframework.lang.NonNull"
     ],
     "editor.minimap.renderCharacters": false,
-    "[sql]": {
-        "editor.defaultFormatter": "mtxr.sqltools"
-    },
-    "workbench.editor.enablePreview": false,
     "latex-workshop.latex.tools": [
         {
             "name": "latexmk",
@@ -359,4 +354,41 @@
         "searchAndCompare": true,
         "launchpad": false
     },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "java.format.settings.url": "formatter-config.xml",
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "E8CF3B05-CF6B-4565-8E36-5AA913FA4D16"
+        }
+    ],
+    "prettier.tabWidth": 4,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+    "terminal.integrated.suggest.enabled": true
 }

@@ -180,18 +180,56 @@ sleep-inactive-battery-type='nothing'
 [org/gnome/shell]
 disable-user-extensions=false
 disabled-extensions=@as []
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'Battery-Health-Charging@maniacx.github.com', 'paperwm@paperwm.github.com', 'hidetopbar@mathieu.bidon.ca', 'caffeine@patapon.info', 'blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['paperwm@paperwm.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'Battery-Health-Charging@maniacx.github.com', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx']
 favorite-apps=@as []
 
 [org/gnome/shell/extensions/Battery-Health-Charging]
 charging-mode='bal'
 ctl-path='/usr/local/bin/batteryhealthchargingctl-roland'
 device-type=2
-indicator-position-max=3
+indicator-position-max=2
 polkit-status='installed'
 show-battery-panel2=false
 show-notifications=false
 show-system-indicator=false
+
+[org/gnome/shell/extensions/blur-my-shell]
+hacks-level=1
+pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <@av []>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}}
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+blur=false
+
+[org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
+blur=false
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=false
+override-background=false
+pipeline='pipeline_default_rounded'
+
+[org/gnome/shell/extensions/blur-my-shell/lockscreen]
+blur=false
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/overview]
+blur=true
+pipeline='pipeline_default'
+style-components=1
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+blur=false
+override-background=false
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/screenshot]
+blur=true
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+blur=false
 
 [org/gnome/shell/extensions/just-perfection]
 animation=1
@@ -297,6 +335,26 @@ sort-column='modified'
 sort-directories-first=true
 sort-order='descending'
 type-format='category'
+
+[org/virt-manager/virt-manager/confirm]
+delete-storage=true
+forcepoweroff=true
+removedev=true
+unapplied-dev=true
+
+[org/virt-manager/virt-manager/connections]
+autoconnect=['qemu:///system']
+uris=['qemu:///system']
+
+[org/virt-manager/virt-manager/details]
+show-toolbar=true
+
+[org/virt-manager/virt-manager/new-vm]
+graphics-type='system'
+
+[org/virt-manager/virt-manager/vmlist-fields]
+disk-usage=false
+network-traffic=false
 
 [system/locale]
 region='en_GB.UTF-8'
