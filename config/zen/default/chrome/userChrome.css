@@ -25,13 +25,13 @@
 
 #titlebar:before {
   outline: none !important;
-  border-radius: 15px 0 0 15px !important;
+  border-radius: 14px 0 0 14px !important;
 }
 
 #navigator-toolbox {
-  padding: 0 0 0 5px !important;
+  padding: 0 0 4px 5px !important;
   top: 0 !important;
-  bottom: 0 !important;
+  bottom: -5px !important;
   height: unset !important;
 }
 
@@ -55,4 +55,3 @@
 #zen-tabbox-wrapper {
   margin: 0 !important;
 }
-
