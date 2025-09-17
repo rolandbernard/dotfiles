@@ -17,6 +17,10 @@
   color-scheme: dark !important;
 }
 
+.zen-toast {
+  background: #181818 !important;
+}
+
 :root[privatebrowsingmode="temporary"] #titlebar:before,
 :root[privatebrowsingmode="temporary"] #zen-browser-background,
 :root[privatebrowsingmode="temporary"] #zen-appcontent-wrapper {
