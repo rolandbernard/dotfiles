@@ -13,6 +13,10 @@
   display: none !important;
 }
 
+#nav-bar {
+  color-scheme: dark !important;
+}
+
 :root[privatebrowsingmode="temporary"] #titlebar:before,
 :root[privatebrowsingmode="temporary"] #zen-browser-background,
 :root[privatebrowsingmode="temporary"] #zen-appcontent-wrapper {
