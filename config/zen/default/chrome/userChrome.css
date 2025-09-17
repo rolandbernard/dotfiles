@@ -1,0 +1,58 @@
+
+#navigator-toolbox {
+  --zen-compact-float: 10px !important;
+  --zen-compact-mode-func: linear !important;
+  --zen-compact-mode-time: 0.12s !important;
+}
+
+#titlebar:before, #zen-browser-background, #zen-appcontent-wrapper {
+  background: #181818 !important;
+}
+
+#zen-appcontent-navbar-wrapper {
+  display: none !important;
+}
+
+:root[privatebrowsingmode="temporary"] #titlebar:before,
+:root[privatebrowsingmode="temporary"] #zen-browser-background,
+:root[privatebrowsingmode="temporary"] #zen-appcontent-wrapper {
+  background: #181820 !important;
+}
+
+#zen-appcontent-wrapper browser {
+  background: #1e1e1e !important;
+}
+
+#titlebar:before {
+  outline: none !important;
+  border-radius: 15px 0 0 15px !important;
+}
+
+#navigator-toolbox {
+  padding: 0 0 0 5px !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  height: unset !important;
+}
+
+#zen-browser-background:before, #zen-browser-background:after {
+  display: none;
+}
+
+#sidebar-box, #titlebar:before, .browserSidebarContainer {
+  box-shadow: none !important;
+}
+
+#zen-sidebar-splitter, #sidebar-splitter {
+  width: 4px !important;
+  min-width: 4px !important;
+}
+
+#sidebar-splitter {
+  margin: 0 -8px;
+}
+
+#zen-tabbox-wrapper {
+  margin: 0 !important;
+}
+
