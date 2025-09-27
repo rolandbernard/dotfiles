@@ -173,7 +173,8 @@ command='ghostty -e tmux'
 name='Terminal'
 
 [org/gnome/settings-daemon/plugins/power]
-idle-dim=true
+idle-dim=false
+power-saver-profile-on-low-battery=true
 sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
@@ -187,7 +188,7 @@ favorite-apps=@as []
 charging-mode='bal'
 ctl-path='/usr/local/bin/batteryhealthchargingctl-roland'
 device-type=2
-indicator-position-max=2
+indicator-position-max=4
 polkit-status='installed'
 show-battery-panel2=false
 show-notifications=false

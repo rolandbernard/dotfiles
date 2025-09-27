@@ -369,13 +369,13 @@
     ],
     "prettier.tabWidth": 4,
     "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
@@ -390,5 +390,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
-    "terminal.integrated.suggest.enabled": true
+    "terminal.integrated.suggest.enabled": true,
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "prettier.arrowParens": "avoid"
 }
