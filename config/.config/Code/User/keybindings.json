@@ -103,7 +103,7 @@
     {
         "key": "shift+alt+c",
         "command": "workbench.action.terminal.copySelection",
-        "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+        "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
     },
     {
         "key": "shift+alt+v",
@@ -153,5 +153,19 @@
         "key": "ctrl+[Period]",
         "command": "workbench.action.terminal.focusFind",
         "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+alt+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+alt+x",
+        "command": "editor.action.clipboardCutAction"
     }
 ]
