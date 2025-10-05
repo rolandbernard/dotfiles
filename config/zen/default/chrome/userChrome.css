@@ -1,4 +1,8 @@
 
+.zen-toast, .zen-toolbar-background {
+  background: #181818 !important;
+}
+
 #navigator-toolbox {
   --zen-compact-float: 10px !important;
   --zen-compact-mode-func: linear !important;
@@ -15,10 +19,6 @@
 
 * {
   color-scheme: dark !important;
-}
-
-.zen-toast {
-  background: #181818 !important;
 }
 
 :root[privatebrowsingmode="temporary"] #titlebar:before,
@@ -43,7 +43,8 @@
   height: unset !important;
 }
 
-#zen-browser-background:before, #zen-browser-background:after {
+#zen-browser-background:before, #zen-browser-background:after,
+.zen-toolbar-background:before, .zen-toolbar-background:after {
   display: none;
 }
 
