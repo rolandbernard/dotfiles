@@ -39,7 +39,9 @@ cp $HOME/.config/helix/themes/* config/.config/helix/themes/
 cp $HOME/.config/gtk-3.0/gtk.css config/.config/gtk-3.0
 cp $HOME/.config/gtk-4.0/gtk.css config/.config/gtk-4.0
 cp $HOME/.var/app/app.zen_browser.zen/.zen/*" (release)"/chrome/userChrome.css config/.zen/default/chrome
+cp $HOME/.var/app/app.zen_browser.zen/.zen/*" (release)"/user.js config/.zen/default
 cp $HOME/.mozilla/firefox/*".default-release"/chrome/userChrome.css config/.mozilla/firefox/default/chrome
+cp $HOME/.mozilla/firefox/*".default-release"/user.js config/.mozilla/firefox/default
 
 dconf dump / > config/settings.dconf
 
