@@ -12,6 +12,8 @@ mkdir -p config/.config/ghostty/themes
 mkdir -p config/.config/helix/themes
 mkdir -p config/.config/gtk-3.0
 mkdir -p config/.config/gtk-4.0
+mkdir -p config/.mozilla/firefox/default/chrome
+mkdir -p config/.zen/default/chrome
 
 cp $HOME/.bashrc config/
 cp $HOME/.bash_profile config/
@@ -36,6 +38,8 @@ cp $HOME/.config/helix/languages.toml config/.config/helix/
 cp $HOME/.config/helix/themes/* config/.config/helix/themes/
 cp $HOME/.config/gtk-3.0/gtk.css config/.config/gtk-3.0
 cp $HOME/.config/gtk-4.0/gtk.css config/.config/gtk-4.0
+cp $HOME/.var/app/app.zen_browser.zen/.zen/*" (release)"/chrome/userChrome.css config/.zen/default/chrome
+cp $HOME/.mozilla/firefox/*".default-release"/chrome/userChrome.css config/.mozilla/firefox/default/chrome
 
 dconf dump / > config/settings.dconf
 

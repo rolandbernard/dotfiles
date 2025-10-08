@@ -1,16 +1,28 @@
 
-.zen-toast, .zen-toolbar-background {
-  background: #181818 !important;
-}
-
 #navigator-toolbox {
   --zen-compact-float: 10px !important;
   --zen-compact-mode-func: linear !important;
   --zen-compact-mode-time: 0.12s !important;
 }
 
-#titlebar:before, #zen-browser-background, #zen-appcontent-wrapper {
+.zen-toast, .zen-toolbar-background, #titlebar:before, #zen-browser-background, #zen-appcontent-wrapper {
   background: #181818 !important;
+}
+
+:root[privatebrowsingmode="temporary"] .zen-toast,
+:root[privatebrowsingmode="temporary"] .zen-toolbar-background,
+:root[privatebrowsingmode="temporary"] #titlebar:before,
+:root[privatebrowsingmode="temporary"] #zen-browser-background,
+:root[privatebrowsingmode="temporary"] #zen-appcontent-wrapper {
+  background: #0d1629 !important;
+}
+
+#zen-appcontent-wrapper browser {
+  background: #1e1e1e !important;
+}
+
+:root[privatebrowsingmode="temporary"] #zen-appcontent-wrapper browser {
+  background: #141c30 !important;
 }
 
 #zen-appcontent-navbar-wrapper {
@@ -19,16 +31,6 @@
 
 * {
   color-scheme: dark !important;
-}
-
-:root[privatebrowsingmode="temporary"] #titlebar:before,
-:root[privatebrowsingmode="temporary"] #zen-browser-background,
-:root[privatebrowsingmode="temporary"] #zen-appcontent-wrapper {
-  background: #181820 !important;
-}
-
-#zen-appcontent-wrapper browser {
-  background: #1e1e1e !important;
 }
 
 #titlebar:before {
@@ -46,10 +48,6 @@
 #zen-browser-background:before, #zen-browser-background:after,
 .zen-toolbar-background:before, .zen-toolbar-background:after {
   display: none;
-}
-
-#sidebar-box, #titlebar:before, .browserSidebarContainer {
-  box-shadow: none !important;
 }
 
 #zen-sidebar-splitter, #sidebar-splitter {
