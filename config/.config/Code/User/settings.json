@@ -29,7 +29,6 @@
     "window.dialogStyle": "custom",
     "files.insertFinalNewline": true,
     "editor.lineNumbers": "relative",
-    "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.external.linuxExec": "ghostty",
     "editor.renderWhitespace": "all",
     "git.confirmSync": false,
@@ -290,18 +289,6 @@
     "rust-analyzer.cargo.cfgs": [
         "miri",
     ],
-    "[latex]": {
-        "editor.wordWrap": "wordWrapColumn",
-    },
-    "[markdown]": {
-        "editor.wordWrap": "wordWrapColumn",
-    },
-    "[cpp]": {
-        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-    },
-    "[c]": {
-        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-    },
     "gitlens.showWhatsNewAfterUpgrades": false,
     "gitlens.plusFeatures.enabled": false,
     "workbench.editorAssociations": {
@@ -328,12 +315,6 @@
         "searchAndCompare": true,
         "launchpad": false
     },
-    "[xml]": {
-        "editor.defaultFormatter": "redhat.vscode-xml"
-    },
-    "[java]": {
-        "editor.defaultFormatter": "redhat.java"
-    },
     "java.format.settings.url": "formatter-config.xml",
     "mssql.connectionGroups": [
         {
@@ -342,6 +323,39 @@
         }
     ],
     "prettier.tabWidth": 4,
+    "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+    "terminal.integrated.suggest.enabled": true,
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "prettier.arrowParens": "avoid",
+    "terminal.integrated.persistentSessionScrollback": 10000,
+    "terminal.integrated.scrollback": 100000,
+    "cmake.automaticReconfigure": false,
+    "cmake.configureOnEdit": false,
+    "cmake.configureOnOpen": false,
+    "cmake.enableAutomaticKitScan": false,
+    "terminal.integrated.shellIntegration.history": 1000,
+    "editor.foldingMaximumRegions": 50000,
+    "json.maxItemsComputed": 50000,
+    "[latex]": {
+        "editor.wordWrap": "wordWrapColumn",
+    },
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -362,11 +376,5 @@
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
-    "terminal.integrated.suggest.enabled": true,
-    "files.associations": {
-        "*.css": "tailwindcss"
-    },
-    "prettier.arrowParens": "avoid"
+    }
 }
