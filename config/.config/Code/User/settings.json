@@ -2,12 +2,6 @@
     "telemetry.telemetryLevel": "off",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
     "editor.suggestSelection": "first",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
     "ltex.additionalRules.enablePickyRules": true,
     "workbench.startupEditor": "none",
     "C_Cpp.intelliSenseEngine": "disabled",
@@ -32,9 +26,7 @@
             },
         ],
     },
-    "window.titleBarStyle": "custom",
     "window.dialogStyle": "custom",
-    "editor.renderFinalNewline": "off",
     "files.insertFinalNewline": true,
     "editor.lineNumbers": "relative",
     "terminal.integrated.defaultProfile.linux": "bash",
@@ -49,7 +41,6 @@
         "-header-insertion=never"
     ],
     "java.configuration.runtimes": [
-
         {
             "name": "JavaSE-17",
             "path": "/usr/lib/jvm/java-21"
@@ -65,24 +56,12 @@
     "ltex.completionEnabled": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\Roland\\Documents\\Neovim\\bin\\nvim.exe",
-    "security.workspace.trust.untrustedFiles": "open",
-    "git.enableSmartCommit": true,
     "jupyter.askForKernelRestart": false,
-    "editor.inlayHints.enabled": "off",
     "rust-analyzer.inlayHints.enable": false,
     "editor.language.colorizedBracketPairs": [],
-    "C_Cpp.clang_format_fallbackStyle": "file",
-    "hexeditor.columnWidth": 32,
-    "hexeditor.showDecodedText": true,
-    "hexeditor.defaultEndianness": "little",
-    "hexeditor.inspectorType": "aside",
+    "C_Cpp.clang_format_fallbackStyle": "none",
     "javascript.format.enable": false,
-    "debug.allowBreakpointsEverywhere": true,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.foldingMaximumRegions": 50000,
-    "settingsSync.ignoredExtensions": [
-        "llvm-vs-code-extensions.vscode-clangd"
-    ],
     "terminal.integrated.inheritEnv": false,
     "python.analysis.typeCheckingMode": "basic",
     "rust-analyzer.rustfmt.rangeFormatting.enable": true,
@@ -92,14 +71,11 @@
     "java.debug.settings.showStaticVariables": false,
     "java.debug.settings.showQualifiedNames": false,
     "java.debug.settings.showLogicalStructure": true,
-    "debug.autoExpandLazyVariables": "on",
-    "ltex.language": "en-GB",
     "java.compile.nullAnalysis.nonnull": [
         "javax.annotation.Nonnull",
         "org.eclipse.jdt.annotation.NonNull",
         "org.springframework.lang.NonNull"
     ],
-    "editor.minimap.renderCharacters": false,
     "latex-workshop.latex.tools": [
         {
             "name": "latexmk",
@@ -339,7 +315,6 @@
         "markdown": false,
         "scminput": false
     },
-    "workbench.experimental.share.enabled": true,
     "explorer.confirmPasteNative": false,
     "gitlens.views.scm.grouped.views": {
         "commits": true,
