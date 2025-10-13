@@ -77,7 +77,6 @@
     "hexeditor.defaultEndianness": "little",
     "hexeditor.inspectorType": "aside",
     "javascript.format.enable": false,
-    "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
     "debug.allowBreakpointsEverywhere": true,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.foldingMaximumRegions": 50000,

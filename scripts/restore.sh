@@ -17,8 +17,8 @@ ln -s $HOME/.config/vim $HOME/.config/nvim
 rm -f $HOME/.vimrc
 ln -s $HOME/.config/vim/init.vim $HOME/.vimrc
 
-cp -r config/.zen/default/chrome $HOME/.var/app/app.zen_browser.zen/.zen/*" (release)"/
-cp -r config/.mozilla/firefox/default/chrome $HOME/.mozilla/firefox/*".default-release"/
+cp -r config/.zen/default/* $HOME/.var/app/app.zen_browser.zen/.zen/*" (release)"/
+cp -r config/.mozilla/firefox/default/* $HOME/.mozilla/firefox/*".default-release"/
 
 dconf load -f / < config/settings.dconf
 

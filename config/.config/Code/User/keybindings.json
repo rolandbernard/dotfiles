@@ -26,11 +26,6 @@
         "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "ctrl+left",
-        "command": "-vscode-neovim.send",
-        "when": "neovim.recording || editorTextFocus && neovim.init && neovim.mode != 'insert'"
-    },
-    {
         "key": "shift+up",
         "command": "workbench.action.navigateUp"
     },
@@ -167,5 +162,31 @@
     {
         "key": "shift+alt+x",
         "command": "editor.action.clipboardCutAction"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.terminal.runRecentCommand",
+        "when": " terminalFocus && terminalHasBeenCreated ||  terminalFocus && terminalProcessSupported ||  accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' ||  accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.terminal.runRecentCommand",
+        "when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-workbench.action.terminal.runRecentCommand",
+        "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\u0012"/*^R*/ },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "accessibilityModeEnabled && terminalFocus"
     }
 ]
