@@ -179,6 +179,7 @@ sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
+disable-extension-version-validation=true
 disable-user-extensions=false
 disabled-extensions=@as []
 enabled-extensions=['paperwm@paperwm.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'Battery-Health-Charging@maniacx.github.com', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx']
