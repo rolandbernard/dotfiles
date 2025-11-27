@@ -329,15 +329,10 @@
         "*.css": "tailwindcss"
     },
     "prettier.arrowParens": "avoid",
-    "terminal.integrated.persistentSessionScrollback": 10000,
-    "terminal.integrated.scrollback": 100000,
     "cmake.automaticReconfigure": false,
     "cmake.configureOnEdit": false,
     "cmake.configureOnOpen": false,
     "cmake.enableAutomaticKitScan": false,
-    "terminal.integrated.shellIntegration.history": 1000,
-    "editor.foldingMaximumRegions": 50000,
-    "json.maxItemsComputed": 50000,
     "[latex]": {
         "editor.wordWrap": "wordWrapColumn",
     },
@@ -378,5 +373,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "telemetry.feedback.enabled": false,
-    "telemetry.editStats.enabled": false
+    "telemetry.editStats.enabled": false,
+    "editor.inlayHints.enabled": "off"
 }

@@ -56,7 +56,7 @@ current=uint32 0
 sources=[('xkb', 'de')]
 
 [org/gnome/desktop/interface]
-accent-color='blue'
+accent-color='teal'
 clock-format='24h'
 clock-show-weekday=true
 color-scheme='prefer-dark'
@@ -66,6 +66,9 @@ gtk-theme='adw-gtk3-dark'
 monospace-font-name='IBM Plex Mono 10'
 show-battery-percentage=true
 toolkit-accessibility=false
+
+[org/gnome/desktop/media-handling]
+autorun-never=true
 
 [org/gnome/desktop/peripherals/touchpad]
 disable-while-typing=true
@@ -349,7 +352,7 @@ autoconnect=['qemu:///system']
 uris=['qemu:///system']
 
 [org/virt-manager/virt-manager/details]
-show-toolbar=true
+show-toolbar=false
 
 [org/virt-manager/virt-manager/new-vm]
 graphics-type='system'

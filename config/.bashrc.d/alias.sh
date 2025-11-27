@@ -18,9 +18,9 @@ alias fan-silent='echo 2 | sudo tee /sys/devices/platform/asus-nb-wmi/throttle_t
 opencode() {
     if [ -z "$1" ]
     then
-        \code $(realpath .)
+        \code --ozone-platform=wayland $(realpath .)
     else
-        \code $(realpath $1)
+        \code --ozone-platform=wayland $(realpath $1)
     fi
 }
 
