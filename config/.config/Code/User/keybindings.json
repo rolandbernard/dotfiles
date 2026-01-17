@@ -188,5 +188,10 @@
         "key": "ctrl+alt+r",
         "command": "-workbench.action.terminal.sendSequence",
         "when": "accessibilityModeEnabled && terminalFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
     }
 ]
