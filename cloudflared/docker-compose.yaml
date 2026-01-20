@@ -6,3 +6,11 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway" # this is so we can access the host services
     restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 128M
+        reservations:
+          cpus: '0.25'
+          memory: 32M
