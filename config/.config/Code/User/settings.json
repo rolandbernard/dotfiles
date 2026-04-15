@@ -374,5 +374,6 @@
     },
     "telemetry.feedback.enabled": false,
     "telemetry.editStats.enabled": false,
-    "editor.inlayHints.enabled": "off"
+    "editor.inlayHints.enabled": "off",
+    "csv.maxFileSizeMB": 0,
 }

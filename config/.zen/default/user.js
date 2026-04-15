@@ -90,3 +90,5 @@ user_pref("zen.view.compact.hide-toolbar", true);
 user_pref("zen.view.window.scheme", 0);
 user_pref("zen.workspaces.hide-default-container-indicator", false);
 user_pref("zen.workspaces.separate-essentials", false);
+user_pref("zen.window-sync.sync-only-pinned-tabs", true);
+user_pref("zen.pinned-tab-manager.restore-pinned-tabs-to-pinned-url", true);
