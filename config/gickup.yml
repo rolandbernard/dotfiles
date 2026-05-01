@@ -1,0 +1,30 @@
+
+source:
+  github:
+    - token_file: /backup/github.token
+      wiki: true
+      issues: true
+
+destination:
+  local:
+    - path: /backup/
+      structured: true
+
+  gitea:
+    - token_file: /backup/gitea.token
+      user: rolandbernard
+      url: http://localhost:3000
+      lfs: true
+      mirror:
+        mirrorinterval: 8h
+        enabled: false
+      visibility:
+        repositories: private
+        organizations: private
+      force: true
+
+log:
+  file-logging:
+    dir: /backup/logs/
+    file: gickup.log
+    maxage: 30
