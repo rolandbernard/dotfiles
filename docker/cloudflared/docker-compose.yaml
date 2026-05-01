@@ -1,7 +1,7 @@
 services:
   cloudflared:
-    image: 'cloudflare/cloudflared:latest'
-    container_name: '${COMPOSE_PROJECT_NAME:-rtgh}-cloudflared'
+    image: "cloudflare/cloudflared:latest"
+    container_name: "${COMPOSE_PROJECT_NAME:-cloudflared}-cloudflared"
     command: ["tunnel", "--no-autoupdate", "run", "--token", "${CLOUDFLARED_TOKEN}"]
     extra_hosts:
       - "host.docker.internal:host-gateway" # this is so we can access the host services
@@ -9,8 +9,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '1.0'
+          cpus: "1.0"
           memory: 128M
         reservations:
-          cpus: '0.25'
+          cpus: "0.25"
           memory: 32M

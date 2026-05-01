@@ -1,0 +1,44 @@
+services:
+  gitea:
+    image: gitea/gitea:latest
+    container_name: "${COMPOSE_PROJECT_NAME:-gitea}-gitea"
+    environment:
+      USER_UID: "1000"
+      USER_GID: "1000"
+      GITEA__database__DB_TYPE: "sqlite3"
+      GITEA__actions__ENABLED: "true"
+      GITEA__session__COOKIE_SECURE: "false"
+    restart: always
+    ports:
+      - "3000:3000"
+      - "222:22"
+    volumes:
+      - gitea-data:/data:z
+      - ./templates:/data/gitea/templates:z
+    deploy:
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 1G
+        reservations:
+          cpus: "0.25"
+          memory: 512M
+
+  runner:
+    image: gitea/act_runner:latest
+    container_name: "${COMPOSE_PROJECT_NAME:-gitea}-runner"
+    restart: always
+    privileged: true  #
+    depends_on:
+      - gitea
+    environment:
+      GITEA_INSTANCE_URL: "http://gitea:3000"
+      GITEA_RUNNER_REGISTRATION_TOKEN: "${GITEA_RUNNER_TOKEN}"
+      DOCKER_HOST: "unix:///var/run/docker.sock"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:z
+      - runner-data:/data:z
+
+volumes:
+  gitea-data:
+  runner-data:
