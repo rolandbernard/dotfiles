@@ -5,8 +5,10 @@ then
 
 # Some dnf config changes
 echo "
-fastestmirror=True
-max_parallel_downloads=10" | sudo tee -a /etc/dnf/dnf.conf
+max_parallel_downloads=10
+metadata_timer_sync=0
+minrate=100k
+timeout=15" | sudo tee -a /etc/dnf/dnf.conf
 
 if [ "$HOST_NAME" == "rolandlinux" -o "$HOST_NAME" == "rolandvm" ]
 then
