@@ -21,8 +21,6 @@ if !exists('g:vscode')
     Plug 'puremourning/vimspector'
 
     if has('nvim')
-        Plug 'nvim-treesitter/nvim-treesitter'
-        Plug 'nvim-treesitter/playground'
         Plug 'romgrk/barbar.nvim'
     else
         Plug 'bling/vim-bufferline'
