@@ -1,0 +1,62 @@
+services:
+  forgejo:
+    image: code.forgejo.org/forgejo/forgejo:15
+    container_name: "${COMPOSE_PROJECT_NAME:-forgejo}-forgejo"
+    environment:
+      USER_UID: "1000"
+      USER_GID: "1000"
+      GITEA__database__DB_TYPE: "sqlite3"
+      GITEA__actions__ENABLED: "true"
+      GITEA__service__DISABLE_REGISTRATION: "true"
+      GITEA__session__COOKIE_SECURE: "false"
+    restart: always
+    ports:
+      - "3000:3000"
+      - "222:22"
+    volumes:
+      - forgejo-data:/data:z
+      - ./templates:/data/gitea/templates:z
+    deploy:
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 1G
+        reservations:
+          cpus: "0.25"
+          memory: 512M
+
+  docker-in-docker:
+    image: docker:dind
+    container_name: "docker_dind"
+    privileged: "true"
+    command: ["dockerd", "-H", "tcp://0.0.0.0:2375", "--tls=false"]
+    restart: "always"
+
+  runner:
+    image: code.forgejo.org/forgejo/runner:12
+    container_name: "${COMPOSE_PROJECT_NAME:-forgejo}-runner"
+    links:
+      - docker-in-docker
+    command: [
+      "forgejo-runner", "daemon",
+      "--url", "http://forgejo:3000",
+      "--uuid", "${FORGEJO_RUNNER_UUID}",
+      "--token-url", "file:///runner-token",
+      "--label", "ubuntu-22.04:docker://ghcr.io/catthehacker/ubuntu:act-22.04",
+      "--label", "ubuntu-24.04:docker://ghcr.io/catthehacker/ubuntu:act-24.04",
+    ]
+    restart: always
+    depends_on:
+      - forgejo
+      - docker-in-docker
+    environment:
+      DOCKER_HOST: "tcp://docker-in-docker:2375"
+    user: 1001:1001
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:z
+      - ./.runner-token:/runner-token:z
+      - runner-data:/data:z
+
+volumes:
+  forgejo-data:
+  runner-data:

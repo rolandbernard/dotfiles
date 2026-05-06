@@ -11,7 +11,7 @@ destination:
       structured: true
 
   gitea:
-    - token_file: /backup/gitea.token
+    - token_file: /backup/forgejo.token
       user: rolandbernard
       url: http://localhost:3000
       lfs: true
