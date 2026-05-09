@@ -378,5 +378,6 @@
     "csv.maxFileSizeMB": 0,
     "chat.disableAIFeatures": true,
     "git.addAICoAuthor": "off",
-    "workbench.activityBar.location": "top"
+    "workbench.activityBar.location": "top",
+    "update.mode": "none"
 }
