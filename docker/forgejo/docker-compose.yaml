@@ -9,6 +9,7 @@ services:
       GITEA__actions__ENABLED: "true"
       GITEA__service__DISABLE_REGISTRATION: "true"
       GITEA__session__COOKIE_SECURE: "false"
+      GITEA__server__DISABLE_SSH: "true"
     restart: always
     ports:
       - "3000:3000"
