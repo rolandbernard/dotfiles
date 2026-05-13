@@ -10,6 +10,7 @@ services:
       GITEA__service__DISABLE_REGISTRATION: "true"
       GITEA__session__COOKIE_SECURE: "false"
       GITEA__server__DISABLE_SSH: "true"
+      GITEA__server__LANDING_PAGE: "explore"
     restart: always
     ports:
       - "3000:3000"

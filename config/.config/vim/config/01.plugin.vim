@@ -14,7 +14,7 @@ if !exists('g:vscode')
     Plug 'sheerun/vim-polyglot'
     Plug 'Shirk/vim-gas'
     Plug 'vim-scripts/restore_view.vim'
-    Plug 'ryanoasis/vim-devicons'
+    Plug 'nvim-tree/nvim-web-devicons'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'lambdalisue/suda.vim'
     Plug 'kylelaker/riscv.vim'
