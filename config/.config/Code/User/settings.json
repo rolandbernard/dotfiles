@@ -339,6 +339,9 @@
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
     },
+    "[plaintext]": {
+        "editor.wordWrap": "wordWrapColumn",
+    },
     "[cpp]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
@@ -379,5 +382,6 @@
     "chat.disableAIFeatures": true,
     "git.addAICoAuthor": "off",
     "workbench.activityBar.location": "top",
-    "update.mode": "none"
+    "update.mode": "none",
+    "editor.wordWrapColumn": 120
 }
