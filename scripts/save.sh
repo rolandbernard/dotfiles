@@ -25,7 +25,7 @@ cp $HOME/.tmux.conf config/
 cp $HOME/.bashrc.d/* config/.bashrc.d/
 cp $HOME/.config/marvin/marvin.json config/.config/marvin/
 cp $HOME/.config/Code/User/{keybindings.json,settings.json} config/.config/Code/User/
-cp $HOME/.config/vim/{init.vim,coc-settings.json} config/.config/vim/
+cp $HOME/.config/vim/init.vim config/.config/vim/
 cp $HOME/.config/vim/autoload/lightline/colorscheme/* config/.config/vim/autoload/lightline/colorscheme/
 cp $HOME/.config/vim/colors/* config/.config/vim/colors/
 cp $HOME/.config/vim/config/* config/.config/vim/config/
