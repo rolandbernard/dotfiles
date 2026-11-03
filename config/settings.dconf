@@ -200,14 +200,15 @@ show-system-indicator=false
 
 [org/gnome/shell/extensions/blur-my-shell]
 hacks-level=1
-pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <@av []>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}}
+pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <@av []>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <@av []>}, 'pipeline_liquid_glass': {'name': <'Liquid Glass'>, 'effects': <[<{'type': <'luminosity'>, 'id': <'effect_liquid_glass_luminosity'>, 'params': <{'saturation_multiplicator': <1.1000000000000001>}>}>, <{'type': <'refraction'>, 'id': <'effect_liquid_glass_refraction'>, 'params': <{'tint': <0>}>}>, <{'type': <'noise'>, 'id': <'effect_liquid_glass_noise'>, 'params': <{'noise': <0.10000000000000001>}>}>]>}, 'pipeline_vapor_glass': {'name': <'Vapor Glass'>, 'effects': <[<{'type': <'luminosity'>, 'id': <'effect_vapor_glass_luminosity'>, 'params': <{'saturation_multiplicator': <1.1000000000000001>}>}>, <{'type': <'wave'>, 'id': <'effect_vapor_glass_wave'>, 'params': <@a{sv} {}>}>, <{'type': <'refraction'>, 'id': <'effect_vapor_glass_refraction'>, 'params': <{'tint': <0>}>}>, <{'type': <'noise'>, 'id': <'effect_vapor_glass_noise'>, 'params': <{'noise': <0.10000000000000001>}>}>]>}, 'pipeline_classic_light_background': {'name': <'Classic Light Background'>, 'effects': <[<{'type': <'dual_kawase_blur'>, 'id': <'effect_classic_light_blur'>, 'params': <{'unscaled_radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'color'>, 'id': <'effect_classic_light_color'>, 'params': <{'color': <(1.0, 1.0, 1.0, 0.25)>, 'blend_mode': <17>}>}>]>}, 'pipeline_classic_dark_background': {'name': <'Classic Dark Background'>, 'effects': <[<{'type': <'dual_kawase_blur'>, 'id': <'effect_classic_dark_blur'>, 'params': <{'unscaled_radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'color'>, 'id': <'effect_classic_dark_color'>, 'params': <{'color': <(0.40000000000000002, 0.40000000000000002, 0.40000000000000002, 0.34999999999999998)>, 'blend_mode': <17>}>}>]>}, 'pipeline_f3fef42b-f881-43e8-8479-5606a7315045': {'name': <'New pipeline'>, 'effects': <@av []>}}
 rounded-blur-found=false
-settings-version=2
+settings-version=8
 
 [org/gnome/shell/extensions/blur-my-shell/appfolder]
 blur=false
 
 [org/gnome/shell/extensions/blur-my-shell/applications]
+blur=false
 pipeline='pipeline_default'
 
 [org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
@@ -226,7 +227,7 @@ pipeline='pipeline_default'
 [org/gnome/shell/extensions/blur-my-shell/overview]
 blur=true
 pipeline='pipeline_default'
-style-components=1
+style-components=4
 
 [org/gnome/shell/extensions/blur-my-shell/panel]
 blur=false
