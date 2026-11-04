@@ -28,7 +28,7 @@ if !exists('g:vscode')
     nmap <silent> <S-Up> :TmuxNavigateUp<cr>
     nmap <silent> <S-Right> :TmuxNavigateRight<cr>
     nmap <silent> <C-\> :TmuxNavigatePrevious<cr>
-    
+
     tmap <silent> <ESC> <C-\><C-n>
     tmap <silent> <C-Left> <C-\><C-n>:bprev<CR>
     tmap <silent> <C-Right> <C-\><C-n>:bnext<CR>
@@ -56,6 +56,21 @@ else
     nmap gc  <Plug>VSCodeCommentary
     omap gc  <Plug>VSCodeCommentary
     nmap gcc <Plug>VSCodeCommentaryLine
+
+    nmap <silent> [g <Cmd>call VSCodeNotify("editor.action.marker.prevInFiles")<CR>
+    nmap <silent> ]g <Cmd>call VSCodeNotify("editor.action.marker.nextInFiles")<CR>
+
+    nmap <silent> gd <Cmd>call VSCodeNotify("editor.action.revealDefinition")<CR>
+    nmap <silent> gy <Cmd>call VSCodeNotify("editor.action.goToTypeDefinition")<CR>
+    nmap <silent> gi <Cmd>call VSCodeNotify("editor.action.goToImplementation")<CR>
+    nmap <silent> gr <Cmd>call VSCodeNotify("editor.action.goToReferences")<CR>
+
+    nmap <silent> rn <Cmd>call VSCodeNotify("editor.action.rename")<CR>
+
+    xmap <silent> gf <Cmd>call VSCodeNotify("editor.action.formatSelection")<CR>
+    nmap <silent> gf <Cmd>call VSCodeNotify("editor.action.formatSelection")<CR>
+    xmap <silent> ga <Cmd>call VSCodeNotify("editor.action.quickFix")<CR>
+    nmap <silent> ga <Cmd>call VSCodeNotify("editor.action.quickFix")<CR>
 
 endif
 
